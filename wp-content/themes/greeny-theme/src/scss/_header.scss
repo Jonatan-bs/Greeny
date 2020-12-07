@@ -1,0 +1,18 @@
+@import "variables/colors";
+
+header {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  background: $light;
+
+  .logo {
+    width: 150px;
+  }
+
+  .topMenu {
+    list-style-type: none;
+    padding: 0;
+  }
+}

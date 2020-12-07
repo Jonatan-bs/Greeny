@@ -1,0 +1,17 @@
+@import "scss/header";
+@import "scss/variables/colors";
+@import "scss/hero";
+@import "scss/footer";
+@import "scss/page";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 100%; 
+  margin: 0 auto;
+  max-width: 900px;
+}
