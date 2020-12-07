@@ -1,13 +1,29 @@
 @import "scss/header";
 @import "scss/variables/colors";
+@import "scss/variables/fonts";
 @import "scss/hero";
 @import "scss/footer";
 @import "scss/page";
+
+// font-family: $heading
+// font-family: $body
+// font-family: $display
+// font-family: $blog-heading
+// font-family: $blog-body
 
 body,
 html {
   margin: 0;
   padding: 0;
+  font-family: $body
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading;
+}
+
+p {
+  font-family: $body
 }
 
 .content {
