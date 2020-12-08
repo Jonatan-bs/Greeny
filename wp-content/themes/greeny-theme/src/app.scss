@@ -19,15 +19,20 @@ html {
   font-family: $body;
   color: $dark;
   background: $light;
-
+  font-size: $body-size;
 }
 
+.col-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading;
 }
 a{
-  color: $contrast;
+  color: $dark;
+  text-decoration: none;
 }
 
 p {
@@ -71,5 +76,17 @@ p {
 }
 .color-light{
   color: $light;
+}
+.color-dark{
+  color: $dark;
+}
+.color-medium{
+  color: $medium;
+}
+.color-secondary{
+  color: $secondary;
+}
+.color-secondary-light{
+  color: $secondary-light;
 }
 

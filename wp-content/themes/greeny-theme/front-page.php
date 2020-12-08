@@ -27,7 +27,7 @@
         </p>
     </div>
 <!-- Products -->
-    <div class="content">
+    <div class="content col-4 featured-products">
         <?php
             $meta_query  = WC()->query->get_meta_query();
             $tax_query   = WC()->query->get_tax_query();
@@ -60,12 +60,17 @@
                     ?>
                     <div class="featured-product">
                         <a href="<?php the_permalink(); ?>">
-                            <?php echo woocommerce_get_product_thumbnail(); ?>
+                            <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );?>
+                            <img  class="image" src="<?echo $src[0];?>" alt="">
                         </a>
                         <a href="<?php the_permalink(); ?>">
-                            <h3><?php the_title(); ?></h3>
+                            <p class="font-display color-dark text-display title"><?php the_title(); ?></p>
                         </a>
-                        <?php echo $price; ?>
+                        <p class="color-medium excerpt"><?php echo strip_tags( get_the_excerpt() ) ?></p>
+                        <div class="flex">
+                            <p class="price"><?php echo $price; ?></p>
+                            <img  class="add-to-cart-button" src="<?php echo get_template_directory_uri() ?>/images/cart-add.svg" alt="add to cart" >
+                        </div>
                     </div>
                     <?php
                 
@@ -76,14 +81,91 @@
         ?>
     </div>
 <!-- Symbols -->
+    <div class="symbols-container">
+        <p class="font-display color-secondary-light text-title" style="top: -210px; left: -260px;">All our juices are</p>
+        <img  class="arrow" src="<?php echo get_template_directory_uri() ?>/images/arrow.svg" alt="arrow" style="top: -40px; left: -160px;">
+        <div class="symbols">
+            <div>
+                <img  class="arrow" src="<?php echo get_template_directory_uri() ?>/images/symbol1.png" alt="vegan" >
+                <p class="font-display color-secondary-light ">Vegan</p>
+            </div>
+            <div>
+                <img  class="arrow" src="<?php echo get_template_directory_uri() ?>/images/symbol1.png" alt="vegan" >
+                <p class="font-display color-secondary-light ">Vegan</p>
+            </div>
+            <div>
+                <img  class="arrow" src="<?php echo get_template_directory_uri() ?>/images/symbol1.png" alt="vegan" >
+                <p class="font-display color-secondary-light ">Vegan</p>
+            </div>
+            <div>
+                <img  class="arrow" src="<?php echo get_template_directory_uri() ?>/images/symbol1.png" alt="vegan" >
+                <p class="font-display color-secondary-light ">Vegan</p>
+            </div>
+            
+            
+        </div>
+    </div>
+    
 <!-- About Greeny juices -->
+    <h2 class="color-primary text-title"> Why Greeny Juices?</h2>
     <section class="about-greeny">
         <div class="content">
-            tst
+            <div class="cards">
+                <div class="card text-display">
+                    <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/satchels-symbol.svg" alt="vegan" >
+                    <p class="font-display color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
+                </div>
+                <div class="card text-display">
+                    <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/satchels-symbol.svg" alt="vegan" >
+                    <p class="font-display color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
+                </div>
+                <div class="card text-display">
+                    <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/satchels-symbol.svg" alt="vegan" >
+                    <p class="font-display color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
+                </div>
+                <div class="card text-display">
+                    <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/satchels-symbol.svg" alt="vegan" >
+                    <p class="font-display color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
+                </div>
+            </div>
         </div>
 
     </section>
 <!-- Blog -->
+    <div class="content">
+        <?php $wpb_all_query = new WP_Query(
+            array(
+                'post_type'=>'post', 
+                'post_status'=>'publish', 
+                'posts_per_page'=>-1
+                )
+        ); ?>
+    
+        <?php if ( $wpb_all_query->have_posts() ) : ?>
+        
+        
+            <!-- the loop -->
+            <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+                <div class="blog-card">
+                    <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );?>
+                    <img  class="image" src="<?echo $src[0];?>" alt=""/>
+                    <div class="container">
+                        <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        <div class="excerpt"> <?php the_excerpt(); ?> </div>
+                    </div>
+                </div>
+            
+            <?php endwhile; ?>
+            <!-- end of the loop -->
+        
+        
+            <?php wp_reset_postdata(); ?>
+        
+        <?php else : ?>
+            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <?php endif; ?>
+    </div>
+
 <!-- Newsletter -->
 </div>
 <?php get_footer(); ?>
