@@ -4,6 +4,7 @@
 @import "scss/hero";
 @import "scss/footer";
 @import "scss/page";
+@import "scss/front-page";
 
 // font-family: $heading
 // font-family: $body
@@ -15,19 +16,60 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: $body
+  font-family: $body;
+  color: $dark;
+  background: $light;
+
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading;
 }
+a{
+  color: $contrast;
+}
 
 p {
-  font-family: $body
+  font-family: $body;
 }
 
 .content {
   width: 100%; 
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1450px;
+  padding: 20px;
+  box-sizing: border-box;
 }
+
+
+.text-display{ 
+  font-size: $display-size;
+}
+.text-menu{ 
+  font-size: $menu-size;
+}
+.text-title{
+  font-size: $title-size;
+}
+.text-body{ 
+  font-size: $body-size;
+}
+.text-heading{ 
+  font-size: $heading-size;
+}
+
+.font-display{
+  font-family: $heading;
+}
+
+.color-contrast{
+  color: $contrast;
+}
+.color-primary{
+  color: $primary;
+}
+.color-light{
+  color: $light;
+}
+

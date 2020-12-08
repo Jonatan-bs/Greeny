@@ -1,0 +1,80 @@
+@import "variables/colors";
+
+#front-page{
+    .hero{
+        background: $primary;
+        position: relative;
+        height: 500px;
+        margin-bottom: 254px;
+        .text{
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: center;
+            padding: 40px 0 40px 0;
+            p:nth-child(1){
+                text-transform: uppercase;
+            }
+        };
+        img{
+            width: 800px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,50%);
+        }
+    }
+    .starterpack{
+        text-align: center;
+        position: relative;
+
+        p{
+            position: relative;
+        }
+
+        .blue-circle:nth-of-type(1){
+            width: 330px;
+            height: 330px;
+            opacity: .1;
+            border-radius: 100%;
+            background: #2699fb;
+            position: absolute;
+            left: 50%;
+            top: 0%;
+            transform: translate(-180px, 10px);
+        }
+        .blue-circle:nth-of-type(2){
+            width: 60px;
+            height: 60px;
+            opacity: 0.1;
+            border-radius: 100%;
+            background: #2699fb;
+            position: absolute;
+            left: 50%;
+            bottom: -80px;
+            transform: translate(-230px, 0px);
+        }
+        .blue-circle:nth-of-type(3){
+            width: 90px;
+            height: 90px;
+            opacity: 0.1;
+            border-radius: 100%;
+            background: #2699fb;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(130px, 0px);
+        }
+        .fruits{
+            height: 120px;
+            position: relative;
+            img{
+                left: 50%;
+                top: 0%;
+                position: absolute;
+            }
+        }
+    }
+    .about-greeny{
+        background: $primary;
+    }
+}

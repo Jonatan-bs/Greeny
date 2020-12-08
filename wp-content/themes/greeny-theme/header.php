@@ -10,13 +10,13 @@
     <header>
         <div class="container">
             <a href="<?php bloginfo( 'url' )?>">
-                <img src="<?php bloginfo('template_directory')?>/images/logo.png" alt="logo" class="logo">
+                <img src="<?php bloginfo('template_directory')?>/images/logo-light.svg" alt="logo" class="logo">
             </a>
             <?php
                 wp_nav_menu( 
                     array(
-                        'menu_class' => 'topMenu',        
-                        'theme_location' => 'top-menu'
+                        'menu_class' => 'primary-menu',        
+                        'theme_location' => 'primary-menu'
                     ) 
                 )
             ?>

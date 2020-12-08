@@ -1,16 +1,28 @@
-header {
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap);@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora:ital@0;1&display=swap);@import url(https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Josefin+Sans&display=swap);header {
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #000;
   padding: 10px 0;
-  background: #fff;
+  background: #2c9558;
 }
 header .logo {
-  width: 150px;
+  width: 200px;
+  margin: 20px 0px;
 }
-header .topMenu {
-  list-style-type: none;
+header .primary-menu {
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
   padding: 0;
+}
+header .primary-menu li {
+  display: inline-block;
+  margin: 0px 25px;
+}
+header .primary-menu a {
+  font-size: 25px;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-family: "Caveat Brush", cursive;
 }
 
 #hero {
@@ -28,21 +40,149 @@ header .topMenu {
 
 footer {
   height: 300px;
-  background: #e7e7e7;
+  background: #2c9558;
 }
 
 .content.page .featuredImage {
   width: 100%;
 }
 
+#front-page .hero {
+  background: #2c9558;
+  position: relative;
+  height: 500px;
+  margin-bottom: 254px;
+}
+#front-page .hero .text {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  padding: 40px 0 40px 0;
+}
+#front-page .hero .text p:nth-child(1) {
+  text-transform: uppercase;
+}
+#front-page .hero img {
+  width: 800px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+#front-page .starterpack {
+  text-align: center;
+  position: relative;
+}
+#front-page .starterpack p {
+  position: relative;
+}
+#front-page .starterpack .blue-circle:nth-of-type(1) {
+  width: 330px;
+  height: 330px;
+  opacity: 0.1;
+  border-radius: 100%;
+  background: #2699fb;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-180px, 10px);
+}
+#front-page .starterpack .blue-circle:nth-of-type(2) {
+  width: 60px;
+  height: 60px;
+  opacity: 0.1;
+  border-radius: 100%;
+  background: #2699fb;
+  position: absolute;
+  left: 50%;
+  bottom: -80px;
+  transform: translate(-230px, 0px);
+}
+#front-page .starterpack .blue-circle:nth-of-type(3) {
+  width: 90px;
+  height: 90px;
+  opacity: 0.1;
+  border-radius: 100%;
+  background: #2699fb;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(130px, 0px);
+}
+#front-page .starterpack .fruits {
+  height: 120px;
+  position: relative;
+}
+#front-page .starterpack .fruits img {
+  left: 50%;
+  top: 0%;
+  position: absolute;
+}
+#front-page .about-greeny {
+  background: #2c9558;
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: #404040;
+  background: #f5f5f5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Caveat Brush", cursive;
+}
+
+a {
+  color: #fdc83e;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .content {
   width: 100%;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1450px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text-display {
+  font-size: 35px;
+}
+
+.text-menu {
+  font-size: 25px;
+}
+
+.text-title {
+  font-size: 35px;
+}
+
+.text-body {
+  font-size: 20px;
+}
+
+.text-heading {
+  font-size: 35px;
+}
+
+.font-display {
+  font-family: "Caveat Brush", cursive;
+}
+
+.color-contrast {
+  color: #fdc83e;
+}
+
+.color-primary {
+  color: #2c9558;
+}
+
+.color-light {
+  color: #f5f5f5;
 }
