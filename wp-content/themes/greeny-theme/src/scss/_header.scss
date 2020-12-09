@@ -38,4 +38,11 @@ header {
       font-family: $heading;
     }
   }
+  &.light{
+    background: transparent;
+
+    a{
+      color: $primary;
+    }
+  }
 }

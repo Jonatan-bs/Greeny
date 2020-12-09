@@ -1,5 +1,5 @@
 
-<?php get_header(); ?>
+<?php get_header('light'); ?>
     
 <section class="content page">
     

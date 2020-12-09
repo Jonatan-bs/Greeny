@@ -1,4 +1,4 @@
-<?php get_header('components/header.php'); ?>
+<?php get_header(); ?>
 <div id="front-page">
 
 <!-- HERO -->
@@ -69,7 +69,7 @@
                         <p class="color-medium excerpt"><?php echo strip_tags( get_the_excerpt() ) ?></p>
                         <div class="flex">
                             <p class="price"><?php echo $price; ?></p>
-                            <img  class="add-to-cart-button" data-id="<?php echo esc_attr( $product->get_id() ); ?>" src="<?php echo get_template_directory_uri() ?>/images/cart-add.svg" alt="add to cart" >
+                            <img  class="add-to-cart-button pointer" data-id="<?php echo esc_attr( $product->get_id() ); ?>" src="<?php echo get_template_directory_uri() ?>/images/cart-add.svg" alt="add to cart" >
                         </div>
                     </div>
                     <?php
