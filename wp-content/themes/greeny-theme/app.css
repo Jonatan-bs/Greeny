@@ -8,6 +8,15 @@ header .logo {
   width: 200px;
   margin: 20px 0px;
 }
+header .symbols {
+  display: inline;
+  position: absolute;
+  right: 70px;
+}
+header .symbols .symbol {
+  width: 50px;
+  margin: 15px 5px;
+}
 header .primary-menu {
   text-transform: uppercase;
   list-style: none;

@@ -11,7 +11,16 @@ header {
     width: 200px;
     margin: 20px 0px;
   }
-
+  .symbols{
+    display: inline;
+    position: absolute;
+    right: 70px;
+    
+    .symbol{
+      width: 50px;
+      margin: 15px 5px;
+    }
+  } 
   .primary-menu{
 
     text-transform: uppercase;
