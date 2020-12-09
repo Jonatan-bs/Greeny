@@ -206,6 +206,7 @@ footer .secundary-menu a {
 #front-page .about-greeny .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 130px;
 }
 #front-page .about-greeny .cards .card {
   text-align: center;
@@ -218,9 +219,14 @@ footer .secundary-menu a {
   display: flex;
   margin-bottom: 40px;
 }
+#front-page .blog-card .container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 #front-page .blog-card img {
-  width: 100%;
-  max-width: 600px;
+  width: 40%;
 }
 #front-page .newsletter {
   border: 3px solid #404040;
@@ -269,6 +275,12 @@ html {
   color: #404040;
   background: #f5f5f5;
   font-size: 20px;
+}
+
+input {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  padding: 10px 10px;
 }
 
 .flexcenter {
@@ -334,6 +346,24 @@ p {
   box-sizing: border-box;
 }
 
+.py {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.my {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.mt {
+  margin-top: 90px;
+}
+
+.mb {
+  margin-bottom: 90px;
+}
+
 .text-display {
   font-size: 35px;
 }
@@ -352,6 +382,25 @@ p {
 
 .text-heading {
   font-size: 35px;
+}
+
+.blog-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  color: #2c9558;
+  font-weight: bold;
+}
+
+.blog-tag {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  color: #9d9d9d;
+}
+
+.blog-body {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  color: #404040;
 }
 
 .font-display {

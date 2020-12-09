@@ -13,7 +13,7 @@
                 <img src="<?php bloginfo('template_directory')?>/images/logo.svg" alt="logo" class="logo">
             </a>
             <div class="symbols">
-                <a href="<?php echo get_page_link( get_page_by_title( 'account' )->ID ); ?>">
+                <a href="<?php echo get_page_link( 9 ); ?>">
                     <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/account-green.svg" alt="account" >
                 </a>
                 <a href="<?php echo get_page_link( get_page_by_title( 'cart' )->ID ); ?>">

@@ -21,7 +21,11 @@ html {
   background: $light;
   font-size: $body-size;
 }
-
+input{
+  font-family: $body;
+  font-size: $body-size;
+  padding: 10px 10px;
+}
 .flexcenter{
   display: flex;
   justify-content: center;
@@ -81,6 +85,21 @@ p {
   max-width: 1450px;
   padding: 20px;
   box-sizing: border-box;
+
+}
+.py{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.my{
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.mt{
+  margin-top: 90px;
+}
+.mb{
+  margin-bottom: 90px;
 }
 
 
@@ -98,6 +117,23 @@ p {
 }
 .text-heading{ 
   font-size: $heading-size;
+}
+
+.blog-title{
+  font-family: $blog-heading;
+  font-size: $heading-size;
+  color: $primary;
+  font-weight: bold;
+}
+.blog-tag{
+  font-family: $blog-heading;
+  font-size: $small-size;
+  color: $medium;
+}
+.blog-body{
+  font-family: $blog-body;
+  font-size: $body-size;
+  color: $dark;
 }
 
 .font-display{

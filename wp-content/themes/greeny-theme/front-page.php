@@ -11,7 +11,7 @@
     </div>
 
 <!-- Starter pack CTA -->
-    <div class="starterpack">
+    <div class="starterpack pb">
         
         <div class="blue-circle"></div>
         <div class="blue-circle"></div>
@@ -27,7 +27,7 @@
         </p>
     </div>
 <!-- Products -->
-    <div class="content col-4 featured-products">
+    <div class="content col-4 featured-products pb">
         <?php
             $meta_query  = WC()->query->get_meta_query();
             $tax_query   = WC()->query->get_tax_query();
@@ -84,7 +84,7 @@
         <a class="page-link" href="<?php echo get_page_link( get_page_by_title( 'shop' )->ID ); ?>">Shop</a>
     </div>
 <!-- Symbols -->
-    <div class="symbols-container">
+    <div class="symbols-container pb">
         <p class="font-display color-secondary-light text-title" style="top: -210px; left: -260px;">All our juices are</p>
         <img  class="arrow" src="<?php echo get_template_directory_uri() ?>/images/arrow.svg" alt="arrow" style="top: -40px; left: -160px;">
         <div class="symbols">
@@ -113,8 +113,8 @@
     <div class="flexcenter">
         <h2 class="color-primary text-title"> Why Greeny Juices?</h2>
     </div>
-    <section class="about-greeny">
-        <div class="content">
+    <section class="about-greeny mb">
+        <div class="content py">
             <div class="cards">
                 <div class="card text-display">
                     <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/satchels-symbol.svg" alt="vegan" >
@@ -137,7 +137,7 @@
 
     </section>
 <!-- Blog -->
-    <div class="content">
+    <div class="content mb">
         <?php $wpb_all_query = new WP_Query(
             array(
                 'post_type'=>'post', 
@@ -151,15 +151,17 @@
         
             <!-- the loop -->
             <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-                <div class="blog-card">
-                    <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );?>
-                    <img  class="image" src="<?echo $src[0];?>" alt=""/>
-                    <div class="container">
-                        <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                        <div class="excerpt"> <?php the_excerpt(); ?> </div>
+                <a href="<?php the_permalink(); ?>">
+                    <div class="blog-card">
+                        <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );?>
+                        <img  class="image" src="<?echo $src[0];?>" alt=""/>
+                        <div class="container">
+                            <p class="blog-title"><?php the_title(); ?></p>
+                            <p class="blog-tag">Category example</p>
+                            <div class="excerpt blog-body"> <?php the_excerpt(); ?> </div>
+                        </div>
                     </div>
-                </div>
-            
+                </a>
             <?php endwhile; ?>
             <!-- end of the loop -->
         
@@ -169,13 +171,14 @@
         <?php else : ?>
             <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
         <?php endif; ?>
-    </div>
-    <div class="flexcenter">
+        <div class="flexcenter">
         <a class="page-link" href="<?php echo get_page_link( get_page_by_title( 'blog' )->ID ); ?>">Blog</a>
+        </div>
     </div>
+    
 
 <!-- Newsletter -->
-    <div class="content">
+    <div class="content mb">
         <div class="newsletter">
             <img src="<?php echo get_template_directory_uri() ?>/images/paperplane.svg" class="paperplane" alt="paperplane">
             
