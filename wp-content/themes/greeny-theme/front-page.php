@@ -23,7 +23,7 @@
         </div>
         <p class="font-display text-display color-primary" >
             Start or complement your diet today <br>
-            with our <a href="#" class="color-contrast-dark">starter pack</a>
+            with our <a href="<?php echo get_permalink(38) ?>" class="color-contrast-dark">starter pack</a>
         </p>
     </div>
 <!-- Products -->
@@ -110,7 +110,9 @@
     </div>
     
 <!-- About Greeny juices -->
-    <h2 class="color-primary text-title"> Why Greeny Juices?</h2>
+    <div class="flexcenter">
+        <h2 class="color-primary text-title"> Why Greeny Juices?</h2>
+    </div>
     <section class="about-greeny">
         <div class="content">
             <div class="cards">
