@@ -22,6 +22,38 @@ html {
   font-size: $body-size;
 }
 
+.flexcenter{
+  display: flex;
+  justify-content: center;
+}
+
+.button, input[type=button], input[type=submit]{
+  background-color: $primary;
+  color: $light;
+  border: none;
+  padding: 10px 20px;
+  font-size: $display-size;
+  font-family: $display;
+  cursor: pointer;
+
+  &.contrast, &.es_submit_button{
+    background-color: $contrast;
+  }
+}
+
+a.page-link{
+  position: relative;
+  font-size: $display-size;
+  font-family: $display;
+  &::after{
+    content: url(images/arrow2.svg);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,110%);
+  }
+}
+
 .col-4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -71,6 +103,10 @@ p {
 .color-contrast{
   color: $contrast;
 }
+.color-contrast-dark{
+  color: $contrast-dark;
+}
+
 .color-primary{
   color: $primary;
 }

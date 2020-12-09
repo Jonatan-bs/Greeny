@@ -93,7 +93,13 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+// Add product to cart
+document.addEventListener('click', function (e) {
+  if (e.target.classList.contains('add-to-cart-button')) {
+    var id = e.target.dataset.id;
+    fetch('/?add-to-cart=' + e.target.dataset.id);
+  }
+});
 
 /***/ }),
 

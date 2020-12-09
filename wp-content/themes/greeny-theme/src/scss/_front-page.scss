@@ -77,7 +77,7 @@
         }
     }
     .featured-products{
-        margin: 230px auto;
+        margin: 0px auto;
         text-align: center;
         .image{ width:100%;}
         .title{}
@@ -100,7 +100,8 @@
     }
     .symbols-container{
         position: relative;
-        margin: 0 auto;
+        margin: 100px auto;
+        margin-top: 170px;
         max-width: 700px;
         &>p:nth-of-type(1),&>img:nth-of-type(1){
             position: absolute;
@@ -139,5 +140,46 @@
         .excerpt{
 
         }
+    }
+    .newsletter{
+        border: 3px solid $dark;
+        position: relative;
+        text-align: center;
+        padding: 60px 20px;
+        margin-top: 120px;
+        img.paperplane{
+            position: absolute;
+            top: 0;
+            left: 50px;
+            width: 210px;
+            background: $light;
+            padding: 18px;
+            transform: translateY(-50%);
+        }
+        .title{
+            font-family: $display;
+            font-size: $title-size;
+        }
+        .subtitle{
+            font-family: $display;
+        }
+        hr{
+            max-width: 320px;
+            width: 90%;
+        }
+        .text{
+            font-family: $display;
+            font-size: $display-size;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+        .big{
+            font-size: $title-size;
+        }
+        .es_shortcode_form{
+            margin-top: 50px;
+        }
+        input{}
+        .es_subscription_form_submit{}
     }
 }

@@ -48,7 +48,16 @@ function add_woocommerce_support() {
 }
 add_action( 'after_setup_theme', 'add_woocommerce_support' );
 
-    
+
+//Add Google Font Set
+ function youttheme_font_typekit() {
+ echo '<script src="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"></script>';
+echo '<script src="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora:ital@0;1&display=swap"></script>';
+echo '<script src="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Josefin+Sans&display=swap"></script>';
+ }
+ //Add fonts
+add_action('wp_head', 'youttheme_font_typekit');
+
 // Add favicon
 function add_favicon() { ?>
     <link rel="shortcut icon" href="/wp-content/themes/greeny-theme/favicons/favicon-32x32.png" >

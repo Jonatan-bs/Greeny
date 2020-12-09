@@ -23,7 +23,7 @@
         </div>
         <p class="font-display text-display color-primary" >
             Start or complement your diet today <br>
-            with our <a href="#" class="color-contrast">starter pack</a>
+            with our <a href="#" class="color-contrast-dark">starter pack</a>
         </p>
     </div>
 <!-- Products -->
@@ -69,7 +69,7 @@
                         <p class="color-medium excerpt"><?php echo strip_tags( get_the_excerpt() ) ?></p>
                         <div class="flex">
                             <p class="price"><?php echo $price; ?></p>
-                            <img  class="add-to-cart-button" src="<?php echo get_template_directory_uri() ?>/images/cart-add.svg" alt="add to cart" >
+                            <img  class="add-to-cart-button" data-id="<?php echo esc_attr( $product->get_id() ); ?>" src="<?php echo get_template_directory_uri() ?>/images/cart-add.svg" alt="add to cart" >
                         </div>
                     </div>
                     <?php
@@ -79,6 +79,9 @@
             
             }
         ?>
+    </div>
+    <div class="flexcenter">
+        <a class="page-link" href="<?php echo get_page_link( get_page_by_title( 'shop' )->ID ); ?>">Shop</a>
     </div>
 <!-- Symbols -->
     <div class="symbols-container">
@@ -165,8 +168,22 @@
             <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
         <?php endif; ?>
     </div>
+    <div class="flexcenter">
+        <a class="page-link" href="<?php echo get_page_link( get_page_by_title( 'blog' )->ID ); ?>">Blog</a>
+    </div>
 
 <!-- Newsletter -->
+    <div class="content">
+        <div class="newsletter">
+            <img src="<?php echo get_template_directory_uri() ?>/images/paperplane.svg" class="paperplane" alt="paperplane">
+            
+            <div class="title">Subscribe</div>
+            <div class="subtitle">to our newsletter</div>
+            <hr>
+            <div class="text">Get <span class="big">10%</span> off your first order </div>
+            <?php echo do_shortcode( '[email-subscribers-form id="1"]', true); ?>
+        </div>
+    </div>
 </div>
 <?php get_footer(); ?>
 

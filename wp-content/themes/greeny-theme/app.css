@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap);@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora:ital@0;1&display=swap);@import url(https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Josefin+Sans&display=swap);header {
+header {
   width: 100%;
   text-align: center;
   padding: 10px 0;
@@ -122,7 +122,7 @@ footer {
   position: absolute;
 }
 #front-page .featured-products {
-  margin: 230px auto;
+  margin: 0px auto;
   text-align: center;
 }
 #front-page .featured-products .image {
@@ -146,7 +146,8 @@ footer {
 }
 #front-page .symbols-container {
   position: relative;
-  margin: 0 auto;
+  margin: 100px auto;
+  margin-top: 170px;
   max-width: 700px;
 }
 #front-page .symbols-container > p:nth-of-type(1), #front-page .symbols-container > img:nth-of-type(1) {
@@ -179,6 +180,45 @@ footer {
   width: 100%;
   max-width: 600px;
 }
+#front-page .newsletter {
+  border: 3px solid #404040;
+  position: relative;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 120px;
+}
+#front-page .newsletter img.paperplane {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 210px;
+  background: #f5f5f5;
+  padding: 18px;
+  transform: translateY(-50%);
+}
+#front-page .newsletter .title {
+  font-family: "Caveat Brush", cursive;
+  font-size: 65px;
+}
+#front-page .newsletter .subtitle {
+  font-family: "Caveat Brush", cursive;
+}
+#front-page .newsletter hr {
+  max-width: 320px;
+  width: 90%;
+}
+#front-page .newsletter .text {
+  font-family: "Caveat Brush", cursive;
+  font-size: 35px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+#front-page .newsletter .big {
+  font-size: 65px;
+}
+#front-page .newsletter .es_shortcode_form {
+  margin-top: 50px;
+}
 body,
 html {
   margin: 0;
@@ -187,6 +227,37 @@ html {
   color: #404040;
   background: #f5f5f5;
   font-size: 20px;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.button, input[type=button], input[type=submit] {
+  background-color: #2c9558;
+  color: #f5f5f5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 35px;
+  font-family: "Caveat Brush", cursive;
+  cursor: pointer;
+}
+.button.contrast, .button.es_submit_button, input[type=button].contrast, input[type=button].es_submit_button, input[type=submit].contrast, input[type=submit].es_submit_button {
+  background-color: #fdc83e;
+}
+
+a.page-link {
+  position: relative;
+  font-size: 35px;
+  font-family: "Caveat Brush", cursive;
+}
+a.page-link::after {
+  content: url(images/arrow2.svg);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 110%);
 }
 
 .col-4 {
@@ -241,6 +312,10 @@ p {
 
 .color-contrast {
   color: #fdc83e;
+}
+
+.color-contrast-dark {
+  color: #f5af00;
 }
 
 .color-primary {

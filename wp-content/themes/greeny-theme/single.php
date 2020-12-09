@@ -13,8 +13,7 @@
         <?php the_content();?>
         <?php endwhile; else: endif; ?>
     
-        <?php get_sidebar() ?>
-        </section>
+    </section>
     
     <?php get_footer(); ?>
     
