@@ -1,6 +1,14 @@
 footer {
   background: $primary;
-
+  padding-top: 60px;
+  .some-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    img{
+      width: 70px;
+    }
+  }
   .secundary-menu{
     text-align: center;
     text-transform: uppercase;

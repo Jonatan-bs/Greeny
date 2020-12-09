@@ -40,6 +40,15 @@ header .primary-menu a {
 
 footer {
   background: #2c9558;
+  padding-top: 60px;
+}
+footer .some-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+footer .some-buttons img {
+  width: 70px;
 }
 footer .secundary-menu {
   text-align: center;
