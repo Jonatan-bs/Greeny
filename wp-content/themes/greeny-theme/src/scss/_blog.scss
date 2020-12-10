@@ -1,0 +1,19 @@
+@import "variables/colors";
+
+.blog-card{
+    display: flex;
+    margin-bottom: 40px;
+    .container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    img{
+        width: 40%;
+    }
+    .title{}
+    .excerpt{
+
+    }
+}

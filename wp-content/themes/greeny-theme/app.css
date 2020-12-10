@@ -198,19 +198,6 @@ footer .secundary-menu a {
   display: inline;
   width: 100px;
 }
-#front-page .blog-card {
-  display: flex;
-  margin-bottom: 40px;
-}
-#front-page .blog-card .container {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#front-page .blog-card img {
-  width: 40%;
-}
 #front-page .newsletter {
   border: 3px solid #404040;
   position: relative;
@@ -271,6 +258,19 @@ footer .secundary-menu a {
   gap: 30px;
 }
 
+.blog-card {
+  display: flex;
+  margin-bottom: 40px;
+}
+.blog-card .container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blog-card img {
+  width: 40%;
+}
 body,
 html {
   position: relative;
