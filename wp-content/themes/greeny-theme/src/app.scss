@@ -5,6 +5,7 @@
 @import "scss/footer";
 @import "scss/page";
 @import "scss/front-page";
+@import "scss/product-list";
 
 // $body: 'Josefin Sans', sans-serif;
 // $body-sm: 20px; 
@@ -191,4 +192,8 @@ p {
 
 .center{
  text-align: center;
+}
+
+.header-padding{
+  padding-top: 140px;
 }

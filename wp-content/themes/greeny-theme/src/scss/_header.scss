@@ -38,15 +38,13 @@ header {
     a{
       font-size: $display-sm;
       font-family: $display;
-      color: $light;
+      color: $primary;
       text-decoration: none;
     }
   }
   &.light{
-    background: transparent;
-
     a{
-      color: $primary;
+      color: $light;
     }
   }
 }

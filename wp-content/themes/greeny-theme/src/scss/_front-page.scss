@@ -78,26 +78,7 @@
             }
         }
     }
-    .featured-products{
-        .image{ width:100%;}
-        .title{}
-        .excerpt{
-            max-width: 330px;
-            margin: 0 auto;
-        }
-        .price{
-            font-family: $display;
-            font-size: $display-md;
-        }
-        .add-to-cart-button{
-            width: 50px;
-        }
-        .flex{
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-    }
+   
     .symbols-container{
         display: flex;
        

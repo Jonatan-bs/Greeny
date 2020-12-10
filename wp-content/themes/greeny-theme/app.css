@@ -34,14 +34,11 @@ header .primary-menu li {
 header .primary-menu a {
   font-size: 25px;
   font-family: "Caveat Brush", cursive;
-  color: #f5f5f5;
+  color: #2c9558;
   text-decoration: none;
 }
-header.light {
-  background: transparent;
-}
 header.light a {
-  color: #2c9558;
+  color: #f5f5f5;
 }
 
 #hero {
@@ -169,25 +166,6 @@ footer .secundary-menu a {
   top: 0%;
   position: absolute;
 }
-#front-page .featured-products .image {
-  width: 100%;
-}
-#front-page .featured-products .excerpt {
-  max-width: 330px;
-  margin: 0 auto;
-}
-#front-page .featured-products .price {
-  font-family: "Caveat Brush", cursive;
-  font-size: 35px;
-}
-#front-page .featured-products .add-to-cart-button {
-  width: 50px;
-}
-#front-page .featured-products .flex {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
 #front-page .symbols-container {
   display: flex;
 }
@@ -273,6 +251,26 @@ footer .secundary-menu a {
 #front-page .newsletter .es_shortcode_form {
   margin-top: 50px;
 }
+.product-list .image {
+  width: 100%;
+}
+.product-list .excerpt {
+  max-width: 330px;
+  margin: 0 auto;
+}
+.product-list .price {
+  font-family: "Caveat Brush", cursive;
+  font-size: 35px;
+}
+.product-list .add-to-cart-button {
+  width: 50px;
+}
+.product-list .flex {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
 body,
 html {
   position: relative;
@@ -459,4 +457,8 @@ p {
 
 .center {
   text-align: center;
+}
+
+.header-padding {
+  padding-top: 140px;
 }

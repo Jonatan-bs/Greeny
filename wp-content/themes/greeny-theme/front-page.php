@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('light'); ?>
 <div id="front-page">
 
 <!-- HERO -->
@@ -27,7 +27,7 @@
         </p>
     </div>
 <!-- Products -->
-    <div class="featured-products mb center">
+    <div class="product-list mb center">
         <div class="content col-4">
             <?php
                 $meta_query  = WC()->query->get_meta_query();
@@ -59,7 +59,7 @@
                         $price = $product->get_price_html();
                 
                         ?>
-                        <div class="featured-product">
+                        <div class="product">
                             <a href="<?php the_permalink(); ?>">
                                 <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );?>
                                 <img  class="image" src="<?echo $src[0];?>" alt="">
