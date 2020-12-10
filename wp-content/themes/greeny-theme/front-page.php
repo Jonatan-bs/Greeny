@@ -4,8 +4,8 @@
 <!-- HERO -->
     <div class="hero">
         <div class="text">
-            <p class="text-display color-contrast font-display">a convenient way to add fruits and vegetables into your diet</p>
-            <p class="text-body color-light">Simply add water or any kind of milk and ENJOY!</p>            
+            <p class="display-md color-contrast">a convenient way to add fruits and vegetables into your diet</p>
+            <p class="body-sm color-light">Simply add water or any kind of milk and ENJOY!</p>            
         </div>
         <img src="<?php echo get_template_directory_uri() ?>/images/hero-img.png" alt="sachets">
     </div>
@@ -21,7 +21,7 @@
             <img src="<?php echo get_template_directory_uri() ?>/images/fruit/pineapple-blue.svg" alt="pineapple" style=" transform: translate(-70px, 10px) rotate(-15deg); width: 150px;">
             <img src="<?php echo get_template_directory_uri() ?>/images/fruit/lime-blue.svg" alt="lime" style=" transform: translate(30px, 60px) rotate(25deg); width: 100px;">
         </div>
-        <p class="font-display text-display color-primary" >
+        <p class="display-md color-primary" >
             Start or complement your diet today <br>
             with our <a href="<?php echo get_permalink(38) ?>" class="color-contrast-dark">starter pack</a>
         </p>
@@ -64,7 +64,7 @@
                             <img  class="image" src="<?echo $src[0];?>" alt="">
                         </a>
                         <a href="<?php the_permalink(); ?>">
-                            <p class="font-display color-dark text-display title"><?php the_title(); ?></p>
+                            <p class="display-md color-dark  title"><?php the_title(); ?></p>
                         </a>
                         <p class="color-medium excerpt"><?php echo strip_tags( get_the_excerpt() ) ?></p>
                         <div class="flex">
@@ -85,24 +85,24 @@
     </div>
 <!-- Symbols -->
     <div class="symbols-container pb">
-        <p class="font-display color-secondary-light text-title" style="top: -210px; left: -260px;">All our juices are</p>
+        <p class="display-xl color-secondary-light text-title" style="top: -210px; left: -260px;">All our juices are</p>
         <img  class="arrow" src="<?php echo get_template_directory_uri() ?>/images/arrow.svg" alt="arrow" style="top: -40px; left: -160px;">
         <div class="symbols">
             <div>
                 <img  class="arrow" src="<?php echo get_template_directory_uri() ?>/images/symbol1.png" alt="vegan" >
-                <p class="font-display color-secondary-light ">Vegan</p>
+                <p class="display-sm color-secondary-light ">Vegan</p>
             </div>
             <div>
                 <img  class="arrow" src="<?php echo get_template_directory_uri() ?>/images/symbol1.png" alt="vegan" >
-                <p class="font-display color-secondary-light ">Vegan</p>
+                <p class="display-sm color-secondary-light ">Vegan</p>
             </div>
             <div>
                 <img  class="arrow" src="<?php echo get_template_directory_uri() ?>/images/symbol1.png" alt="vegan" >
-                <p class="font-display color-secondary-light ">Vegan</p>
+                <p class="display-sm color-secondary-light ">Vegan</p>
             </div>
             <div>
                 <img  class="arrow" src="<?php echo get_template_directory_uri() ?>/images/symbol1.png" alt="vegan" >
-                <p class="font-display color-secondary-light ">Vegan</p>
+                <p class="display-sm color-secondary-light ">Vegan</p>
             </div>
             
             
@@ -111,26 +111,26 @@
     
 <!-- About Greeny juices -->
     <div class="flexcenter">
-        <h2 class="color-primary text-title"> Why Greeny Juices?</h2>
+        <h2 class="color-primary display-xl"> Why Greeny Juices?</h2>
     </div>
     <section class="about-greeny mb">
         <div class="content py">
             <div class="cards">
                 <div class="card text-display">
                     <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/satchels-symbol.svg" alt="vegan" >
-                    <p class="font-display color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
+                    <p class="display-md color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
                 </div>
                 <div class="card text-display">
                     <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/satchels-symbol.svg" alt="vegan" >
-                    <p class="font-display color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
+                    <p class="display-md color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
                 </div>
                 <div class="card text-display">
                     <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/satchels-symbol.svg" alt="vegan" >
-                    <p class="font-display color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
+                    <p class="display-md color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
                 </div>
                 <div class="card text-display">
                     <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/satchels-symbol.svg" alt="vegan" >
-                    <p class="font-display color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
+                    <p class="display-md color-light">It’s a convenient way to add fruits and vegetables into your diet without worrying about choosing the right ingredients by yourself.</p>
                 </div>
             </div>
         </div>

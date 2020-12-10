@@ -32,10 +32,10 @@ header {
       margin: 0px 25px;
     }
     a{
-      font-size: $menu-size;
+      font-size: $display-sm;
+      font-family: $display;
       color: $light;
       text-decoration: none;
-      font-family: $heading;
     }
   }
   &.light{

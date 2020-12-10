@@ -29,9 +29,9 @@ header .primary-menu li {
 }
 header .primary-menu a {
   font-size: 25px;
+  font-family: "Caveat Brush", cursive;
   color: #f5f5f5;
   text-decoration: none;
-  font-family: "Caveat Brush", cursive;
 }
 header.light {
   background: transparent;
@@ -246,10 +246,11 @@ footer .secundary-menu a {
 }
 #front-page .newsletter .title {
   font-family: "Caveat Brush", cursive;
-  font-size: 65px;
+  font-size: 47px;
 }
 #front-page .newsletter .subtitle {
   font-family: "Caveat Brush", cursive;
+  font-size: 25px;
 }
 #front-page .newsletter hr {
   max-width: 320px;
@@ -262,7 +263,7 @@ footer .secundary-menu a {
   margin: 0 auto;
 }
 #front-page .newsletter .big {
-  font-size: 65px;
+  font-size: 47px;
 }
 #front-page .newsletter .es_shortcode_form {
   margin-top: 50px;
@@ -279,7 +280,7 @@ html {
 
 input {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
+  font-size: 38px;
   padding: 10px 10px;
 }
 
@@ -297,7 +298,7 @@ input {
   color: #f5f5f5;
   border: none;
   padding: 10px 20px;
-  font-size: 35px;
+  font-size: 25px;
   font-family: "Caveat Brush", cursive;
   cursor: pointer;
 }
@@ -308,7 +309,7 @@ input {
 a.page-link {
   margin-bottom: 60px;
   position: relative;
-  font-size: 35px;
+  font-size: 47px;
   font-family: "Caveat Brush", cursive;
 }
 a.page-link::after {
@@ -364,47 +365,58 @@ p {
   margin-bottom: 90px;
 }
 
-.text-display {
-  font-size: 35px;
-}
-
-.text-menu {
-  font-size: 25px;
-}
-
-.text-title {
-  font-size: 65px;
-}
-
-.text-body {
+.body-sm {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
 }
 
-.text-heading {
+.body-md {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 38px;
+}
+
+.display-sm {
+  font-family: "Caveat Brush", cursive;
+  font-size: 25px;
+}
+
+.display-md {
+  font-family: "Caveat Brush", cursive;
   font-size: 35px;
+}
+
+.display-xl {
+  font-family: "Caveat Brush", cursive;
+  font-size: 47px;
+}
+
+.blog-body-md {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+
+.blog-body-md {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 48px;
 }
 
 .blog-title {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 35px;
+  font-size: 48px;
   color: #2c9558;
   font-weight: bold;
 }
 
 .blog-tag {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   color: #9d9d9d;
 }
 
 .blog-body {
-  font-family: "Lora", serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   color: #404040;
-}
-
-.font-display {
-  font-family: "Caveat Brush", cursive;
 }
 
 .color-contrast {

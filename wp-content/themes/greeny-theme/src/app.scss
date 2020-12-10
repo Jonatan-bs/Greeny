@@ -6,24 +6,34 @@
 @import "scss/page";
 @import "scss/front-page";
 
-// font-family: $heading
-// font-family: $body
-// font-family: $display
-// font-family: $blog-heading
-// font-family: $blog-body
+// $body: 'Josefin Sans', sans-serif;
+// $body-sm: 20px; 
+// $body-md: 38px; 
+
+// $display: 'Caveat Brush', cursive;
+// $display-sm: 25px;
+// $display-md: 35px;
+// $display-xl: 47px;
+
+// $blog-body: 'Josefin Sans', sans-serif;
+// $blog-body-md: 37px;
+
+// $blog-display: 'Josefin Sans', sans-serif;
+// $blog-display-xl: 48px;
+
 
 body,
 html {
   margin: 0;
   padding: 0;
-  font-family: $body;
+  font-family: $blog-body;
   color: $dark;
   background: $light;
-  font-size: $body-size;
+  font-size: $blog-body-md;
 }
 input{
   font-family: $body;
-  font-size: $body-size;
+  font-size: $body-md;
   padding: 10px 10px;
 }
 .flexcenter{
@@ -38,7 +48,7 @@ cursor: pointer;
   color: $light;
   border: none;
   padding: 10px 20px;
-  font-size: $display-size;
+  font-size: $display-sm;
   font-family: $display;
   cursor: pointer;
 
@@ -50,7 +60,7 @@ cursor: pointer;
 a.page-link{
   margin-bottom: 60px;
   position: relative;
-  font-size: $display-size;
+  font-size: $display-xl;
   font-family: $display;
   &::after{
     content: url(images/arrow2.svg);
@@ -67,7 +77,7 @@ a.page-link{
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $heading;
+  font-family: $display;
 }
 a{
   color: $dark;
@@ -103,42 +113,58 @@ p {
 }
 
 
-.text-display{ 
-  font-size: $display-size;
+.body-sm{ 
+  font-family: $body;
+  font-size: $body-sm;
 }
-.text-menu{ 
-  font-size: $menu-size;
+.body-md{ 
+  font-family: $body;
+  font-size: $body-md;
 }
-.text-title{
-  font-size: $title-size;
+.display-sm{ 
+  font-family: $display;
+  font-size: $display-sm;
 }
-.text-body{ 
-  font-size: $body-size;
+.display-md{ 
+  font-family: $display;
+  font-size: $display-md;
 }
-.text-heading{ 
-  font-size: $heading-size;
+.display-xl{ 
+  font-family: $display;
+  font-size: $display-xl;
 }
 
+.blog-body-md{ 
+  font-family: $blog-body;
+  font-size: $blog-body-md;
+}
+
+.blog-body-md{ 
+  font-family: $blog-display;
+  font-size: $blog-display-xl
+}
+
+
 .blog-title{
-  font-family: $blog-heading;
-  font-size: $heading-size;
+  font-family: $blog-display;
+  font-size: $blog-display-xl;
   color: $primary;
   font-weight: bold;
 }
 .blog-tag{
-  font-family: $blog-heading;
-  font-size: $small-size;
+  font-family: $blog-body;
+  font-size: $blog-body-sm;
   color: $medium;
 }
 .blog-body{
   font-family: $blog-body;
-  font-size: $body-size;
+  font-size: $blog-body-md;
   color: $dark;
 }
 
-.font-display{
-  font-family: $heading;
-}
+// .font-display{
+//   font-family: $heading;
+// }
 
 .color-contrast{
   color: $contrast;

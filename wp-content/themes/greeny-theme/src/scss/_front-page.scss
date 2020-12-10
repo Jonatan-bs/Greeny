@@ -87,7 +87,7 @@
         }
         .price{
             font-family: $display;
-            font-size: $display-size;
+            font-size: $display-md;
         }
         .add-to-cart-button{
             width: 50px;
@@ -164,10 +164,11 @@
         }
         .title{
             font-family: $display;
-            font-size: $title-size;
+            font-size: $display-xl;
         }
         .subtitle{
             font-family: $display;
+            font-size: $display-sm;
         }
         hr{
             max-width: 320px;
@@ -175,12 +176,12 @@
         }
         .text{
             font-family: $display;
-            font-size: $display-size;
+            font-size: $display-md;
             max-width: 320px;
             margin: 0 auto;
         }
         .big{
-            font-size: $title-size;
+            font-size: $display-xl;
         }
         .es_shortcode_form{
             margin-top: 50px;
