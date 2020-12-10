@@ -5,7 +5,8 @@
         background: $primary;
         position: relative;
         height: 500px;
-        margin-bottom: 254px;
+        margin-bottom: 334px;
+        padding-top: 140px;
         .text{
             margin: 0 auto;
             max-width: 600px;
@@ -26,6 +27,7 @@
     .starterpack{
         text-align: center;
         position: relative;
+        height: 350px;
         a{
             text-decoration: underline;
         }
@@ -41,8 +43,8 @@
             background: #2699fb;
             position: absolute;
             left: 50%;
-            top: 0%;
-            transform: translate(-180px, 10px);
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
         .blue-circle:nth-of-type(2){
             width: 60px;
@@ -52,8 +54,8 @@
             background: #2699fb;
             position: absolute;
             left: 50%;
-            bottom: -80px;
-            transform: translate(-230px, 0px);
+            bottom: 0px;
+            transform: translate(-190px, 0px)
         }
         .blue-circle:nth-of-type(3){
             width: 90px;
@@ -64,7 +66,7 @@
             position: absolute;
             left: 50%;
             top: 0;
-            transform: translate(130px, 0px);
+            transform: translate(170px, 40px);
         }
         .fruits{
             height: 120px;
@@ -77,8 +79,6 @@
         }
     }
     .featured-products{
-        margin: 0px auto;
-        text-align: center;
         .image{ width:100%;}
         .title{}
         .excerpt{
@@ -99,16 +99,20 @@
         }
     }
     .symbols-container{
-        position: relative;
-        margin: 100px auto;
-        margin-top: 170px;
-        max-width: 700px;
-        &>p:nth-of-type(1),&>img:nth-of-type(1){
-            position: absolute;
-        }
+        display: flex;
+       
         .symbols{
+            &>p:nth-of-type(1),&>img:nth-of-type(1){
+                position: absolute;
+            }
+            position: relative;
+            height: 310px;
+            justify-content: flex-end;
+            align-items: flex-end;
             display: inline-flex;
+            margin: 0 auto;
             gap: 40px;
+            padding: 0 230px;
             text-align: center;
         }
     }

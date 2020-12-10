@@ -1,8 +1,12 @@
 header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   width: 100%;
   text-align: center;
   padding: 10px 0;
-  background: #2c9558;
+  background: transparent;
 }
 header .logo {
   width: 200px;
@@ -93,7 +97,8 @@ footer .secundary-menu a {
   background: #2c9558;
   position: relative;
   height: 500px;
-  margin-bottom: 254px;
+  margin-bottom: 334px;
+  padding-top: 140px;
 }
 #front-page .hero .text {
   margin: 0 auto;
@@ -114,6 +119,7 @@ footer .secundary-menu a {
 #front-page .starterpack {
   text-align: center;
   position: relative;
+  height: 350px;
 }
 #front-page .starterpack a {
   text-decoration: underline;
@@ -129,8 +135,8 @@ footer .secundary-menu a {
   background: #2699fb;
   position: absolute;
   left: 50%;
-  top: 0%;
-  transform: translate(-180px, 10px);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 #front-page .starterpack .blue-circle:nth-of-type(2) {
   width: 60px;
@@ -140,8 +146,8 @@ footer .secundary-menu a {
   background: #2699fb;
   position: absolute;
   left: 50%;
-  bottom: -80px;
-  transform: translate(-230px, 0px);
+  bottom: 0px;
+  transform: translate(-190px, 0px);
 }
 #front-page .starterpack .blue-circle:nth-of-type(3) {
   width: 90px;
@@ -152,7 +158,7 @@ footer .secundary-menu a {
   position: absolute;
   left: 50%;
   top: 0;
-  transform: translate(130px, 0px);
+  transform: translate(170px, 40px);
 }
 #front-page .starterpack .fruits {
   height: 120px;
@@ -162,10 +168,6 @@ footer .secundary-menu a {
   left: 50%;
   top: 0%;
   position: absolute;
-}
-#front-page .featured-products {
-  margin: 0px auto;
-  text-align: center;
 }
 #front-page .featured-products .image {
   width: 100%;
@@ -187,18 +189,21 @@ footer .secundary-menu a {
   gap: 30px;
 }
 #front-page .symbols-container {
-  position: relative;
-  margin: 100px auto;
-  margin-top: 170px;
-  max-width: 700px;
-}
-#front-page .symbols-container > p:nth-of-type(1), #front-page .symbols-container > img:nth-of-type(1) {
-  position: absolute;
+  display: flex;
 }
 #front-page .symbols-container .symbols {
+  position: relative;
+  height: 310px;
+  justify-content: flex-end;
+  align-items: flex-end;
   display: inline-flex;
+  margin: 0 auto;
   gap: 40px;
+  padding: 0 230px;
   text-align: center;
+}
+#front-page .symbols-container .symbols > p:nth-of-type(1), #front-page .symbols-container .symbols > img:nth-of-type(1) {
+  position: absolute;
 }
 #front-page .about-greeny {
   background: #2c9558;
@@ -270,6 +275,7 @@ footer .secundary-menu a {
 }
 body,
 html {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
@@ -449,4 +455,8 @@ p {
 
 .color-secondary-light {
   color: #a5cbef;
+}
+
+.center {
+  text-align: center;
 }
