@@ -3,7 +3,7 @@
 .product-list, .woocommerce .product-list{
     .product{
         &.outofstock{
-            .image{ opacity: .5;}
+            .product-image{ opacity: .5;}
             .info{
                 font-size: $body-xs;
                 font-family: $body;
@@ -31,7 +31,7 @@
             justify-content: center;
             border-radius: 100%;
         }
-        .image{ width:100%;}
+        .product-image{ width:100%;}
         .title{}
         .excerpt{
             max-width: 330px;

@@ -5,7 +5,7 @@
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'product', $product ); ?> >
     <a href="<?php the_permalink(); ?>">
         <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );?>
-        <img  class="image" src="<?echo $src[0];?>" alt="">
+        <img  class="product-image" src="<?echo $src[0];?>" alt="">
         
         <?php if(!$product->is_in_stock()){?> 
             <div class="info outofstock">Out of stock</div>

@@ -7,6 +7,7 @@
 @import "scss/front-page";
 @import "scss/products";
 @import "scss/blog";
+@import "scss/single-product";
 
 // $body: 'Josefin Sans', sans-serif;
 // $body-sm: 20px; 
@@ -108,6 +109,9 @@ p {
   max-width: 1450px;
   padding: 20px;
   box-sizing: border-box;
+  &.text{
+    max-width: 900px;
+  }
 
 }
 .py{
