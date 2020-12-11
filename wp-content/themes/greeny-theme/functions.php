@@ -10,8 +10,8 @@ add_action( 'wp_enqueue_scripts', 'load_stylesheets');
 
 // Load scripts
 function load_javascript(){
-    wp_register_script('custom', get_template_directory_uri() . '/app.js', '', 1, true);
-    wp_enqueue_script('custom');
+    wp_register_script('app', get_template_directory_uri() . '/app.js', '', 1, true);
+    wp_enqueue_script('app');
 };
 add_action( 'wp_enqueue_scripts', 'load_javascript');
 

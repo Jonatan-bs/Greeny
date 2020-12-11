@@ -1,22 +1,71 @@
 @import "variables/colors";
 
-.product-list{
-    .image{ width:100%;}
-    .title{}
-    .excerpt{
-        max-width: 330px;
-        margin: 0 auto;
-    }
-    .price{
-        font-family: $display;
-        font-size: $display-md;
-    }
-    .add-to-cart-button{
-        width: 50px;
-    }
-    .flex{
-        display: flex;
-        justify-content: center;
-        gap: 30px;
+.product-list, .woocommerce .product-list{
+    .product{
+        &.outofstock{
+            .image{ opacity: .5;}
+            .info{
+                font-size: $body-xs;
+                font-family: $body;
+                color: $medium
+            }
+        }
+
+        .info.outofstock{
+            font-size: $body-xs;
+            font-family: $body;
+            color: $medium
+        }
+        .info.sale{
+            width: 70px;
+            height: 70px;
+            top: 0;
+            right: 0;
+            position: absolute;
+            background: $primary;
+            font-size: $body-xs;
+            font-family: $body;
+            color: $light;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+        }
+        .image{ width:100%;}
+        .title{}
+        .excerpt{
+            max-width: 330px;
+            margin: 0 auto;
+        }
+        .price{
+            font-family: $display;
+            font-size: $display-md; 
+            color: $dark;
+
+            &.onsale{
+                color: $primary;
+
+                .sales-price{
+                    font-size: $display-sm;
+                    color: #a7a5a3;
+                    text-decoration: line-through;
+                    text-decoration-color: #5b5550;
+                    text-decoration-thickness: 3px;
+                    padding: 0 5px;
+                }
+            }
+        }
+        .add-to-cart-button{
+            width: 50px;
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .read-more{
+            margin-top: 10px;
+        }
+        
     }
 }

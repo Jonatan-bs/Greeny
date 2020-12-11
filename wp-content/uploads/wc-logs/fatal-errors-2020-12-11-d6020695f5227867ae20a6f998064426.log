@@ -1,0 +1,72 @@
+2020-12-11T11:39:49+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in /var/www/html/wp-includes/class.wp-scripts.php:492
+Stack trace:
+#0 /var/www/html/wp-includes/functions.wp-scripts.php(221): WP_Scripts->localize('app', 'product', Object(WC_Product_Simple))
+#1 /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php(18): wp_localize_script('app', 'product', Object(WC_Product_Simple))
+#2 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#3 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#4 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#5 /var/www/html/wp-content/themes/greeny-theme/components/products-featured.php(31): get_template_part('components/part...', 'single', Array)
+#6 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#7 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#8 /var/www/ in /var/www/html/wp-includes/class.wp-scripts.php on line 492
+
+2020-12-11T11:40:25+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in /var/www/html/wp-includes/class.wp-scripts.php:492
+Stack trace:
+#0 /var/www/html/wp-includes/functions.wp-scripts.php(221): WP_Scripts->localize('app', 'product', Object(WC_Product_Simple))
+#1 /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php(18): wp_localize_script('app', 'product', Object(WC_Product_Simple))
+#2 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#3 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#4 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#5 /var/www/html/wp-content/themes/greeny-theme/components/products-featured.php(31): get_template_part('components/part...', 'single', Array)
+#6 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#7 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#8 /var/www/ in /var/www/html/wp-includes/class.wp-scripts.php on line 492
+
+2020-12-11T11:40:37+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in /var/www/html/wp-includes/class.wp-scripts.php:492
+Stack trace:
+#0 /var/www/html/wp-includes/functions.wp-scripts.php(221): WP_Scripts->localize('app', 'product', Object(WC_Product_Simple))
+#1 /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php(18): wp_localize_script('app', 'product', Object(WC_Product_Simple))
+#2 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#3 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#4 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#5 /var/www/html/wp-content/themes/greeny-theme/components/products-featured.php(31): get_template_part('components/part...', 'single', Array)
+#6 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#7 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#8 /var/www/ in /var/www/html/wp-includes/class.wp-scripts.php on line 492
+
+2020-12-11T11:43:15+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in /var/www/html/wp-includes/class.wp-scripts.php:492
+Stack trace:
+#0 /var/www/html/wp-includes/functions.wp-scripts.php(221): WP_Scripts->localize('app', 'product', Object(WC_Product_Simple))
+#1 /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php(18): wp_localize_script('app', 'product', Object(WC_Product_Simple))
+#2 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#3 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#4 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#5 /var/www/html/wp-content/themes/greeny-theme/components/products-list.php(31): get_template_part('components/part...', 'single', Array)
+#6 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#7 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#8 /var/www/html in /var/www/html/wp-includes/class.wp-scripts.php on line 492
+
+2020-12-11T11:48:23+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in /var/www/html/wp-includes/class.wp-scripts.php:492
+Stack trace:
+#0 /var/www/html/wp-includes/functions.wp-scripts.php(221): WP_Scripts->localize('app', 'php_vars', Object(WC_Product_Simple))
+#1 /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php(18): wp_localize_script('app', 'php_vars', Object(WC_Product_Simple))
+#2 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#3 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#4 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#5 /var/www/html/wp-content/themes/greeny-theme/components/products-list.php(31): get_template_part('components/part...', 'single', Array)
+#6 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#7 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#8 /var/www/ht in /var/www/html/wp-includes/class.wp-scripts.php on line 492
+
+2020-12-11T11:48:25+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in /var/www/html/wp-includes/class.wp-scripts.php:492
+Stack trace:
+#0 /var/www/html/wp-includes/functions.wp-scripts.php(221): WP_Scripts->localize('app', 'php_vars', Object(WC_Product_Simple))
+#1 /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php(18): wp_localize_script('app', 'php_vars', Object(WC_Product_Simple))
+#2 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#3 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#4 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#5 /var/www/html/wp-content/themes/greeny-theme/components/products-list.php(31): get_template_part('components/part...', 'single', Array)
+#6 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#7 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#8 /var/www/ht in /var/www/html/wp-includes/class.wp-scripts.php on line 492
+

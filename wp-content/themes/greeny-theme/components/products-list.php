@@ -1,19 +1,16 @@
 <div class="product-list center">
-    <div class="content col-4">
+    <div class="content col-4 gap-5">
         <?php
             $meta_query  = WC()->query->get_meta_query();
             $tax_query   = WC()->query->get_tax_query();
-            // $tax_query[] = array(
-            //     'taxonomy' => 'product_visibility',
-            //     'field'    => 'name',
-            //     'terms'    => 'featured',
-            //     'operator' => 'IN',
-            // );
             
+           
             $args = array(
                 'post_type'           => 'product',
                 'post_status'         => 'publish',
                 'posts_per_page'      => -1,
+                'orderby'             => 'menu_order',
+                'order'               => 'ASC',
                 'meta_query'          => $meta_query,
                 'tax_query'           => $tax_query,
             );

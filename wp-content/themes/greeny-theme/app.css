@@ -238,24 +238,68 @@ footer .secundary-menu a {
 #front-page .newsletter .es_shortcode_form {
   margin-top: 50px;
 }
-.product-list .image {
+.product-list .product.outofstock .image, .woocommerce .product-list .product.outofstock .image {
+  opacity: 0.5;
+}
+.product-list .product.outofstock .info, .woocommerce .product-list .product.outofstock .info {
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #9d9d9d;
+}
+.product-list .product .info.outofstock, .woocommerce .product-list .product .info.outofstock {
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #9d9d9d;
+}
+.product-list .product .info.sale, .woocommerce .product-list .product .info.sale {
+  width: 70px;
+  height: 70px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: #2c9558;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.product-list .product .image, .woocommerce .product-list .product .image {
   width: 100%;
 }
-.product-list .excerpt {
+.product-list .product .excerpt, .woocommerce .product-list .product .excerpt {
   max-width: 330px;
   margin: 0 auto;
 }
-.product-list .price {
+.product-list .product .price, .woocommerce .product-list .product .price {
   font-family: "Caveat Brush", cursive;
   font-size: 35px;
+  color: #404040;
 }
-.product-list .add-to-cart-button {
+.product-list .product .price.onsale, .woocommerce .product-list .product .price.onsale {
+  color: #2c9558;
+}
+.product-list .product .price.onsale .sales-price, .woocommerce .product-list .product .price.onsale .sales-price {
+  font-size: 25px;
+  color: #a7a5a3;
+  text-decoration: line-through;
+  -webkit-text-decoration-color: #5b5550;
+          text-decoration-color: #5b5550;
+  text-decoration-thickness: 3px;
+  padding: 0 5px;
+}
+.product-list .product .add-to-cart-button, .woocommerce .product-list .product .add-to-cart-button {
   width: 50px;
 }
-.product-list .flex {
+.product-list .product .flex, .woocommerce .product-list .product .flex {
   display: flex;
   justify-content: center;
   gap: 30px;
+}
+.product-list .product .read-more, .woocommerce .product-list .product .read-more {
+  margin-top: 10px;
 }
 
 .blog-card {
@@ -308,6 +352,18 @@ input {
 }
 .button.contrast, .button.es_submit_button, input[type=button].contrast, input[type=button].es_submit_button, input[type=submit].contrast, input[type=submit].es_submit_button {
   background-color: #fdc83e;
+}
+
+.gap-3 {
+  gap: 30px;
+}
+
+.gap-4 {
+  gap: 40px;
+}
+
+.gap-5 {
+  gap: 50px;
 }
 
 a.page-link {

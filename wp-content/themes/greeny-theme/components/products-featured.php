@@ -1,5 +1,5 @@
 <div class="product-list center">
-    <div class="content col-4">
+    <div class="content col-4 gap-5">
         <?php
             $meta_query  = WC()->query->get_meta_query();
             $tax_query   = WC()->query->get_tax_query();
