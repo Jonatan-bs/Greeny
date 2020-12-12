@@ -18,7 +18,7 @@
 
 <!-- Symbols -->
     <section class="content mb">
-        <?php  get_template_part('components/frontpage','symbols');?>
+        <?php  get_template_part('components/symbols');?>
     </section>
 
 <!-- About Greeny juices -->

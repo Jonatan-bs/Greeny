@@ -35,3 +35,5 @@ Stack trace:
 
 2020-12-12T15:18:26+00:00 CRITICAL syntax error, unexpected '$count' (T_VARIABLE) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 401
 
+2020-12-12T15:46:15+00:00 CRITICAL syntax error, unexpected '}' in /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php on line 75
+

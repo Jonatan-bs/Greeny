@@ -50,47 +50,32 @@ get_header('light'); ?>
 				<!-- </div> -->
 				<div class="content text">
 					<section class="content mb">
-						<?php  
-							// $template = 'components/frontpage';
-							// get_template_part($template,'symbols');
-						?>
-					</section>
-					<?php echo the_content() ?>
-					<!-- Ingredients -->
-					<div class="ingredients">
-						<?php 
-							$ingredients = get_post_meta( $post->ID, 'ingredients_fields', true );
 
-
-							foreach( $ingredients as $ingredient ){
-								$title = $ingredient['title'];
-								$text = $ingredient['text'];
-								$percentage = $ingredient['percentage'] . " %";
-								$image_attr =  wp_get_attachment_image_src(  esc_attr( $ingredient['image'], 'thumbnail' ));
-								?>
-									<div class="ingredient">
-										<div class="image-percentage">
-											<img 
-												class="symbol" 
-												src="<?php echo $image_attr[0] ?>" 
-												width="<?php echo $image_attr[1] ?>" 
-												height="<?php echo $image_attr[2] ?>" alt="" />
-
-											<p class="percentage"><?php echo $percentage ?></p>
-										</div>
-										<div class="title">
-											<?php echo $title ?>
-										</div>
-										<div class="text">
-											<?php echo $text ?>
-										</div>
-									</div>
-								<?php
+					
+					<?php  
+							$components = get_post_meta( $post->ID, 'component_position_fields', true );
+							if($components){
+								foreach($components as $component){
+									switch ($component['component']) {
+										case 'content':
+											the_content();
+											break;
+										case 'symbols':
+											get_template_part('components/symbols');
+											break;
+										case 'ingredients':
+											get_template_part('components/ingredients');
+											break;
+										
+									}
+								}
+							} else{
+								the_content();
 							}
-
-
-						?>
-					</div>
+							
+					?>
+					</section>
+					
 				</div>
 
 			<?php endwhile; ?>

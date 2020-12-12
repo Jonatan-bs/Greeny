@@ -1,14 +1,15 @@
-@import "scss/header";
+@import "scss/components/header";
 @import "scss/variables/colors";
 @import "scss/variables/fonts";
-@import "scss/hero";
-@import "scss/footer";
+@import "scss/components/hero";
+@import "scss/components/footer";
 @import "scss/page";
 @import "scss/front-page";
-@import "scss/products";
-@import "scss/blog";
+@import "scss/components/products";
+@import "scss/components/blog";
 @import "scss/single-product";
-@import "scss/ingredients";
+@import "scss/components/ingredients";
+@import "scss/components/symbols";
 
 // $body: 'Josefin Sans', sans-serif;
 // $body-sm: 20px; 

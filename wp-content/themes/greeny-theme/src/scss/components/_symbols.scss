@@ -1,0 +1,21 @@
+.symbols-container{
+    display: flex;
+   
+    .symbols{
+        &>p:nth-of-type(1),&>img:nth-of-type(1){
+            position: absolute;
+        }
+        position: relative;
+        height: 310px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        display: inline-flex;
+        margin: 0 auto;
+        gap: 40px;
+        padding: 0 230px;
+        text-align: center;
+        img{
+            max-width: initial;
+        }
+    }
+}

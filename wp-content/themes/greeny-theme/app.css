@@ -166,23 +166,6 @@ footer .secundary-menu a {
   top: 0%;
   position: absolute;
 }
-#front-page .symbols-container {
-  display: flex;
-}
-#front-page .symbols-container .symbols {
-  position: relative;
-  height: 310px;
-  justify-content: flex-end;
-  align-items: flex-end;
-  display: inline-flex;
-  margin: 0 auto;
-  gap: 40px;
-  padding: 0 230px;
-  text-align: center;
-}
-#front-page .symbols-container .symbols > p:nth-of-type(1), #front-page .symbols-container .symbols > img:nth-of-type(1) {
-  position: absolute;
-}
 #front-page .about-greeny {
   background: #2c9558;
 }
@@ -418,6 +401,27 @@ footer .secundary-menu a {
 }
 .ingredients .ingredient .text {
   padding: 20px 0;
+}
+
+.symbols-container {
+  display: flex;
+}
+.symbols-container .symbols {
+  position: relative;
+  height: 310px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: inline-flex;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 0 230px;
+  text-align: center;
+}
+.symbols-container .symbols > p:nth-of-type(1), .symbols-container .symbols > img:nth-of-type(1) {
+  position: absolute;
+}
+.symbols-container .symbols img {
+  max-width: initial;
 }
 
 body,
