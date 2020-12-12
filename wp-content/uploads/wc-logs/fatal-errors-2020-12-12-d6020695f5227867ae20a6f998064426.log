@@ -1,0 +1,9 @@
+2020-12-12T03:07:57+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_get_attachment_image(), 0 passed in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 176 and at least 1 expected in /var/www/html/wp-includes/media.php:1028
+Stack trace:
+#0 /var/www/html/wp-content/themes/greeny-theme/functions.php(176): wp_get_attachment_image()
+#1 /var/www/html/wp-admin/includes/template.php(1389): hhs_repeatable_meta_box_display(Object(WP_Post), Array)
+#2 /var/www/html/wp-admin/edit-form-advanced.php(686): do_meta_boxes(Object(WP_Screen), 'normal', Object(WP_Post))
+#3 /var/www/html/wp-admin/post.php(206): require('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/wp-includes/media.php on line 1028
+
