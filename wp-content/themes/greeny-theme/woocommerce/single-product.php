@@ -49,7 +49,12 @@ get_header('light'); ?>
 					
 				<!-- </div> -->
 				<div class="content text">
-				
+					<section class="content mb">
+						<?php  
+							// $template = 'components/frontpage';
+							// get_template_part($template,'symbols');
+						?>
+					</section>
 					<?php echo the_content() ?>
 					<!-- Ingredients -->
 					<div class="ingredients">

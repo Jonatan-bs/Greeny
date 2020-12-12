@@ -389,6 +389,37 @@ footer .secundary-menu a {
   z-index: 0;
 }
 
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ingredients .ingredient {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 50%;
+}
+.ingredients .ingredient .image-percentage {
+  position: relative;
+  display: inline-block;
+}
+.ingredients .ingredient .image-percentage .percentage {
+  font-family: "Caveat Brush", cursive;
+  font-size: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f5f5f5;
+}
+.ingredients .ingredient .title {
+  font-family: "Caveat Brush", cursive;
+  font-size: 47px;
+}
+.ingredients .ingredient .text {
+  padding: 20px 0;
+}
+
 body,
 html {
   position: relative;

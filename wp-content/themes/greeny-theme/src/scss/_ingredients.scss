@@ -1,0 +1,32 @@
+.ingredients{
+    display: flex;
+    flex-wrap: wrap;
+    .ingredient{
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        width: 50%;
+        .image-percentage{
+            position: relative;
+            display: inline-block;
+
+            .symbol{}
+            .percentage{
+                font-family: $display;
+                font-size: $display-sm;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                color: $light;
+        }
+        }
+        .title{
+            font-family: $display;
+            font-size: $display-xl;
+        }
+        .text{
+            padding: 20px 0;
+        }
+    }
+}

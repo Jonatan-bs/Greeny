@@ -7,3 +7,7 @@ Stack trace:
 #4 {main}
   thrown in /var/www/html/wp-includes/media.php on line 1028
 
+2020-12-12T13:44:37+00:00 CRITICAL syntax error, unexpected 'foreach' (T_FOREACH) in /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php on line 58
+
+2020-12-12T13:48:03+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php on line 65
+

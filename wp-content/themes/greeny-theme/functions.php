@@ -234,7 +234,7 @@ function hhs_ingredients_meta_box_save($post_id) {
     
 	for ( $i = 0; $i < $count; $i++ ) {
 		if ( $texts[$i] != '' &&  $images[$i] != '' && $titles[$i] != '' && $percentages[$i] != ''  ) :
-			$new[$i]['title'] = stripslashes( strip_tags( $texts[$i] ) );
+			$new[$i]['title'] = stripslashes( strip_tags( $titles[$i] ) );
 			$new[$i]['text'] = stripslashes( strip_tags( $texts[$i] ) );
 			$new[$i]['percentage'] = stripslashes( strip_tags( $percentages[$i] ) );
 			$new[$i]['image'] = stripslashes( strip_tags( $images[$i] ) );
