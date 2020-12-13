@@ -221,6 +221,10 @@ footer .secundary-menu a {
 #front-page .newsletter .es_shortcode_form {
   margin-top: 50px;
 }
+#front-page .newsletter .es_subscription_form_submit {
+  margin: 0 auto;
+}
+
 .product-list .product.outofstock .product-image, .woocommerce .product-list .product.outofstock .product-image {
   opacity: 0.5;
 }

@@ -5,5 +5,6 @@
     <div class="subtitle">to our newsletter</div>
     <hr>
     <div class="text">Get <span class="big">10%</span> off your first order </div>
-    <?php echo do_shortcode( '[email-subscribers-form id="1"]', true); ?>
+    <div class="flexcenter">
+    <?php echo do_shortcode( '[email-subscribers-form id="1"]', true); ?></div>
 </div>
