@@ -5,7 +5,7 @@
         .info{
             position: absolute;
             right: 0;
-            bottom: 0;
+            bottom: 5%;
             text-align: right;
             .add-to-cart-button{
                 font-family: $display;
@@ -39,12 +39,13 @@
         }
 
         .product-wrap{
-            max-width: 800px;
-            width:100%;
+            max-width: 1000px;
+            width: 90%;
             margin: 60px auto;
             position: relative;
             .product-image-width{
-                width: 90%;
+                width: 75%;
+                margin: 0 auto;
                 .aspect-wrap{
                     position: relative;
                     padding-bottom: 100%;

@@ -20,10 +20,16 @@ $product = $args['product'];
 
                     
             <p class="price <?php if ($product->get_sale_price()) {?> onsale <?php } ?>">
-            <?php if ($product->get_sale_price()) {?>
-                <span class="sales-price"><?php echo $product->get_sale_price(), get_woocommerce_currency_symbol() ?></span>
+
+            <?php if($product->is_purchasable()){?> 
+                <?php if ($product->get_sale_price()) {?>
+                    <span class="sales-price"><?php echo $product->get_sale_price(), get_woocommerce_currency_symbol() ?></span>
+                <?php } ?>
+                <?php echo $product->get_regular_price(), get_woocommerce_currency_symbol()?>
+            <? } else if (!$product->is_in_stock()){?>
+                <div class="outofstock">Out of stock</div>
             <?php } ?>
-            <?php echo $product->get_regular_price(), get_woocommerce_currency_symbol()?>
+
             </p>
 
             <?php 

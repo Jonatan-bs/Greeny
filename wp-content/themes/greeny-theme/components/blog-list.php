@@ -21,6 +21,4 @@
 <?php else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
-<div class="flexcenter">
-    <a class="page-link" href="<?php echo get_page_link( get_page_by_title( 'blog' )->ID ); ?>">Blog</a>
-</div>
+

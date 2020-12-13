@@ -319,7 +319,7 @@ footer .secundary-menu a {
 #single-product .single-product-showcase .info, .woocommerce #single-product .single-product-showcase .info {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 5%;
   text-align: right;
 }
 #single-product .single-product-showcase .info .add-to-cart-button, .woocommerce #single-product .single-product-showcase .info .add-to-cart-button {
@@ -351,13 +351,14 @@ footer .secundary-menu a {
   padding: 0 5px;
 }
 #single-product .single-product-showcase .product-wrap, .woocommerce #single-product .single-product-showcase .product-wrap {
-  max-width: 800px;
-  width: 100%;
+  max-width: 1000px;
+  width: 90%;
   margin: 60px auto;
   position: relative;
 }
 #single-product .single-product-showcase .product-wrap .product-image-width, .woocommerce #single-product .single-product-showcase .product-wrap .product-image-width {
-  width: 90%;
+  width: 75%;
+  margin: 0 auto;
 }
 #single-product .single-product-showcase .product-wrap .product-image-width .aspect-wrap, .woocommerce #single-product .single-product-showcase .product-wrap .product-image-width .aspect-wrap {
   position: relative;
