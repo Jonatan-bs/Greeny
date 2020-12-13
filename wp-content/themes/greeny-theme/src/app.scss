@@ -40,11 +40,13 @@ html {
   height: 100%;
 }
 
-.wrapper {
-  min-height: 100%;
-  margin-bottom:-270px ;
+body{
+  display: flex;
+  flex-direction: column;
 }
-
+.wrapper{
+  flex: 1 0 auto
+}
 input{
   font-family: $body;
   font-size: $body-sm;

@@ -1,4 +1,4 @@
-header {
+header.greeny {
   position: absolute;
   top: 0;
   left: 0;
@@ -8,36 +8,36 @@ header {
   padding: 10px 0;
   background: transparent;
 }
-header .logo {
+header.greeny .logo {
   width: 200px;
   margin: 20px 0px;
 }
-header .symbols {
+header.greeny .symbols {
   display: inline;
   position: absolute;
   right: 70px;
 }
-header .symbols .symbol {
+header.greeny .symbols .symbol {
   width: 50px;
   margin: 15px 5px;
 }
-header .primary-menu {
+header.greeny .primary-menu {
   text-transform: uppercase;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-header .primary-menu li {
+header.greeny .primary-menu li {
   display: inline-block;
   margin: 0px 25px;
 }
-header .primary-menu a {
+header.greeny .primary-menu a {
   font-size: 25px;
   font-family: "Caveat Brush", cursive;
   color: #2c9558;
   text-decoration: none;
 }
-header.light a {
+header.greeny.light a {
   color: #f5f5f5;
 }
 
@@ -473,6 +473,25 @@ footer .secundary-menu a {
   max-width: initial;
 }
 
+#cart .woocommerce img {
+  width: 100%;
+}
+#cart .woocommerce .product-thumbnail {
+  max-width: 60px;
+}
+#cart .woocommerce table.shop_table {
+  border: 0px;
+}
+#cart .woocommerce .input-text {
+  width: auto;
+  font-size: 20px;
+  padding: 10px;
+}
+#cart .woocommerce a.button.alt {
+  background-color: #f5af00;
+  font-size: 35px;
+}
+
 body,
 html {
   position: relative;
@@ -482,11 +501,21 @@ html {
   color: #404040;
   background: #f5f5f5;
   font-size: 20px;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
 }
 
 input {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 38px;
+  font-size: 20px;
   padding: 10px 10px;
 }
 

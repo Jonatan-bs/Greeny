@@ -7,7 +7,9 @@
     <title>Greeny</title>
     <?php wp_head(); ?>
 </head>
-    <header >
+    
+<body <?php body_class() ?>>
+<header class="greeny">
         <div class="container">
             <a href="<?php bloginfo( 'url' )?>">
                 <img src="<?php bloginfo('template_directory')?>/images/logo.svg" alt="logo" class="logo">
@@ -30,5 +32,4 @@
             ?>
         </div>
     </header>
-<body <?php body_class() ?>>
-    
+<div class="wrapper">

@@ -7,7 +7,7 @@
     <title>Greeny</title>
     <?php wp_head(); ?>
 </head>
-    <header class="light">
+    <header class="light greeny">
         <div class="container">
             <a href="<?php bloginfo( 'url' )?>">
                 <img src="<?php bloginfo('template_directory')?>/images/logo-light.svg" alt="logo" class="logo">
