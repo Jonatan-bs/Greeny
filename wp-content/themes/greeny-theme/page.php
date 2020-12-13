@@ -1,7 +1,7 @@
 
 <?php get_header(); ?>
     
-<section class="content page header-padding">
+<section class="content text page header-padding">
     
     <?php if(has_post_thumbnail()):?>
         <img class="featuredImage" src="<?php the_post_thumbnail_url('post_image'); ?>"/>

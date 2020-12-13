@@ -16,4 +16,5 @@ mix
     processCssUrls: false,
   })
   .js("src/app.js", "./")
-  .sass("src/app.scss", "./");
+  .sass("src/app.scss", "./")
+  .sass("src/editor.scss", "./");

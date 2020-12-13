@@ -1,0 +1,42 @@
+h1, .editor-post-title__input {
+  color: #2c9558;
+  font-family: "Caveat Brush", cursive;
+  font-size: 47px;
+  text-align: center;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+  color: #404040;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Caveat Brush", cursive;
+  color: #404040;
+}
+
+h1 {
+  font-size: 47px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 23.4px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16.6px;
+}
+
+.wp-block {
+  max-width: 900px;
+}

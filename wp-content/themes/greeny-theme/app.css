@@ -89,6 +89,16 @@ footer .secundary-menu a {
 .content.page .featuredImage {
   width: 100%;
 }
+.content.page h1 {
+  color: #2c9558;
+  font-family: "Caveat Brush", cursive;
+  font-size: 47px;
+  text-align: center;
+}
+.content.page p {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
 
 #front-page .hero {
   background: #2c9558;
@@ -509,6 +519,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Caveat Brush", cursive;
 }
 
+h1 {
+  font-size: 47px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 23.4px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16.6px;
+}
+
 a {
   color: #404040;
   text-decoration: none;
@@ -528,6 +558,7 @@ p {
 }
 .content.text {
   max-width: 900px;
+  line-height: 30px;
 }
 
 .py {

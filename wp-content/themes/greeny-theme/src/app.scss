@@ -103,6 +103,22 @@ a.page-link{
 h1, h2, h3, h4, h5, h6 {
   font-family: $display;
 }
+h1{
+  font-size: $display-xl;
+}
+h2{
+  font-size: 30px ;
+}
+h3{
+  font-size:  23.4px;
+}
+h4{
+  font-size: 20px;
+}
+h5{
+  font-size: 16.6px;
+}
+
 a{
   color: $dark;
   text-decoration: none;
@@ -121,6 +137,7 @@ p {
   box-sizing: border-box;
   &.text{
     max-width: 900px;
+    line-height: 30px;
   }
 
 }

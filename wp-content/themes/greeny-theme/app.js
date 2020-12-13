@@ -114,15 +114,27 @@ document.addEventListener('click', function (e) {
 
 /***/ }),
 
+/***/ "./src/editor.scss":
+/*!*************************!*\
+  !*** ./src/editor.scss ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*****************************************!*\
-  !*** multi ./src/app.js ./src/app.scss ***!
-  \*****************************************/
+/*!***********************************************************!*\
+  !*** multi ./src/app.js ./src/app.scss ./src/editor.scss ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/jonatanshoshan/Library/Mobile Documents/com~apple~CloudDocs/htdocs /Greeny/wp-content/themes/greeny-theme/src/app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! /Users/jonatanshoshan/Library/Mobile Documents/com~apple~CloudDocs/htdocs /Greeny/wp-content/themes/greeny-theme/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/jonatanshoshan/Library/Mobile Documents/com~apple~CloudDocs/htdocs /Greeny/wp-content/themes/greeny-theme/src/app.scss */"./src/app.scss");
+module.exports = __webpack_require__(/*! /Users/jonatanshoshan/Library/Mobile Documents/com~apple~CloudDocs/htdocs /Greeny/wp-content/themes/greeny-theme/src/editor.scss */"./src/editor.scss");
 
 
 /***/ })

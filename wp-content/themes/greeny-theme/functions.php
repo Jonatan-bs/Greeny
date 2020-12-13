@@ -30,6 +30,16 @@ register_nav_menus(
 //add image size
 add_image_size('post_image', 1100, 750, false); 
 
+//Change style in WYSIWYG editor
+add_action( 'after_setup_theme', 'misha_gutenberg_css' );
+ 
+function misha_gutenberg_css(){
+ 
+	add_theme_support( 'editor-styles' ); // if you don't add this line, your stylesheet won't be added
+	add_editor_style( 'editor.css' ); // tries to include style-editor.css directly from your theme folder
+ 
+}
+
 // Add a widget
 register_sidebar(
     array(
