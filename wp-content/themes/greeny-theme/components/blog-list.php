@@ -1,6 +1,9 @@
 <?php 
 
-$cat_id = get_the_category()[0]->term_id? get_the_category()[0]->term_id : -1 ;
+$thisCategoryID = $wp_query->get_queried_object_id(); 
+
+
+$cat_id = get_query_var('cat')? get_query_var('cat') : -1 ;
 
 $wpb_all_query = new WP_Query(
     array(

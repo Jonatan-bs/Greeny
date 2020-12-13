@@ -1,4 +1,27 @@
 @import "../variables/colors";
+// $blog-body: 'Josefin Sans', sans-serif;
+// $blog-body-md: 37px;
+
+// $blog-display: 'Josefin Sans', sans-serif;
+// $blog-display-xl: 48px;
+#blog-post{
+    h1{
+        font-family: $blog-display;
+        font-size: $blog-display-xl;
+        color: $primary;
+    }
+    p{
+        font-family: $blog-body;
+        font-size: $blog-body-md;
+        color: $dark;
+    }
+    .blog-tag{
+        a{
+            color: $medium;
+        }
+    }
+
+}
 .categories{
         margin-bottom: 30px;
         display: flex;

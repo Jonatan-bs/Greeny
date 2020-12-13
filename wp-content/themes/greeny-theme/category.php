@@ -7,14 +7,14 @@
                     All
                 </a>
             <?php
-            $thisCategory = get_the_category(); 
+            $thisCategoryID = $wp_query->get_queried_object_id(); 
             $categories = get_categories(); 
                     
                 foreach( $categories as $categorie){
                     
                     $link = get_category_link( $categorie->term_id )
                     ?>
-                    <a href="<?php echo $link ?>" class="<?php if($thisCategory[0]->term_id === $categorie->term_id){ echo 'active'; }; ?>">
+                    <a href="<?php echo $link ?>" class="<?php if($thisCategoryID === $categorie->term_id){ echo 'active'; }; ?>">
                         <?php echo $categorie->name ?>
                     </a>
 
