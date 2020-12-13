@@ -299,6 +299,19 @@ footer .secundary-menu a {
   margin-top: 10px;
 }
 
+.categories {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.categories a {
+  color: #9d9d9d;
+}
+.categories .active {
+  color: #2c9558;
+}
+
 .blog-card {
   display: flex;
   margin-bottom: 40px;
@@ -308,9 +321,16 @@ footer .secundary-menu a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 60%;
 }
-.blog-card img {
+.blog-card .image {
   width: 40%;
+}
+.blog-card .image img {
+  width: 100%;
+}
+.blog-card .blog-tag a {
+  color: #9d9d9d;
 }
 #single-product .single-product-showcase, .woocommerce #single-product .single-product-showcase {
   overflow: auto;

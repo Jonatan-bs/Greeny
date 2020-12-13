@@ -1,7 +1,12 @@
-<?php $wpb_all_query = new WP_Query(
+<?php 
+
+$cat_id = get_the_category()[0]->term_id? get_the_category()[0]->term_id : -1 ;
+
+$wpb_all_query = new WP_Query(
     array(
         'post_type'=>'post', 
-        'post_status'=>'publish', 
+        'post_status'=>'publish',
+        'cat'=>$cat_id, 
         'posts_per_page'=>-1
         )
 ); ?>

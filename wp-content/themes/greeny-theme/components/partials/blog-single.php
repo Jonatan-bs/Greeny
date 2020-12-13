@@ -1,11 +1,26 @@
-<a href="<?php the_permalink(); ?>">
+
     <div class="blog-card">
         <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );?>
-        <img  class="image" src="<?echo $src[0];?>" alt=""/>
+        <a class="image" href="<?php the_permalink(); ?>">
+            <img   src="<?echo $src[0];?>" alt=""/>
+        </a>
         <div class="container">
-            <p class="blog-title"><?php the_title(); ?></p>
-            <p class="blog-tag">Category example</p>
+            <a href="<?php the_permalink(); ?>">
+                <p class="blog-title"><?php the_title(); ?></p>
+            </a>
+            <div class="blog-tag">
+                <?php $categories = get_the_category(); 
+                foreach( $categories as $categorie){
+                    $link = get_category_link( $categorie->term_id )
+                    ?>
+                        <a href="<?php echo $link ?>">
+                            <?php echo $categorie->name ?>
+                        </a>
+
+                <?php    
+                }
+                ?>
+            </div>
             <div class="excerpt blog-body"> <?php the_excerpt(); ?> </div>
         </div>
     </div>
-</a>
