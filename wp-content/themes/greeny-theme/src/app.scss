@@ -10,6 +10,7 @@
 @import "scss/single-product";
 @import "scss/components/ingredients";
 @import "scss/components/symbols";
+@import "scss/cart";
 
 // $body: 'Josefin Sans', sans-serif;
 // $body-sm: 20px; 
@@ -36,10 +37,17 @@ html {
   color: $dark;
   background: $light;
   font-size: $blog-body-md;
+  height: 100%;
 }
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom:-270px ;
+}
+
 input{
   font-family: $body;
-  font-size: $body-md;
+  font-size: $body-sm;
   padding: 10px 10px;
 }
 .flexcenter{

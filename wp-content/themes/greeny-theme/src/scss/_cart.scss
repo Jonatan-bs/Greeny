@@ -1,0 +1,21 @@
+#cart .woocommerce{
+    img{
+        width:100% ;
+    }
+    .product-thumbnail {
+        max-width: 60px;
+    }
+    table.shop_table {
+        border: 0px;
+    }
+    .input-text{
+        width: auto;
+        font-size: $body-sm;
+        padding: 10px;
+    }
+    a.button.alt{
+        background-color: $contrast-dark;
+        font-size: $display-md;
+    }
+
+}
