@@ -454,6 +454,8 @@ input {
   background-color: #2c9558;
   color: #f5f5f5;
   border: none;
+  display: flex;
+  align-items: center;
   padding: 10px 20px;
   font-size: 25px;
   font-family: "Caveat Brush", cursive;
@@ -461,6 +463,11 @@ input {
 }
 .button.contrast, .button.es_submit_button, input[type=button].contrast, input[type=button].es_submit_button, input[type=submit].contrast, input[type=submit].es_submit_button {
   background-color: #fdc83e;
+}
+.button .symbol, input[type=button] .symbol, input[type=submit] .symbol {
+  display: inline;
+  width: 40px;
+  margin-left: 10px;
 }
 
 .gap-3 {

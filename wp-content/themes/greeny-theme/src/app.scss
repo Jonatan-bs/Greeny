@@ -53,6 +53,8 @@ cursor: pointer;
   background-color: $primary;
   color: $light;
   border: none;
+  display: flex;
+  align-items: center;  
   padding: 10px 20px;
   font-size: $display-sm;
   font-family: $display;
@@ -60,6 +62,12 @@ cursor: pointer;
 
   &.contrast, &.es_submit_button{
     background-color: $contrast;
+  }
+
+  .symbol{
+    display: inline;
+    width: 40px;
+    margin-left: 10px;
   }
 }
 
