@@ -54,6 +54,7 @@ Stack trace:
 #3 {main}
   thrown in /var/www/html/wp-content/themes/greeny-theme/front-page.php on line 14
 
+<<<<<<< HEAD
 2020-12-10T12:39:02+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php:12
 Stack trace:
 #0 /var/www/html/wp-includes/template.php(732): require()
@@ -174,3 +175,5 @@ Stack trace:
 #7 /var/www/html/wp-content/themes/greeny-theme/front-page.php(11): get_template_part('components/prod...', 'featured')
 #8 /var/www/html/wp-includes/template-loader.php(106): include('/var/ in /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php on line 15
 
+=======
+>>>>>>> 397c0c3bdf0b53cd125e45bf3aa6ecf3e4e5387c
