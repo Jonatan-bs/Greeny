@@ -20,7 +20,7 @@ get_header('light'); ?>
 								<img  class="product-image" src="<?echo $src[0];?>" alt="">
 								<div class="circle"></div>
 							</div>
-						</div>
+						</div> 
 
 						<div class="info">
 							<p  class="title" > 
@@ -30,9 +30,9 @@ get_header('light'); ?>
 									
 							<p class="price <?php if ($product->get_sale_price()) {?> onsale <?php } ?>">
 							<?php if ($product->get_sale_price()) {?>
-								<span class="sales-price"><?php echo $product->get_sale_price() ?></span>
+								<span class="sales-price"><?php echo $product->get_sale_price(), get_woocommerce_currency_symbol() ?></span>
 							<?php } ?>
-							<?php echo $product->get_regular_price() ?>
+							<?php echo $product->get_regular_price(), get_woocommerce_currency_symbol()?>
 							</p>
 
 							<?php 

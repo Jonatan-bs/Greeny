@@ -1,6 +1,5 @@
 <?php
     $product = $args['product'];
-    $price = $product->get_price_html();
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'product', $product ); ?> >
     <a href="<?php the_permalink(); ?>">
@@ -28,9 +27,9 @@
             
             <p class="price <?php if ($product->get_sale_price()) {?> onsale <?php } ?>">
                 <?php if ($product->get_sale_price()) {?>
-                    <span class="sales-price"><?php echo $product->get_sale_price() ?></span>
+                    <span class="sales-price"><?php echo $product->get_sale_price(), get_woocommerce_currency_symbol() ?></span>
                 <?php } ?>
-                <?php echo $product->get_regular_price() ?>
+                <?php echo $product->get_regular_price(), get_woocommerce_currency_symbol() ?>
             </p>
             <img  class="add-to-cart-button pointer" data-id="<?php echo esc_attr( $product->get_id() ); ?>" src="<?php echo get_template_directory_uri() ?>/images/cart-add.svg" alt="add to cart" >
         <?php
