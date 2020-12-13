@@ -1,0 +1,192 @@
+2020-12-13T12:49:01+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:19
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(13): get_template_part('components/sing...')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 19
+
+2020-12-13T12:50:04+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(13): get_template_part('components/sing...')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:50:16+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(13): get_template_part('components/sing...')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:50:30+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(13): get_template_part('components/sing...')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:50:37+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:18
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(13): get_template_part('components/sing...')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 18
+
+2020-12-13T12:52:20+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on null in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:19
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(13): get_template_part('components/sing...', 'Array')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 19
+
+2020-12-13T12:52:49+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on null in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(13): get_template_part('components/sing...', 'Array')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:53:01+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on null in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(15): get_template_part('components/sing...', 'Array')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:53:23+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on null in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(15): get_template_part('components/sing...', 'Array')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:53:38+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(15): get_template_part('components/sing...', 'Array')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:53:53+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(17): get_template_part('components/sing...', 'Array')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:53:59+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(17): get_template_part('components/sing...', 'sss')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:54:19+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(15): get_template_part('components/sing...', '', Array)
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:54:38+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(15): get_template_part('components/sing...')
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:54:56+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Object(WC_Product_Simple))
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Object(WC_Product_Simple))
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(15): get_template_part('components/sing...', '', Object(WC_Product_Simple))
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
+2020-12-13T12:55:12+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on string in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php:22
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/woocommerce/single-product.php(15): get_template_part('components/sing...', '', Array)
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/components/single-product-showcase.php on line 22
+
