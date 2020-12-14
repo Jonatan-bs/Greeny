@@ -86,6 +86,10 @@ function remove_my_account_links( $menu_links ){
  
 }
 
+// Remove actions
+remove_action( 'woocommerce_account_content', 'woocommerce_output_all_notices', 5 );
+
+
 // Add custom ingrediants fields to products
 
 /**

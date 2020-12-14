@@ -18,3 +18,16 @@ nav.woocommerce-MyAccount-navigation{
     }
     
 }
+
+.woocommerce-Address-title.title{
+    position: relative;
+    .edit {
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        
+    }
+
+}
