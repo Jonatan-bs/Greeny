@@ -76,6 +76,15 @@ add_action('wp_head', 'add_favicon');
 add_action('admin_head', 'add_favicon');
 
 
+// Remove menu items on my account page
+add_filter ( 'woocommerce_account_menu_items', 'remove_my_account_links' );
+function remove_my_account_links( $menu_links ){
+
+	unset( $menu_links['downloads'] );
+
+	return $menu_links;
+ 
+}
 
 // Add custom ingrediants fields to products
 

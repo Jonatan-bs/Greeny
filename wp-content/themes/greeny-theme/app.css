@@ -491,6 +491,22 @@ footer .secundary-menu a {
   background-color: #f5af00;
   font-size: 35px;
 }
+#cart .woocommerce input.qty {
+  width: 3.631em;
+}
+
+nav.woocommerce-MyAccount-navigation li::marker {
+  content: none;
+}
+nav.woocommerce-MyAccount-navigation ul {
+  padding: 0;
+}
+nav.woocommerce-MyAccount-navigation li a {
+  color: #9d9d9d;
+}
+nav.woocommerce-MyAccount-navigation li.is-active a {
+  color: #2c9558;
+}
 
 body,
 html {
