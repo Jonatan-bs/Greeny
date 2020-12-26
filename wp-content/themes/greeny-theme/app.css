@@ -528,7 +528,20 @@ footer .secundary-menu a {
 #cart .woocommerce input.qty {
   width: 3.631em;
 }
-
+#cart .woocommerce .woocommerce-info {
+  text-align: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+#cart .woocommerce .woocommerce-info::before {
+  content: "";
+}
+#cart .woocommerce .return-to-shop {
+  display: flex;
+  justify-content: center;
+}
 nav.woocommerce-MyAccount-navigation li::marker {
   content: none;
 }
@@ -612,6 +625,10 @@ nav.woocommerce-MyAccount-navigation li.is-active a {
     transform: translate(-50%, -50%) scale(1);
   }
 }
+.woocommerce-message {
+  display: none;
+}
+
 body,
 html {
   position: relative;

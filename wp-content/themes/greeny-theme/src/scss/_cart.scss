@@ -26,5 +26,23 @@
     input.qty{
         width: 3.631em;
     }
+    .woocommerce-info{
 
+        text-align: center;
+        border: none;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        
+        &::before{
+            content: "";
+        }
+    }
+    .return-to-shop{
+        display: flex;
+        justify-content: center;
+        .button.wc-backward{
+
+        }   
+    }
 }
