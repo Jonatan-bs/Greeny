@@ -21,8 +21,30 @@ header.greeny {
     right: 70px;
     
     .symbol{
-      width: 50px;
+      position: relative;
+      display: inline-block;
       margin: 15px 5px;
+      img{
+        width: 50px;
+      }
+
+      .qty{
+        position: absolute;
+        top: 7px;
+        right: -4px;
+        background: $primary;
+        color: $light;
+        width: 16px;
+        height: 16px;
+        border-radius: 100%;
+        padding: 2px;
+        border: 1px $light solid;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
     }
   } 
   .primary-menu{
@@ -46,5 +68,19 @@ header.greeny {
     a{
       color: $light;
     }
+    .symbols{
+      display: inline;
+      position: absolute;
+      right: 70px;
+      
+      .symbol{
+       
+        .qty{
+          color: $primary;
+          border: 1px $primary solid;
+          background: #fff;
+        }
+      }
+    } 
   }
 }

@@ -91,7 +91,11 @@ remove_action( 'woocommerce_account_content', 'woocommerce_output_all_notices', 
 
 // Add variables to scripts
 add_action( 'wp_enqueue_scripts', function(){
-    wp_localize_script('app', 'attr', array( 'siteurl' => get_option('siteurl'), 'imageurl' => get_template_directory_uri() . '/images/'  ));
+    wp_localize_script('app', 'attr', array( 
+        'siteurl' => get_option('siteurl'), 
+        'imageurl' => get_template_directory_uri() . '/images/',  
+        'cartQty' => WC()->cart->get_cart_contents_count() 
+    ));
 });
 
 

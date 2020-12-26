@@ -18,8 +18,28 @@ header.greeny .symbols {
   right: 70px;
 }
 header.greeny .symbols .symbol {
-  width: 50px;
+  position: relative;
+  display: inline-block;
   margin: 15px 5px;
+}
+header.greeny .symbols .symbol img {
+  width: 50px;
+}
+header.greeny .symbols .symbol .qty {
+  position: absolute;
+  top: 7px;
+  right: -4px;
+  background: #2c9558;
+  color: #f8f8f8;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  padding: 2px;
+  border: 1px #f8f8f8 solid;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header.greeny .primary-menu {
   text-transform: uppercase;
@@ -39,6 +59,16 @@ header.greeny .primary-menu a {
 }
 header.greeny.light a {
   color: #f8f8f8;
+}
+header.greeny.light .symbols {
+  display: inline;
+  position: absolute;
+  right: 70px;
+}
+header.greeny.light .symbols .symbol .qty {
+  color: #2c9558;
+  border: 1px #2c9558 solid;
+  background: #fff;
 }
 
 #hero {

@@ -115,12 +115,15 @@ document.addEventListener('click', function (e) {
       var tickSrc = button.classList.contains('light') ? '/tick-light.svg' : '/tick.svg';
       tick.src = attr.imageurl + tickSrc;
       button.replaceChild(tick, spinner);
+      document.querySelector('header.greeny .add-to-cart.symbol .qty').innerHTML = ++attr.cartQty;
       setTimeout(function () {
         tick.parentNode.removeChild(tick);
         $(button).children().animate({
           "opacity": 1
         }, 300);
       }, 1000);
+    })["catch"](function () {
+      console.log('error');
     });
   }
 });

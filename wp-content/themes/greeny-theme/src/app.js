@@ -27,11 +27,17 @@ document.addEventListener('click',(e)=>{
                 tick.src = attr.imageurl + tickSrc
                 button.replaceChild(tick, spinner)
 
+                $('header.greeny .add-to-cart.symbol .qty').show().html(++attr.cartQty)
+
                 setTimeout(()=>{
                     tick.parentNode.removeChild(tick);
                     $(button).children().animate( { "opacity" : 1 }, 300 )
 
                 },1000)
+            })
+            .catch((e)=>{
+                console.log('error')
+                console.log(e)
             })
        
     }

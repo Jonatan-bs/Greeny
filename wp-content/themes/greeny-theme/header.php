@@ -16,10 +16,22 @@
             </a>
             <div class="symbols">
                 <a href="<?php echo get_page_link( 9 ); ?>">
-                    <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/account-green.svg" alt="account" >
+                    <div class="account symbol">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/account-green.svg" alt="account" >
+                    </div>
                 </a>
                 <a href="<?php echo get_page_link( get_page_by_title( 'cart' )->ID ); ?>">
-                    <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/cart-green.svg" alt="cart" >
+                    <div class="add-to-cart symbol">
+                        <img  class="" src="<?php echo get_template_directory_uri() ?>/images/cart-green.svg" alt="cart" >
+                        
+                            <div class="qty" <?php if(!WC()->cart->get_cart_contents_count()) : ?> style="display:none" <?php endif ?>>
+                                    <span >
+                                        <?php echo WC()->cart->get_cart_contents_count(); ?>
+                                    </span>
+                            </div>
+                        
+
+                    </div>
                 </a>
             </div>
             <?php
