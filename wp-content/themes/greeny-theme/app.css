@@ -665,7 +665,7 @@ input {
   cursor: pointer;
 }
 
-.button, input[type=button], input[type=submit] {
+.button, input[type=button], input[type=submit], .woocommerce button.button.alt {
   background-color: #2c9558;
   color: #f8f8f8;
   border: none;
@@ -677,13 +677,16 @@ input {
   cursor: pointer;
   position: relative;
 }
-.button.contrast, .button.es_submit_button, input[type=button].contrast, input[type=button].es_submit_button, input[type=submit].contrast, input[type=submit].es_submit_button {
+.button.contrast, .button.es_submit_button, input[type=button].contrast, input[type=button].es_submit_button, input[type=submit].contrast, input[type=submit].es_submit_button, .woocommerce button.button.alt.contrast, .woocommerce button.button.alt.es_submit_button {
   background-color: #fdc83e;
 }
-.button .symbol, input[type=button] .symbol, input[type=submit] .symbol {
+.button .symbol, input[type=button] .symbol, input[type=submit] .symbol, .woocommerce button.button.alt .symbol {
   display: inline;
   width: 40px;
   margin-left: 10px;
+}
+.button:hover, input[type=button]:hover, input[type=submit]:hover, .woocommerce button.button.alt:hover {
+  background: #2b8952;
 }
 
 .gap-3 {

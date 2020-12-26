@@ -62,7 +62,7 @@ input{
 .pointer{
 cursor: pointer;
 }
-.button, input[type=button], input[type=submit]{
+.button, input[type=button], input[type=submit], .woocommerce button.button.alt{
   background-color: $primary;
   color: $light;
   border: none;
@@ -82,6 +82,10 @@ cursor: pointer;
     display: inline;
     width: 40px;
     margin-left: 10px;
+  }
+
+  &:hover{
+    background: #2b8952;
   }
 }
 
