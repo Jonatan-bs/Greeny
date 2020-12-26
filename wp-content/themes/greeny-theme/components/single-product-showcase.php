@@ -35,9 +35,9 @@ $product = $args['product'];
             <?php 
                 if ($product->is_purchasable() ) {
             ?>   
-                <p  class="add-to-cart-button pointer" data-id="<?php echo esc_attr( $product->get_id() ); ?>" > 
-                    Add to cart
-                </p>
+                <div  class="add-to-cart-button pointer light" data-id="<?php echo esc_attr( $product->get_id() ); ?>" > 
+                    <p>Add to cart</p>
+                </div>
             <?php } ?>
         </div>
     </div>

@@ -43,11 +43,12 @@ get_header('light'); ?>
 					</section>
 					<?php if ($product->is_purchasable() ) { ?>   
 						<div class="flexcenter mb">
-							<p  class="add-to-cart-button pointer button" data-id="<?php echo esc_attr( $product->get_id() ); ?>" > 
-								Add to cart
+							<div class="add-to-cart-button light pointer button" data-id="<?php echo esc_attr( $product->get_id() ); ?>" > 
+								<p> 
+									Add to cart
+								</p>
 								<img class="symbol" src="<?php echo get_template_directory_uri() ?>/images/cart-add-light.svg" alt="add to cart" >
-
-							</p>
+							</div>
 						</div>
 					<?php } ?>
 					

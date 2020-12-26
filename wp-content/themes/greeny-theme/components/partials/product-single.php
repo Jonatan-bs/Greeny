@@ -31,7 +31,9 @@
                 <?php } ?>
                 <?php echo $product->get_regular_price(), get_woocommerce_currency_symbol() ?>
             </p>
-            <img  class="add-to-cart-button pointer" data-id="<?php echo esc_attr( $product->get_id() ); ?>" src="<?php echo get_template_directory_uri() ?>/images/cart-add.svg" alt="add to cart" >
+            <div class="add-to-cart-button pointer" data-id="<?php echo esc_attr( $product->get_id() ); ?>" >
+                <img src="<?php echo get_template_directory_uri() ?>/images/cart-add.svg" alt="add to cart" >
+            </div>
         <?php
             } else {
         ?>

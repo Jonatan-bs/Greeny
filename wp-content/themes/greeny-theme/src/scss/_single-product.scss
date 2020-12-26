@@ -8,9 +8,12 @@
             bottom: 5%;
             text-align: right;
             .add-to-cart-button{
-                font-family: $display;
-                font-size: $display-xl;
-                color: $light;
+                position: relative;
+                p{
+                    font-family: $display;
+                    font-size: $display-xl;
+                    color: $light;
+                }
             }
             .title{
                 font-size: $display-md;

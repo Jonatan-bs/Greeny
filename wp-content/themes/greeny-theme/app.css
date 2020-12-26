@@ -288,6 +288,7 @@ footer .secundary-menu a {
   padding: 0 5px;
 }
 .product-list .product .add-to-cart-button, .woocommerce .product-list .product .add-to-cart-button {
+  position: relative;
   width: 50px;
 }
 .product-list .product .flex, .woocommerce .product-list .product .flex {
@@ -357,6 +358,9 @@ footer .secundary-menu a {
   text-align: right;
 }
 #single-product .single-product-showcase .info .add-to-cart-button, .woocommerce #single-product .single-product-showcase .info .add-to-cart-button {
+  position: relative;
+}
+#single-product .single-product-showcase .info .add-to-cart-button p, .woocommerce #single-product .single-product-showcase .info .add-to-cart-button p {
   font-family: "Caveat Brush", cursive;
   font-size: 47px;
   color: #f8f8f8;
@@ -519,6 +523,65 @@ nav.woocommerce-MyAccount-navigation li.is-active a {
   transform: translateY(-50%);
 }
 
+.spinner {
+  max-width: 40px !important;
+  -webkit-animation: rotate 1.2s linear infinite;
+          animation: rotate 1.2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.tick {
+  max-width: 40px !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+  -webkit-animation: fadeIn 0.2s linear;
+          animation: fadeIn 0.2s linear;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
 body,
 html {
   position: relative;
@@ -565,6 +628,7 @@ input {
   font-size: 25px;
   font-family: "Caveat Brush", cursive;
   cursor: pointer;
+  position: relative;
 }
 .button.contrast, .button.es_submit_button, input[type=button].contrast, input[type=button].es_submit_button, input[type=submit].contrast, input[type=submit].es_submit_button {
   background-color: #fdc83e;

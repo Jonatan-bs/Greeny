@@ -89,6 +89,11 @@ function remove_my_account_links( $menu_links ){
 // Remove actions
 remove_action( 'woocommerce_account_content', 'woocommerce_output_all_notices', 5 );
 
+// Add variables to scripts
+add_action( 'wp_enqueue_scripts', function(){
+    wp_localize_script('app', 'attr', array( 'siteurl' => get_option('siteurl'), 'imageurl' => get_template_directory_uri() . '/images/'  ));
+});
+
 
 // Add custom ingrediants fields to products
 

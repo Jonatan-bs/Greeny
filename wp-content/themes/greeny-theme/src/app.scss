@@ -12,6 +12,7 @@
 @import "scss/components/symbols";
 @import "scss/cart";
 @import "scss/myaccount";
+@import "scss/components/spinner";
 
 // $body: 'Josefin Sans', sans-serif;
 // $body-sm: 20px; 
@@ -70,6 +71,7 @@ cursor: pointer;
   font-size: $display-sm;
   font-family: $display;
   cursor: pointer;
+  position: relative;
 
   &.contrast, &.es_submit_button{
     background-color: $contrast;

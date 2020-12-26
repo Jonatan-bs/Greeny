@@ -93,11 +93,35 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// Add product to cart
+var $ = jQuery; // Add product to cart
+
 document.addEventListener('click', function (e) {
-  if (e.target.classList.contains('add-to-cart-button')) {
-    var id = e.target.dataset.id;
-    fetch('/?add-to-cart=' + e.target.dataset.id);
+  if (e.target.closest('.add-to-cart-button')) {
+    var button = e.target.closest('.add-to-cart-button'); // Button add to cart button
+
+    var id = button.dataset.id;
+    $(button).children().animate({
+      "opacity": .1
+    }, 100); // Show spinner
+
+    var spinner = document.createElement('img');
+    spinner.classList.add('spinner');
+    var spinnerSrc = button.classList.contains('light') ? '/spinner-light.svg' : '/spinner.svg';
+    spinner.src = attr.imageurl + spinnerSrc;
+    button.appendChild(spinner);
+    fetch('/?add-to-cart=' + button.dataset.id).then(function () {
+      var tick = document.createElement('img');
+      tick.classList.add('tick');
+      var tickSrc = button.classList.contains('light') ? '/tick-light.svg' : '/tick.svg';
+      tick.src = attr.imageurl + tickSrc;
+      button.replaceChild(tick, spinner);
+      setTimeout(function () {
+        tick.parentNode.removeChild(tick);
+        $(button).children().animate({
+          "opacity": 1
+        }, 300);
+      }, 1000);
+    });
   }
 });
 

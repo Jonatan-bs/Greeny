@@ -1,0 +1,37 @@
+.spinner {
+    max-width: 40px !important;
+    animation: rotate 1.2s linear infinite;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) ;
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+.tick {
+max-width: 40px !important;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: all .5s ease;
+animation: fadeIn .2s linear;  
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.5) ;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
