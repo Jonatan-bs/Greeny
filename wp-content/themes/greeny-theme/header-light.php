@@ -21,8 +21,21 @@
                 <a href="<?php echo get_page_link( get_page_by_title( 'cart' )->ID ); ?>">
                     <div class="add-to-cart symbol">
                         <img  class="" src="<?php echo get_template_directory_uri() ?>/images/cart-light.svg" alt="cart" >
-                        <div class="qty" <?php if(!WC()->cart->get_cart_contents_count()) : ?> style="display:none" <?php endif ?>>
-                                    <span >
+                        <div class="qty"  style=" 
+                                <?php if(!WC()->cart->get_cart_contents_count()) : ?> 
+                                    display:none; 
+                                <?php endif ?>
+                                <?php if(get_post_meta( $post->ID, 'background_color', true )) : ?> 
+                                    border-color: <?php echo get_post_meta( $post->ID, 'background_color', true ) ?>; 
+                                <?php endif ?>
+                            " >
+                                    <span 
+                                        style="
+                                        <?php if(get_post_meta( $post->ID, 'background_color', true ) || is_product()) : ?> 
+                                            color: <?php echo get_post_meta( $post->ID, 'background_color', true ) ?>; 
+                                        <?php endif ?>
+                                        "
+                                    >
                                         <?php echo WC()->cart->get_cart_contents_count(); ?>
                                     </span>
                         </div>

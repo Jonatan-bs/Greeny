@@ -1,6 +1,7 @@
 @import "../variables/colors";
 @import "../variables/fonts";
 
+
 header.greeny {
   position: absolute;
   top: 0;
@@ -82,5 +83,17 @@ header.greeny {
         }
       }
     } 
+  }
+}
+
+.single-product header.greeny{
+  .symbols{
+    .symbol{
+      div.qty{
+        color: #709CAF;
+        border: 1px #709CAF solid;
+
+      }
+    }
   }
 }

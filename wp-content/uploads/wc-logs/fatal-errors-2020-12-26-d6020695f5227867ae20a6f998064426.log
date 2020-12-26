@@ -1,0 +1,52 @@
+2020-12-26T03:02:28+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 611
+
+2020-12-26T03:03:54+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 608
+
+2020-12-26T03:04:28+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 608
+
+2020-12-26T03:05:37+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 589
+
+2020-12-26T03:05:37+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 589
+
+2020-12-26T03:05:38+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 589
+
+2020-12-26T03:05:38+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 589
+
+2020-12-26T03:05:39+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 589
+
+2020-12-26T03:05:39+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 589
+
+2020-12-26T03:06:28+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 589
+
+2020-12-26T03:07:46+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 570
+
+2020-12-26T03:07:47+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 570
+
+2020-12-26T03:07:47+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 570
+
+2020-12-26T03:07:47+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 570
+
+2020-12-26T03:12:07+00:00 CRITICAL Cannot redeclare hhs_component_position_meta_box_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:435) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 544
+
+2020-12-26T03:18:57+00:00 CRITICAL Uncaught Error: Call to undefined function dump() in /var/www/html/wp-content/themes/greeny-theme/functions.php:545
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(289): background_color_save(25)
+#1 /var/www/html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/wp-includes/post.php(4260): do_action('save_post', 25, Object(WP_Post), true)
+#4 /var/www/html/wp-includes/post.php(4354): wp_insert_post(Array, false)
+#5 /var/www/html/wp-admin/includes/post.php(419): wp_update_post(Array)
+#6 /var/www/html/wp-admin/post.php(227): edit_post()
+#7 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 545
+
+2020-12-26T03:38:33+00:00 CRITICAL syntax error, unexpected '?>' in /var/www/html/wp-content/themes/greeny-theme/header-light.php on line 35
+
+2020-12-26T03:38:34+00:00 CRITICAL syntax error, unexpected '?>' in /var/www/html/wp-content/themes/greeny-theme/header-light.php on line 35
+
+2020-12-26T03:38:41+00:00 CRITICAL syntax error, unexpected '?>' in /var/www/html/wp-content/themes/greeny-theme/header-light.php on line 35
+
+2020-12-26T03:38:44+00:00 CRITICAL syntax error, unexpected '?>' in /var/www/html/wp-content/themes/greeny-theme/header-light.php on line 35
+
+2020-12-26T03:38:46+00:00 CRITICAL syntax error, unexpected '?>' in /var/www/html/wp-content/themes/greeny-theme/header-light.php on line 35
+

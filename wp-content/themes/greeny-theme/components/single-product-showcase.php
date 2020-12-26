@@ -2,7 +2,7 @@
 $product = $args['product'];
 ?>
 
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'header-padding single-product-showcase', $product ); ?>>
+<div style="background: <?php echo get_post_meta( $post->ID, 'background_color', true ) ?>" id="product-<?php the_ID(); ?>" <?php wc_product_class( 'header-padding single-product-showcase', $product ); ?>>
     
     <div class="product-wrap">
         <div class="product-image-width">
