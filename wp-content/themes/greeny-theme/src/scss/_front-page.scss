@@ -11,17 +11,21 @@
             margin: 0 auto;
             max-width: 600px;
             text-align: center;
-            padding: 40px 0 40px 0;
+            padding: 40px 20px;
             p:nth-child(1){
                 text-transform: uppercase;
             }
         };
         img{
-            width: 800px;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translate(-50%,50%);
+            max-width: 800px;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            display: block;
+        }
+        @include lt-sm{
+            height: 420px;
         }
     }
     .starterpack{
@@ -115,25 +119,22 @@
             transform: translateY(-50%);
         }
         .title{
-            font-family: $display;
-            font-size: $display-xl;
+            @include display-lg;
         }
         .subtitle{
-            font-family: $display;
-            font-size: $display-sm;
+            @include display-sm;
         }
         hr{
             max-width: 320px;
             width: 90%;
         }
         .text{
-            font-family: $display;
-            font-size: $display-md;
+            @include display-md;
             max-width: 320px;
             margin: 0 auto;
         }
         .big{
-            font-size: $display-xl;
+            @include display-lg;
         }
         .es_shortcode_form{
             margin-top: 50px;

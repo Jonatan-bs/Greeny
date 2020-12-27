@@ -52,10 +52,15 @@ header.greeny .primary-menu li {
   margin: 0px 25px;
 }
 header.greeny .primary-menu a {
-  font-size: 25px;
   font-family: "Caveat Brush", cursive;
+  font-size: 25px;
   color: #2c9558;
   text-decoration: none;
+}
+@media screen and (max-width: 599px) {
+  header.greeny .primary-menu a {
+    font-size: 20px;
+  }
 }
 header.greeny.light a {
   color: #f8f8f8;
@@ -115,10 +120,15 @@ footer .secundary-menu li {
   margin: 0px 25px;
 }
 footer .secundary-menu a {
+  font-family: "Caveat Brush", cursive;
   font-size: 25px;
   color: #f8f8f8;
   text-decoration: none;
-  font-family: "Caveat Brush", cursive;
+}
+@media screen and (max-width: 599px) {
+  footer .secundary-menu a {
+    font-size: 20px;
+  }
 }
 
 .content.page .featuredImage {
@@ -129,6 +139,11 @@ footer .secundary-menu a {
   font-family: "Caveat Brush", cursive;
   font-size: 47px;
   text-align: center;
+}
+@media screen and (max-width: 599px) {
+  .content.page h1 {
+    font-size: 30px;
+  }
 }
 .content.page p {
   margin-top: 28px;
@@ -146,17 +161,23 @@ footer .secundary-menu a {
   margin: 0 auto;
   max-width: 600px;
   text-align: center;
-  padding: 40px 0 40px 0;
+  padding: 40px 20px;
 }
 #front-page .hero .text p:nth-child(1) {
   text-transform: uppercase;
 }
 #front-page .hero img {
-  width: 800px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
+  max-width: 800px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: block;
+}
+@media screen and (max-width: 599px) {
+  #front-page .hero {
+    height: 420px;
+  }
 }
 #front-page .starterpack {
   text-align: center;
@@ -246,9 +267,19 @@ footer .secundary-menu a {
   font-family: "Caveat Brush", cursive;
   font-size: 47px;
 }
+@media screen and (max-width: 599px) {
+  #front-page .newsletter .title {
+    font-size: 30px;
+  }
+}
 #front-page .newsletter .subtitle {
   font-family: "Caveat Brush", cursive;
   font-size: 25px;
+}
+@media screen and (max-width: 599px) {
+  #front-page .newsletter .subtitle {
+    font-size: 20px;
+  }
 }
 #front-page .newsletter hr {
   max-width: 320px;
@@ -260,8 +291,19 @@ footer .secundary-menu a {
   max-width: 320px;
   margin: 0 auto;
 }
+@media screen and (max-width: 599px) {
+  #front-page .newsletter .text {
+    font-size: 25px;
+  }
+}
 #front-page .newsletter .big {
+  font-family: "Caveat Brush", cursive;
   font-size: 47px;
+}
+@media screen and (max-width: 599px) {
+  #front-page .newsletter .big {
+    font-size: 30px;
+  }
 }
 #front-page .newsletter .es_shortcode_form {
   margin-top: 50px;
@@ -274,14 +316,24 @@ footer .secundary-menu a {
   opacity: 0.5;
 }
 .product-list .product.outofstock .info, .woocommerce .product-list .product.outofstock .info {
-  font-size: 15px;
   font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
   color: #9d9d9d;
 }
+@media screen and (max-width: 599px) {
+  .product-list .product.outofstock .info, .woocommerce .product-list .product.outofstock .info {
+    font-size: 12px;
+  }
+}
 .product-list .product .info.outofstock, .woocommerce .product-list .product .info.outofstock {
-  font-size: 15px;
   font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
   color: #9d9d9d;
+}
+@media screen and (max-width: 599px) {
+  .product-list .product .info.outofstock, .woocommerce .product-list .product .info.outofstock {
+    font-size: 12px;
+  }
 }
 .product-list .product .info.sale, .woocommerce .product-list .product .info.sale {
   width: 70px;
@@ -290,13 +342,18 @@ footer .secundary-menu a {
   right: 0;
   position: absolute;
   background: #2c9558;
-  font-size: 15px;
   font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
   color: #f8f8f8;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
+}
+@media screen and (max-width: 599px) {
+  .product-list .product .info.sale, .woocommerce .product-list .product .info.sale {
+    font-size: 12px;
+  }
 }
 .product-list .product .product-image, .woocommerce .product-list .product .product-image {
   width: 100%;
@@ -310,10 +367,16 @@ footer .secundary-menu a {
   font-size: 35px;
   color: #404040;
 }
+@media screen and (max-width: 599px) {
+  .product-list .product .price, .woocommerce .product-list .product .price {
+    font-size: 25px;
+  }
+}
 .product-list .product .price.onsale, .woocommerce .product-list .product .price.onsale {
   color: #2c9558;
 }
 .product-list .product .price.onsale .sales-price, .woocommerce .product-list .product .price.onsale .sales-price {
+  font-family: "Caveat Brush", cursive;
   font-size: 25px;
   color: #a7a5a3;
   text-decoration: line-through;
@@ -321,6 +384,11 @@ footer .secundary-menu a {
           text-decoration-color: #5b5550;
   text-decoration-thickness: 3px;
   padding: 0 5px;
+}
+@media screen and (max-width: 599px) {
+  .product-list .product .price.onsale .sales-price, .woocommerce .product-list .product .price.onsale .sales-price {
+    font-size: 20px;
+  }
 }
 .product-list .product .add-to-cart-button, .woocommerce .product-list .product .add-to-cart-button {
   position: relative;
@@ -337,13 +405,23 @@ footer .secundary-menu a {
 
 #blog-post h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 48px;
+  font-size: 37px;
   color: #2c9558;
+}
+@media screen and (max-width: 599px) {
+  #blog-post h1 {
+    font-size: 34px;
+  }
 }
 #blog-post p {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   color: #404040;
+}
+@media screen and (max-width: 599px) {
+  #blog-post p {
+    font-size: 17px;
+  }
 }
 #blog-post .blog-tag a {
   color: #9d9d9d;
@@ -400,21 +478,37 @@ footer .secundary-menu a {
   font-size: 47px;
   color: #f8f8f8;
 }
+@media screen and (max-width: 599px) {
+  #single-product .single-product-showcase .info .add-to-cart-button p, .woocommerce #single-product .single-product-showcase .info .add-to-cart-button p {
+    font-size: 30px;
+  }
+}
 #single-product .single-product-showcase .info .title, .woocommerce #single-product .single-product-showcase .info .title {
-  font-size: 35px;
   font-family: "Caveat Brush", cursive;
+  font-size: 35px;
   color: #f8f8f8;
   opacity: 0.5;
+}
+@media screen and (max-width: 599px) {
+  #single-product .single-product-showcase .info .title, .woocommerce #single-product .single-product-showcase .info .title {
+    font-size: 25px;
+  }
 }
 #single-product .single-product-showcase .info .price, .woocommerce #single-product .single-product-showcase .info .price {
   font-family: "Caveat Brush", cursive;
   font-size: 47px;
   color: #404040;
 }
+@media screen and (max-width: 599px) {
+  #single-product .single-product-showcase .info .price, .woocommerce #single-product .single-product-showcase .info .price {
+    font-size: 30px;
+  }
+}
 #single-product .single-product-showcase .info .price.onsale, .woocommerce #single-product .single-product-showcase .info .price.onsale {
   color: #f8f8f8;
 }
 #single-product .single-product-showcase .info .price.onsale .sales-price, .woocommerce #single-product .single-product-showcase .info .price.onsale .sales-price {
+  font-family: "Caveat Brush", cursive;
   font-size: 25px;
   color: #dfdfdf;
   text-decoration: line-through;
@@ -422,6 +516,11 @@ footer .secundary-menu a {
           text-decoration-color: #5b5550;
   text-decoration-thickness: 3px;
   padding: 0 5px;
+}
+@media screen and (max-width: 599px) {
+  #single-product .single-product-showcase .info .price.onsale .sales-price, .woocommerce #single-product .single-product-showcase .info .price.onsale .sales-price {
+    font-size: 20px;
+  }
 }
 #single-product .single-product-showcase .product-wrap, .woocommerce #single-product .single-product-showcase .product-wrap {
   max-width: 1000px;
@@ -483,9 +582,20 @@ footer .secundary-menu a {
   transform: translateX(-50%);
   color: #f8f8f8;
 }
+@media screen and (max-width: 599px) {
+  .ingredients .ingredient .image-percentage .percentage {
+    font-size: 20px;
+  }
+}
 .ingredients .ingredient .title {
   font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", cursive;
   font-size: 47px;
+}
+@media screen and (max-width: 599px) {
+  .ingredients .ingredient .title {
+    font-size: 30px;
+  }
 }
 .ingredients .ingredient .text {
   padding: 20px 0;
@@ -511,6 +621,31 @@ footer .secundary-menu a {
 .symbols-container .symbols img {
   max-width: initial;
 }
+@media screen and (max-width: 599px) {
+  .symbols-container .symbols {
+    position: relative;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    gap: 0;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: center;
+  }
+  .symbols-container .symbols div {
+    width: 50%;
+  }
+  .symbols-container .symbols > img {
+    display: none;
+  }
+  .symbols-container .symbols > p:nth-of-type(1) {
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+  }
+}
 
 #cart .woocommerce img {
   width: 100%;
@@ -523,12 +658,24 @@ footer .secundary-menu a {
 }
 #cart .woocommerce .input-text {
   width: auto;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   padding: 10px;
 }
+@media screen and (max-width: 599px) {
+  #cart .woocommerce .input-text {
+    font-size: 17px;
+  }
+}
 #cart .woocommerce a.button.alt {
   background-color: #f5af00;
+  font-family: "Caveat Brush", cursive;
   font-size: 35px;
+}
+@media screen and (max-width: 599px) {
+  #cart .woocommerce a.button.alt {
+    font-size: 25px;
+  }
 }
 #cart .woocommerce input.qty {
   width: 3.631em;
@@ -639,11 +786,18 @@ html {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: "Josefin Sans", sans-serif;
   color: #404040;
   background: #f8f8f8;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   height: 100%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 599px) {
+  body,
+html {
+    font-size: 17px;
+  }
 }
 
 body {
@@ -659,6 +813,11 @@ input {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   padding: 10px 10px;
+}
+@media screen and (max-width: 599px) {
+  input {
+    font-size: 17px;
+  }
 }
 
 .flexcenter {
@@ -677,10 +836,15 @@ input {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  font-size: 25px;
   font-family: "Caveat Brush", cursive;
+  font-size: 25px;
   cursor: pointer;
   position: relative;
+}
+@media screen and (max-width: 599px) {
+  .button, input[type=button], input[type=submit], .woocommerce button.button.alt {
+    font-size: 20px;
+  }
 }
 .button.contrast, .button.es_submit_button, input[type=button].contrast, input[type=button].es_submit_button, input[type=submit].contrast, input[type=submit].es_submit_button, .woocommerce button.button.alt.contrast, .woocommerce button.button.alt.es_submit_button {
   background-color: #fdc83e;
@@ -709,8 +873,13 @@ input {
 a.page-link {
   margin-bottom: 60px;
   position: relative;
-  font-size: 47px;
   font-family: "Caveat Brush", cursive;
+  font-size: 47px;
+}
+@media screen and (max-width: 599px) {
+  a.page-link {
+    font-size: 30px;
+  }
 }
 a.page-link::after {
   content: url(images/arrow2.svg);
@@ -724,13 +893,24 @@ a.page-link::after {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+@media screen and (max-width: 599px) {
+  .col-4 {
+    grid-template-columns: 1fr;
+  }
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Caveat Brush", cursive;
 }
 
 h1 {
+  font-family: "Caveat Brush", cursive;
   font-size: 47px;
+}
+@media screen and (max-width: 599px) {
+  h1 {
+    font-size: 30px;
+  }
 }
 
 h2 {
@@ -793,35 +973,70 @@ p {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
 }
+@media screen and (max-width: 599px) {
+  .body-sm {
+    font-size: 17px;
+  }
+}
 
 .body-md {
   font-family: "Josefin Sans", sans-serif;
   font-size: 38px;
+}
+@media screen and (max-width: 599px) {
+  .body-md {
+    font-size: 35px;
+  }
 }
 
 .display-sm {
   font-family: "Caveat Brush", cursive;
   font-size: 25px;
 }
+@media screen and (max-width: 599px) {
+  .display-sm {
+    font-size: 20px;
+  }
+}
 
 .display-md {
   font-family: "Caveat Brush", cursive;
   font-size: 35px;
+}
+@media screen and (max-width: 599px) {
+  .display-md {
+    font-size: 25px;
+  }
 }
 
 .display-xl {
   font-family: "Caveat Brush", cursive;
   font-size: 47px;
 }
+@media screen and (max-width: 599px) {
+  .display-xl {
+    font-size: 30px;
+  }
+}
 
 .blog-body-md {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
 }
+@media screen and (max-width: 599px) {
+  .blog-body-md {
+    font-size: 17px;
+  }
+}
 
 .blog-body-md {
   font-family: "Josefin Sans", sans-serif;
   font-size: 48px;
+}
+@media screen and (max-width: 599px) {
+  .blog-body-md {
+    font-size: 45px;
+  }
 }
 
 .blog-title {
@@ -830,17 +1045,32 @@ p {
   color: #2c9558;
   font-weight: bold;
 }
+@media screen and (max-width: 599px) {
+  .blog-title {
+    font-size: 45px;
+  }
+}
 
 .blog-tag {
   font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
   color: #9d9d9d;
 }
+@media screen and (max-width: 599px) {
+  .blog-tag {
+    font-size: 15px;
+  }
+}
 
 .blog-body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   color: #404040;
+}
+@media screen and (max-width: 599px) {
+  .blog-body {
+    font-size: 17px;
+  }
 }
 
 .color-contrast {

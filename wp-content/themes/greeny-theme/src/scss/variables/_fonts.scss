@@ -1,20 +1,83 @@
 $body: 'Josefin Sans', sans-serif;
-$body-xs: 15px; // subtext
-$body-sm: 20px; // subtext
-$body-md: 38px; 
+
+@mixin body-xs {
+    font-family: $body;
+    font-size: 15px;
+    @include lt-sm{
+        font-size: 12px;
+    }
+}
+@mixin body-sm {
+    font-family: $body;
+    font-size: 20px;
+    @include lt-sm{
+        font-size: 17px;
+    }
+}
+@mixin body-md {
+    font-family: $body;
+    font-size: 38px;
+    @include lt-sm{
+        font-size: 35px;
+    }
+}
+
 
 $display: 'Caveat Brush', cursive;
-$display-sm: 25px;
-$display-md: 35px;
-$display-xl: 47px;
+@mixin display-sm {
+    font-family: $display;
+    font-size: 25px;
+    @include lt-sm{
+        font-size: 20px;
+    }
+}
+@mixin display-md {
+    font-family: $display;
+    font-size: 35px;
+    @include lt-sm{
+        font-size: 25px;
+    }
+}
+@mixin display-lg {
+    font-family: $display;
+    font-size: 47px;
+    @include lt-sm{
+        font-size: 30px;
+    }
+}
 
 $blog-body: 'Josefin Sans', sans-serif;
-$blog-body-sm: 18px;
-$blog-body-md: 20px;
-$blog-body-xl: 37px;
+@mixin blog-body-sm {
+    font-family: $blog-body;
+    font-size: 18px;
+    @include lt-sm{
+        font-size: 15px;
+    }
+}
+@mixin blog-body-md {
+    font-family: $blog-body;
+    font-size: 20px;
+    @include lt-sm{
+        font-size: 17px;
+    }
+}
+@mixin blog-body-lg {
+    font-family: $blog-body;
+    font-size: 37px;
+    @include lt-sm{
+        font-size: 34px;
+    }
+}
+
 
 $blog-display: 'Josefin Sans', sans-serif;
-$blog-display-xl: 48px;
+@mixin blog-display-lg {
+    font-family: $blog-display;
+    font-size: 48px;
+    @include lt-sm{
+        font-size: 45px;
+    }
+}
 
 
 

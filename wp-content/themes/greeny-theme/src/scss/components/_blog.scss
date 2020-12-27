@@ -6,13 +6,11 @@
 // $blog-display-xl: 48px;
 #blog-post{
     h1{
-        font-family: $blog-display;
-        font-size: $blog-display-xl;
+        @include blog-body-lg;
         color: $primary;
     }
     p{
-        font-family: $blog-body;
-        font-size: $blog-body-md;
+        @include blog-body-md;
         color: $dark;
     }
     .blog-tag{

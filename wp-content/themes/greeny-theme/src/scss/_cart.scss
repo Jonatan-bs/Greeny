@@ -10,12 +10,12 @@
     }
     .input-text{
         width: auto;
-        font-size: $body-sm;
+        @include body-sm;
         padding: 10px;
     }
     a.button.alt{
         background-color: $contrast-dark;
-        font-size: $display-md;
+        @include display-md;
     }
     button.coupon{
 

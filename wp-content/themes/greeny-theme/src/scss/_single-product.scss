@@ -10,27 +10,24 @@
             .add-to-cart-button{
                 position: relative;
                 p{
-                    font-family: $display;
-                    font-size: $display-xl;
+                    @include display-lg;
                     color: $light;
                 }
             }
             .title{
-                font-size: $display-md;
-                font-family: $display;
+                @include display-md;
                 color: $light;
                 opacity: .5;
             }
             .price{
-                font-family: $display;
-                font-size: $display-xl; 
+                @include display-lg; 
                 color: $dark;
 
                 &.onsale{
                     color: $light;
 
                     .sales-price{
-                        font-size: $display-sm;
+                        @include display-sm;
                         color: #dfdfdf;
                         text-decoration: line-through;
                         text-decoration-color: #5b5550;

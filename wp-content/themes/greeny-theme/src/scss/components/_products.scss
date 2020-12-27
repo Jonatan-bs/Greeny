@@ -5,15 +5,13 @@
         &.outofstock{
             .product-image{ opacity: .5;}
             .info{
-                font-size: $body-xs;
-                font-family: $body;
+                @include body-xs;
                 color: $medium
             }
         }
 
         .info.outofstock{
-            font-size: $body-xs;
-            font-family: $body;
+            @include body-xs;
             color: $medium
         }
         .info.sale{
@@ -23,8 +21,7 @@
             right: 0;
             position: absolute;
             background: $primary;
-            font-size: $body-xs;
-            font-family: $body;
+            @include body-xs;
             color: $light;
             display: flex;
             align-items: center;
@@ -38,15 +35,14 @@
             margin: 0 auto;
         }
         .price{
-            font-family: $display;
-            font-size: $display-md; 
+            @include display-md; 
             color: $dark;
 
             &.onsale{
                 color: $primary;
 
                 .sales-price{
-                    font-size: $display-sm;
+                    @include display-sm;
                     color: #a7a5a3;
                     text-decoration: line-through;
                     text-decoration-color: #5b5550;

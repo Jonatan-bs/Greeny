@@ -22,10 +22,9 @@ footer {
       margin: 0px 25px;
     }
     a{
-      font-size: $display-sm;
+      @include display-sm;
       color: $light;
       text-decoration: none;
-      font-family: $display;
     }
   }
 }

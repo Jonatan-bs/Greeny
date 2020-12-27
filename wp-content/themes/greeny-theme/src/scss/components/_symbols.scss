@@ -18,4 +18,31 @@
             max-width: initial;
         }
     }
+
+    @include lt-sm{
+        .symbols{
+            position: relative;
+            height: auto;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            margin: 0 auto;
+            gap: 0;
+            flex-wrap: wrap;
+            padding: 0;
+            text-align: center;
+            div{
+                width: 50%;
+            }
+            >img{
+                display: none;
+            }
+            &>p:nth-of-type(1){
+                margin-bottom: 20px;
+                width: 100%;
+                position: relative;
+            }
+        }
+
+    }
 }

@@ -12,8 +12,7 @@
 
             .symbol{}
             .percentage{
-                font-family: $display;
-                font-size: $display-sm;
+                @include display-sm;
                 position: absolute;
                 bottom: 0;
                 left: 50%;
@@ -23,7 +22,7 @@
         }
         .title{
             font-family: $display;
-            font-size: $display-xl;
+            @include display-lg;
         }
         .text{
             padding: 20px 0;

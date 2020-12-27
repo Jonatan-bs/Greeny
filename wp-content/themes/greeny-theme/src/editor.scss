@@ -1,27 +1,25 @@
+@import "scss/variables/media-queries";
 @import "scss/variables/colors";
 @import "scss/variables/fonts";
 
 h1, .editor-post-title__input{
     color: $primary;
-    font-family: $display;
-    font-size: $display-xl;
+    @include display-lg;
     text-align: center;
 }
 
 p {
-  font-family: $blog-body;
   color: $dark;
-  font-size: $blog-body-md;
+  @include blog-body-md;
   line-height: 30px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $display;
     color: $dark;
 }
 
 h1{
-    font-size: $display-xl;
+    @include display-lg;
 }
 h2{
     font-size: 30px ;
