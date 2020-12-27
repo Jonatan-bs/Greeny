@@ -1,6 +1,7 @@
-@import "scss/components/header";
-@import "scss/variables/colors";
+@import "scss/variables/media-queries";
 @import "scss/variables/fonts";
+@import "scss/variables/colors";
+@import "scss/components/header";
 @import "scss/components/hero";
 @import "scss/components/footer";
 @import "scss/page";
@@ -41,6 +42,7 @@ html {
   background: $light;
   font-size: $blog-body-md;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body{
@@ -116,6 +118,9 @@ a.page-link{
 .col-4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  @include lt-sm{
+    grid-template-columns: 1fr;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
