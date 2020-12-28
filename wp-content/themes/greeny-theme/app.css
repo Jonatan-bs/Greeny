@@ -658,6 +658,11 @@ footer .secundary-menu a {
   text-align: center;
   width: 50%;
 }
+@media screen and (max-width: 599px) {
+  .ingredients .ingredient {
+    width: 100%;
+  }
+}
 .ingredients .ingredient .image-percentage {
   position: relative;
   display: inline-block;

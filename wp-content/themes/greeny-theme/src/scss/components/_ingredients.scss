@@ -6,6 +6,9 @@
         box-sizing: border-box;
         text-align: center;
         width: 50%;
+        @include lt-sm{
+            width: 100%
+        }
         .image-percentage{
             position: relative;
             display: inline-block;
