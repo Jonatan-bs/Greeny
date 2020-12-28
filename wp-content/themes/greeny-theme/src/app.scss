@@ -15,6 +15,7 @@
 @import "scss/myaccount";
 @import "scss/components/spinner";
 @import "scss/components/info-box";
+@import "scss/components/mobile-menu.scss";
 
 // $body: 'Josefin Sans', sans-serif;
 // $body-sm: 20px; 
@@ -248,4 +249,7 @@ p {
 
 .header-padding{
   padding-top: 140px;
+  @include lt-sm{
+    padding-top: 105px;
+  }
 }

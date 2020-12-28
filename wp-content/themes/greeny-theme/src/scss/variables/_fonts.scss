@@ -45,6 +45,13 @@ $display: 'Caveat Brush', cursive;
         font-size: 30px;
     }
 }
+@mixin display-xl {
+    font-family: $display;
+    font-size: 55px;
+    @include lt-sm{
+        font-size: 40px;
+    }
+}
 
 $blog-body: 'Josefin Sans', sans-serif;
 @mixin blog-body-sm {

@@ -93,9 +93,14 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var $ = jQuery; // Add product to cart
-
+var $ = jQuery;
 document.addEventListener('click', function (e) {
+  // Open Mobile Menu
+  if (e.target.closest('.burger-menu')) {
+    $('#mobile-nav').toggleClass('active');
+  } // Add product to cart
+
+
   if (e.target.closest('.add-to-cart-button')) {
     var button = e.target.closest('.add-to-cart-button'); // Button add to cart button
 

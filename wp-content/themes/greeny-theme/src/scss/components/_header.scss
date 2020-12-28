@@ -20,6 +20,9 @@ header.greeny {
     display: inline;
     position: absolute;
     right: 70px;
+    @include lt-sm{
+      display: none !important;
+    }
     
     .symbol{
       position: relative;
@@ -54,6 +57,10 @@ header.greeny {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @include lt-sm{
+      display: none;
+    }
     li{
       display: inline-block;
       margin: 0px 25px;

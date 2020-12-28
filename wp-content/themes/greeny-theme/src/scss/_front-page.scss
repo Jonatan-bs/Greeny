@@ -7,6 +7,9 @@
         height: 500px;
         margin-bottom: 334px;
         padding-top: 140px;
+        @include lt-sm{
+            padding-top: 105px;
+        }
         .text{
             margin: 0 auto;
             max-width: 600px;
@@ -14,6 +17,9 @@
             padding: 40px 20px;
             p:nth-child(1){
                 text-transform: uppercase;
+            }
+            @include lt-sm{
+                padding: 20px 20px;
             }
         };
         img{

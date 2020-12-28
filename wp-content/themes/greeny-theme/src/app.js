@@ -1,7 +1,11 @@
 let $ = jQuery;
-// Add product to cart
 document.addEventListener('click',(e)=>{
+    // Open Mobile Menu
+    if(e.target.closest('.burger-menu')){
+        $('#mobile-nav').toggleClass('active')
+    }
 
+    // Add product to cart
     if(e.target.closest('.add-to-cart-button')){
 
         let button = e.target.closest('.add-to-cart-button');

@@ -23,8 +23,10 @@ add_theme_support( 'post-thumbnails' );
 register_nav_menus(
     array(
         'primary-menu' => 'Primary Menu',
-        'secundary-menu' => 'secundary-menu'
+        'secundary-menu' => 'Secundary Menu',
+        'primary-menu-mobile' => 'Primary Menu Mobile'
     )
+    
 );
 
 //add image size
