@@ -3,6 +3,10 @@
     @include lt-sm{
         &.active{
             bottom: 0%;
+            li{
+                opacity: 1 !important;
+                transform: translateY(0px) !important;
+            }
         }
         transition: bottom .3s ease-out;
         bottom: -100%;
@@ -30,6 +34,15 @@
                 #menu-item-72 a{ 
                     color: $contrast;
                 }
+                @for $i from 1 through 7 {
+                    li:nth-child(#{$i}) {
+                    transition: all .4s ease-out;
+                    transition-delay: .1 * $i + .1s ;
+                    opacity: 0;
+                    transform: translateY(10px);
+                    }
+                }
+                
             }
         }
     }

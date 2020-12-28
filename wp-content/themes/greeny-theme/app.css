@@ -138,7 +138,7 @@ footer .secundary-menu li {
 }
 @media screen and (max-width: 599px) {
   footer .secundary-menu li {
-    display: inline-block;
+    display: none;
     margin: 0 0 15px 0;
     width: 100%;
   }
@@ -894,6 +894,10 @@ nav.woocommerce-MyAccount-navigation li.is-active a {
   #mobile-nav.active {
     bottom: 0%;
   }
+  #mobile-nav.active li {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+  }
   #mobile-nav > div ul {
     margin: 0;
     padding: 0;
@@ -917,6 +921,62 @@ nav.woocommerce-MyAccount-navigation li.is-active a {
 @media screen and (max-width: 599px) {
   #mobile-nav > div ul #menu-item-72 a {
     color: #fdc83e;
+  }
+}
+@media screen and (max-width: 599px) {
+  #mobile-nav > div ul li:nth-child(1) {
+    transition: all 0.4s ease-out;
+    transition-delay: 0.2s;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@media screen and (max-width: 599px) {
+  #mobile-nav > div ul li:nth-child(2) {
+    transition: all 0.4s ease-out;
+    transition-delay: 0.3s;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@media screen and (max-width: 599px) {
+  #mobile-nav > div ul li:nth-child(3) {
+    transition: all 0.4s ease-out;
+    transition-delay: 0.4s;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@media screen and (max-width: 599px) {
+  #mobile-nav > div ul li:nth-child(4) {
+    transition: all 0.4s ease-out;
+    transition-delay: 0.5s;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@media screen and (max-width: 599px) {
+  #mobile-nav > div ul li:nth-child(5) {
+    transition: all 0.4s ease-out;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@media screen and (max-width: 599px) {
+  #mobile-nav > div ul li:nth-child(6) {
+    transition: all 0.4s ease-out;
+    transition-delay: 0.7s;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@media screen and (max-width: 599px) {
+  #mobile-nav > div ul li:nth-child(7) {
+    transition: all 0.4s ease-out;
+    transition-delay: 0.8s;
+    opacity: 0;
+    transform: translateY(10px);
   }
 }
 
