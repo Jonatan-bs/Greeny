@@ -176,7 +176,16 @@ footer .secundary-menu a {
 }
 @media screen and (max-width: 599px) {
   #front-page .hero {
-    height: 420px;
+    height: auto;
+    margin-bottom: 140px;
+  }
+  #front-page .hero img {
+    max-width: 800px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: -30%;
   }
 }
 #front-page .starterpack {
@@ -201,6 +210,12 @@ footer .secundary-menu a {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 599px) {
+  #front-page .starterpack .blue-circle:nth-of-type(1) {
+    width: 270px;
+    height: 270px;
+  }
+}
 #front-page .starterpack .blue-circle:nth-of-type(2) {
   width: 60px;
   height: 60px;
@@ -212,6 +227,11 @@ footer .secundary-menu a {
   bottom: 0px;
   transform: translate(-190px, 0px);
 }
+@media screen and (max-width: 599px) {
+  #front-page .starterpack .blue-circle:nth-of-type(2) {
+    transform: translate(-160px, -10px);
+  }
+}
 #front-page .starterpack .blue-circle:nth-of-type(3) {
   width: 90px;
   height: 90px;
@@ -222,6 +242,11 @@ footer .secundary-menu a {
   left: 50%;
   top: 0;
   transform: translate(170px, 40px);
+}
+@media screen and (max-width: 599px) {
+  #front-page .starterpack .blue-circle:nth-of-type(3) {
+    transform: translate(120px, 20px);
+  }
 }
 #front-page .starterpack .fruits {
   height: 120px;
@@ -240,6 +265,12 @@ footer .secundary-menu a {
   grid-template-columns: 1fr 1fr;
   gap: 130px;
 }
+@media screen and (max-width: 599px) {
+  #front-page .about-greeny .cards {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
 #front-page .about-greeny .cards .card {
   text-align: center;
 }
@@ -254,6 +285,11 @@ footer .secundary-menu a {
   padding: 60px 20px;
   margin-top: 120px;
 }
+@media screen and (max-width: 599px) {
+  #front-page .newsletter {
+    margin-top: 0px;
+  }
+}
 #front-page .newsletter img.paperplane {
   position: absolute;
   top: 0;
@@ -262,6 +298,13 @@ footer .secundary-menu a {
   background: #f8f8f8;
   padding: 18px;
   transform: translateY(-50%);
+}
+@media screen and (max-width: 599px) {
+  #front-page .newsletter img.paperplane {
+    width: 80px;
+    padding: 8px;
+    left: 20px;
+  }
 }
 #front-page .newsletter .title {
   font-family: "Caveat Brush", cursive;
@@ -443,16 +486,28 @@ footer .secundary-menu a {
 .blog-card {
   display: flex;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 .blog-card .container {
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
   width: 60%;
+}
+@media screen and (max-width: 599px) {
+  .blog-card .container {
+    width: 100%;
+  }
 }
 .blog-card .image {
   width: 40%;
+}
+@media screen and (max-width: 599px) {
+  .blog-card .image {
+    width: 100%;
+  }
 }
 .blog-card .image img {
   width: 100%;

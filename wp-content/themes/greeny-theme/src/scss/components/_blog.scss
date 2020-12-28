@@ -36,15 +36,23 @@
 .blog-card{
     display: flex;
     margin-bottom: 40px;
-    .container{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 60%;
+    flex-wrap: wrap;
+        .container{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 60%;
+        @include lt-sm{
+            width: 100%;
+        }
     }
     .image{
         width: 40%;
+        @include lt-sm{
+            width: 100%;
+        }
         img{
             width:100%
         }
