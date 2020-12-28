@@ -101,10 +101,17 @@ footer {
 footer .some-buttons {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+footer .some-buttons a {
+  width: 33%;
+  max-width: 70px;
 }
 footer .some-buttons img {
-  width: 70px;
+  max-width: 100%;
 }
 footer .secundary-menu {
   text-align: center;
@@ -118,6 +125,13 @@ footer .secundary-menu {
 footer .secundary-menu li {
   display: inline-block;
   margin: 0px 25px;
+}
+@media screen and (max-width: 599px) {
+  footer .secundary-menu li {
+    display: inline-block;
+    margin: 0 0 15px 0;
+    width: 100%;
+  }
 }
 footer .secundary-menu a {
   font-family: "Caveat Brush", cursive;
