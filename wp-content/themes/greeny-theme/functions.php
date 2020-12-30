@@ -30,7 +30,7 @@ register_nav_menus(
 );
 
 //add image size
-add_image_size('post_image', 1100, 750, false); 
+add_image_size('custom_product_thumbnail', 420, 300, true); 
 
 //Change style in WYSIWYG editor
 add_action( 'after_setup_theme', 'misha_gutenberg_css' );
