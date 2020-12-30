@@ -62,13 +62,12 @@ add_action( 'after_setup_theme', 'add_woocommerce_support' );
 
 
 //Add Google Font Set
- function youttheme_font_typekit() {
- echo '<script src="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"></script>';
-echo '<script src="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora:ital@0;1&display=swap"></script>';
-echo '<script src="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Josefin+Sans&display=swap"></script>';
+ function font_typekit() {
+echo '<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">';
  }
  //Add fonts
-add_action('wp_head', 'youttheme_font_typekit');
+add_action('wp_head', 'font_typekit');
 
 // Add favicon
 function add_favicon() { ?>
@@ -558,3 +557,152 @@ function background_color_save($post_id) {
     update_post_meta( $post_id, 'background_color', $_POST['background_color']);
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Profiles on About us page
+/*
+add_action('admin_init', 'about_us_profiles', 1);
+
+// Add meta fields
+function about_us_profiles() {
+    global $post;
+
+    // if ( '2' == $post->ID ) {
+    add_meta_box( 'profiles', 'Profiles', 'about_us_profiles_display', 'page', 'normal', 'default');
+    // }
+}
+
+// create frontend
+function about_us_profiles_display() {
+?>
+    <script type="text/javascript">
+    // Create new field on click
+        jQuery(document).ready(function( $ ){
+            $( '#ingredients' ).on('click', '.add-row',  function() {
+                
+                var row = $(this).closest('#ingredients').find('.empty-row.screen-reader-text').clone(true);
+                row.removeClass( 'empty-row screen-reader-text' );
+                row.insertBefore( '#ingredients-fieldset-one tbody>tr:last' );
+                return false;
+            });
+        
+            $( '.remove-row' ).on('click', function() {
+                $(this).parents('tr').remove();
+                return false;
+            });
+        });
+    // Use media library
+        jQuery(function($){
+            $('body').on('click', '.upload_image_button', function(e){
+            e.preventDefault();
+  
+            var button = $(this),
+            uploader = wp.media({
+                title: 'Ingredients symbols',
+                library : {
+                    uploadedTo : wp.media.view.settings.post.id,
+                    type : 'image'
+                },
+                button: {
+                    text: 'Use this image'
+                },
+                multiple: false
+                }).on('select', function() {
+                    var attachment = uploader.state().get('selection').first().toJSON();
+                    button.closest('tr').find('.upload_image').val(attachment.id);
+                    button.closest('tr').find( ".ingredient-symbol" ).attr( {"src": attachment.url, 'width': attachment.sizes.thumbnail.width, 'height': attachment.sizes.thumbnail.height})
+                    button.closest('tr').find('input.upload_image_button').hide()
+                })
+                .open();
+            });
+        });
+
+    </script>
+<?php
+    global $post;
+    $options = [
+        [
+            "value" => "#709CAF",
+            "title" => "Default"
+        ],
+        [
+            "value" => "#d54970",
+            "title" => "Red"
+        ],
+
+
+    ];
+
+	$profiles = get_post_meta($post->ID, 'profiles', true);
+
+	wp_nonce_field( 'about_us_profiles_display_nonce', 'about_us_profiles_display_nonce' );
+	?>
+    
+    <div id="background_color">
+        <table id="background_color_table" width="100%">
+            <thead>
+                <tr>
+                    <th width="100%">Background Color</th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php
+            
+            
+                ?>
+                <tr>
+                    <td>
+                    <select name="background_color" class="widefat" ?>"> 
+                        <?php foreach( $options as $option){ ?>
+                        
+                            <option value="<?php echo $option['value'] ?>" 
+                                <?php if( $option['value'] === $background_color) echo 'selected="selected"' ?> 
+                            >
+                                <?php echo $option['title'] ?>
+                            </option>
+
+
+                        <?php } ?>
+                    </select>   
+                    
+                </tr>
+                
+            
+            </tbody>
+        </table>
+        
+    </div>
+	<?php
+};
+
+// Save post meta 
+add_action('save_post', 'profiles_save');
+function profiles_save($post_id) {
+    
+	if ( ! isset( $_POST['about_us_profiles_display_nonce'] ) ||
+	! wp_verify_nonce( $_POST['about_us_profiles_display_nonce'], 'about_us_profiles_display_nonce' ) )
+		return;
+	
+	if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
+		return;
+	
+	if (!current_user_can('edit_post', $post_id))
+		return;    
+
+    update_post_meta( $post_id, 'profiles', $_POST['profiles']);
+	
+};
+*/

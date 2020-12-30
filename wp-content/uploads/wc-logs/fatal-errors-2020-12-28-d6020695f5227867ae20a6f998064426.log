@@ -1,0 +1,26 @@
+2020-12-28T09:11:15+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:546) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 644
+
+2020-12-28T09:12:49+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:546) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 644
+
+2020-12-28T09:13:16+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:546) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 644
+
+2020-12-28T09:13:58+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:546) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 689
+
+2020-12-28T09:14:45+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:546) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 689
+
+2020-12-28T09:14:47+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:546) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 689
+
+2020-12-28T09:14:47+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:546) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 689
+
+2020-12-28T09:14:58+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:546) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 689
+
+2020-12-28T09:15:58+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:546) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 689
+
+2020-12-28T09:16:29+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:546) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 689
+
+2020-12-28T09:16:29+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:546) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 689
+
+2020-12-28T09:22:20+00:00 CRITICAL syntax error, unexpected 'global' (T_GLOBAL) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 583
+
+2020-12-28T09:22:34+00:00 CRITICAL syntax error, unexpected 'global' (T_GLOBAL) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 583
+
