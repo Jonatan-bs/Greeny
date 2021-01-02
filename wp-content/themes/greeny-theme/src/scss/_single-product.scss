@@ -7,6 +7,10 @@
             right: 0;
             bottom: 5%;
             text-align: right;
+            @include lt-sm{
+                position: inherit;
+                text-align: center;
+            }
             .add-to-cart-button{
                 position: relative;
                 p{
@@ -43,9 +47,15 @@
             width: 90%;
             margin: 60px auto;
             position: relative;
+            @include lt-sm{
+                margin: 20px auto;
+            }
             .product-image-width{
                 width: 75%;
                 margin: 0 auto;
+                @include lt-sm{
+                    width: 100%;
+                }
                 .aspect-wrap{
                     position: relative;
                     padding-bottom: 100%;

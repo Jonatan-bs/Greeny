@@ -62,7 +62,7 @@ header.greeny .primary-menu li {
   margin: 0px 25px;
 }
 header.greeny .primary-menu a {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 25px;
   color: #2c9558;
   text-decoration: none;
@@ -118,7 +118,7 @@ footer .some-buttons {
 }
 footer .some-buttons a {
   width: 33%;
-  max-width: 70px;
+  max-width: 30px;
 }
 footer .some-buttons img {
   max-width: 100%;
@@ -144,7 +144,7 @@ footer .secundary-menu li {
   }
 }
 footer .secundary-menu a {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 25px;
   color: #f8f8f8;
   text-decoration: none;
@@ -160,7 +160,7 @@ footer .secundary-menu a {
 }
 .content.page h1 {
   color: #2c9558;
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 47px;
   text-align: center;
 }
@@ -341,7 +341,7 @@ footer .secundary-menu a {
   }
 }
 #front-page .newsletter .title {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 47px;
 }
 @media screen and (max-width: 599px) {
@@ -350,7 +350,7 @@ footer .secundary-menu a {
   }
 }
 #front-page .newsletter .subtitle {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 25px;
 }
 @media screen and (max-width: 599px) {
@@ -363,7 +363,7 @@ footer .secundary-menu a {
   width: 90%;
 }
 #front-page .newsletter .text {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 35px;
   max-width: 320px;
   margin: 0 auto;
@@ -374,7 +374,7 @@ footer .secundary-menu a {
   }
 }
 #front-page .newsletter .big {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 47px;
 }
 @media screen and (max-width: 599px) {
@@ -441,7 +441,7 @@ footer .secundary-menu a {
   margin: 0 auto;
 }
 .product-list .product .price, .woocommerce .product-list .product .price {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 35px;
   color: #404040;
 }
@@ -454,7 +454,7 @@ footer .secundary-menu a {
   color: #2c9558;
 }
 .product-list .product .price.onsale .sales-price, .woocommerce .product-list .product .price.onsale .sales-price {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 25px;
   color: #a7a5a3;
   text-decoration: line-through;
@@ -560,11 +560,17 @@ footer .secundary-menu a {
   bottom: 5%;
   text-align: right;
 }
+@media screen and (max-width: 599px) {
+  #single-product .single-product-showcase .info, .woocommerce #single-product .single-product-showcase .info {
+    position: inherit;
+    text-align: center;
+  }
+}
 #single-product .single-product-showcase .info .add-to-cart-button, .woocommerce #single-product .single-product-showcase .info .add-to-cart-button {
   position: relative;
 }
 #single-product .single-product-showcase .info .add-to-cart-button p, .woocommerce #single-product .single-product-showcase .info .add-to-cart-button p {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 47px;
   color: #f8f8f8;
 }
@@ -574,7 +580,7 @@ footer .secundary-menu a {
   }
 }
 #single-product .single-product-showcase .info .title, .woocommerce #single-product .single-product-showcase .info .title {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 35px;
   color: #f8f8f8;
   opacity: 0.5;
@@ -585,7 +591,7 @@ footer .secundary-menu a {
   }
 }
 #single-product .single-product-showcase .info .price, .woocommerce #single-product .single-product-showcase .info .price {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 47px;
   color: #404040;
 }
@@ -598,7 +604,7 @@ footer .secundary-menu a {
   color: #f8f8f8;
 }
 #single-product .single-product-showcase .info .price.onsale .sales-price, .woocommerce #single-product .single-product-showcase .info .price.onsale .sales-price {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 25px;
   color: #dfdfdf;
   text-decoration: line-through;
@@ -618,9 +624,19 @@ footer .secundary-menu a {
   margin: 60px auto;
   position: relative;
 }
+@media screen and (max-width: 599px) {
+  #single-product .single-product-showcase .product-wrap, .woocommerce #single-product .single-product-showcase .product-wrap {
+    margin: 20px auto;
+  }
+}
 #single-product .single-product-showcase .product-wrap .product-image-width, .woocommerce #single-product .single-product-showcase .product-wrap .product-image-width {
   width: 75%;
   margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+  #single-product .single-product-showcase .product-wrap .product-image-width, .woocommerce #single-product .single-product-showcase .product-wrap .product-image-width {
+    width: 100%;
+  }
 }
 #single-product .single-product-showcase .product-wrap .product-image-width .aspect-wrap, .woocommerce #single-product .single-product-showcase .product-wrap .product-image-width .aspect-wrap {
   position: relative;
@@ -669,7 +685,7 @@ footer .secundary-menu a {
   display: inline-block;
 }
 .ingredients .ingredient .image-percentage .percentage {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 25px;
   position: absolute;
   bottom: 0;
@@ -683,8 +699,8 @@ footer .secundary-menu a {
   }
 }
 .ingredients .ingredient .title {
-  font-family: "Caveat Brush", cursive;
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 47px;
 }
 @media screen and (max-width: 599px) {
@@ -764,7 +780,7 @@ footer .secundary-menu a {
 }
 #cart .woocommerce a.button.alt {
   background-color: #f5af00;
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 35px;
 }
 @media screen and (max-width: 599px) {
@@ -910,7 +926,7 @@ nav.woocommerce-MyAccount-navigation li.is-active a {
   }
   #mobile-nav > div ul a {
     color: #f8f8f8;
-    font-family: "Caveat Brush", cursive;
+    font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 55px;
   }
 }
@@ -1088,32 +1104,35 @@ input {
   cursor: pointer;
 }
 
-.button, input[type=button], input[type=submit], .woocommerce button.button.alt {
+.button, input[type=button], input[type=submit], .woocommerce button.button.alt, .es_textbox_button {
   background-color: #2c9558;
   color: #f8f8f8;
   border: none;
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 25px;
   cursor: pointer;
   position: relative;
 }
 @media screen and (max-width: 599px) {
-  .button, input[type=button], input[type=submit], .woocommerce button.button.alt {
+  .button, input[type=button], input[type=submit], .woocommerce button.button.alt, .es_textbox_button {
     font-size: 20px;
   }
 }
-.button.contrast, .button.es_submit_button, input[type=button].contrast, input[type=button].es_submit_button, input[type=submit].contrast, input[type=submit].es_submit_button, .woocommerce button.button.alt.contrast, .woocommerce button.button.alt.es_submit_button {
+.button.contrast, .button.es_submit_button, input[type=button].contrast, input[type=button].es_submit_button, input[type=submit].contrast, input[type=submit].es_submit_button, .woocommerce button.button.alt.contrast, .woocommerce button.button.alt.es_submit_button, .es_textbox_button.contrast, .es_textbox_button.es_submit_button {
   background-color: #fdc83e;
 }
-.button .symbol, input[type=button] .symbol, input[type=submit] .symbol, .woocommerce button.button.alt .symbol {
+.button.contrast:hover, .button.es_submit_button:hover, input[type=button].contrast:hover, input[type=button].es_submit_button:hover, input[type=submit].contrast:hover, input[type=submit].es_submit_button:hover, .woocommerce button.button.alt.contrast:hover, .woocommerce button.button.alt.es_submit_button:hover, .es_textbox_button.contrast:hover, .es_textbox_button.es_submit_button:hover {
+  background-color: #deaa22;
+}
+.button .symbol, input[type=button] .symbol, input[type=submit] .symbol, .woocommerce button.button.alt .symbol, .es_textbox_button .symbol {
   display: inline;
   width: 40px;
   margin-left: 10px;
 }
-.button:hover, input[type=button]:hover, input[type=submit]:hover, .woocommerce button.button.alt:hover {
+.button:hover, input[type=button]:hover, input[type=submit]:hover, .woocommerce button.button.alt:hover, .es_textbox_button:hover {
   background: #2b8952;
 }
 
@@ -1132,7 +1151,7 @@ input {
 a.page-link {
   margin-bottom: 60px;
   position: relative;
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 47px;
 }
 @media screen and (max-width: 599px) {
@@ -1148,6 +1167,10 @@ a.page-link::after {
   transform: translate(-50%, 110%);
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 .col-4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1159,11 +1182,11 @@ a.page-link::after {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
 }
 
 h1 {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 47px;
 }
 @media screen and (max-width: 599px) {
@@ -1249,7 +1272,7 @@ p {
 }
 
 .display-sm {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 25px;
 }
 @media screen and (max-width: 599px) {
@@ -1259,7 +1282,7 @@ p {
 }
 
 .display-md {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 35px;
 }
 @media screen and (max-width: 599px) {
@@ -1269,7 +1292,7 @@ p {
 }
 
 .display-xl {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 47px;
 }
 @media screen and (max-width: 599px) {

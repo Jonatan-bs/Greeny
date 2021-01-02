@@ -63,7 +63,7 @@ input{
 .pointer{
 cursor: pointer;
 }
-.button, input[type=button], input[type=submit], .woocommerce button.button.alt{
+.button, input[type=button], input[type=submit], .woocommerce button.button.alt, .es_textbox_button{
   background-color: $primary;
   color: $light;
   border: none;
@@ -77,6 +77,10 @@ cursor: pointer;
   &.contrast, &.es_submit_button{
     background-color: $contrast;
   }
+  &.contrast:hover, &.es_submit_button:hover{
+    background-color: #deaa22;
+  }
+  
 
   .symbol{
     display: inline;
@@ -111,7 +115,9 @@ a.page-link{
     transform: translate(-50%,110%);
   }
 }
-
+a:hover {
+  opacity: .8;
+}
 .col-4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

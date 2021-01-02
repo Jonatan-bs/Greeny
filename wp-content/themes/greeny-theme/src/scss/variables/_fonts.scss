@@ -23,7 +23,7 @@ $body: 'Josefin Sans', sans-serif;
 }
 
 
-$display: 'Caveat Brush', cursive;
+$display: 'Caveat Brush',"Lucida Grande", Tahoma, Sans-Serif;
 @mixin display-sm {
     font-family: $display;
     font-size: 25px;
