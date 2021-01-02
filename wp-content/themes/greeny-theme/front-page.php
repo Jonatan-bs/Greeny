@@ -7,7 +7,7 @@
     </section>
 
 <!-- Starter pack CTA -->
-    <section class="content mb">
+    <section class="content mb animate slideIn">
         <?php  get_template_part('components/starterpack');?>
     </section>
 
@@ -17,7 +17,7 @@
     </section>
 
 <!-- Symbols -->
-    <section class="content mb">
+    <section class="content mb animate slideIn">
         <?php  get_template_part('components/symbols');?>
     </section>
 
@@ -31,7 +31,7 @@
         <?php  get_template_part('components/blog','teaser');?>
     </section>
 <!-- Newsletter -->
-    <section class="content mb">
+    <section class="content mb animate slideIn">
         <?php  get_template_part('components/newsletter');?>
     </section>
     

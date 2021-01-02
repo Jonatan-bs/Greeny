@@ -1,5 +1,5 @@
 
-    <div class="blog-card">
+    <div class="blog-card animate slideIn sequence">
         <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );?>
         <a class="image" href="<?php the_permalink(); ?>">
             <img   src="<?echo $src[0];?>" alt=""/>

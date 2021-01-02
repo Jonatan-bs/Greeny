@@ -259,3 +259,16 @@ p {
     padding-top: 105px;
   }
 }
+
+//Animations
+.animate{
+  opacity: 0;
+}
+.slideIn{
+  transition: all .5s ease;
+  transform: translateY(100px);
+  &.activated{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

@@ -45,4 +45,30 @@ document.addEventListener('click',(e)=>{
             })
        
     }
-})
+});
+
+// Animate in
+
+function checkPosition() {
+    let windowHeight = window.innerHeight;
+    let elements = document.querySelectorAll('.animate:not(.activated)');
+
+    for (let i = 0; i < elements.length; i++) {
+        let element = elements[i];
+        let positionFromTop = elements[i].getBoundingClientRect().top;
+
+        
+        if (positionFromTop - windowHeight <= -150) {
+            element.classList.add('activated');
+        }
+
+    }
+
+}
+
+document.querySelector('body').addEventListener('scroll', checkPosition);
+window.addEventListener('resize', checkPosition);
+
+checkPosition();
+
+

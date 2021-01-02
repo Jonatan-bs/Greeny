@@ -132,7 +132,25 @@ document.addEventListener('click', function (e) {
       console.log(e);
     });
   }
-});
+}); // Animate in
+
+function checkPosition() {
+  var windowHeight = window.innerHeight;
+  var elements = document.querySelectorAll('.animate:not(.activated)');
+
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var positionFromTop = elements[i].getBoundingClientRect().top;
+
+    if (positionFromTop - windowHeight <= -150) {
+      element.classList.add('activated');
+    }
+  }
+}
+
+document.querySelector('body').addEventListener('scroll', checkPosition);
+window.addEventListener('resize', checkPosition);
+checkPosition();
 
 /***/ }),
 

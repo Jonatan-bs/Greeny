@@ -178,7 +178,7 @@ footer .secundary-menu a {
   background: #2c9558;
   position: relative;
   height: 500px;
-  margin-bottom: 334px;
+  margin-bottom: 234px;
   padding-top: 140px;
 }
 @media screen and (max-width: 599px) {
@@ -1398,4 +1398,17 @@ p {
   .header-padding {
     padding-top: 105px;
   }
+}
+
+.animate {
+  opacity: 0;
+}
+
+.slideIn {
+  transition: all 0.5s ease;
+  transform: translateY(100px);
+}
+.slideIn.activated {
+  transform: translateY(0px);
+  opacity: 1;
 }
