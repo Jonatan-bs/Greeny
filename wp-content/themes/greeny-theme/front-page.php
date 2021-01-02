@@ -17,7 +17,7 @@
     </section>
 
 <!-- Symbols -->
-    <section class="content mb animate slideIn">
+    <section class="content mb ">
         <?php  get_template_part('components/symbols');?>
     </section>
 

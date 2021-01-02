@@ -384,8 +384,14 @@ footer .secundary-menu a {
 }
 #front-page .about-greeny .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 130px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  #front-page .about-greeny .cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 130px;
+  }
 }
 @media screen and (max-width: 599px) {
   #front-page .about-greeny .cards {

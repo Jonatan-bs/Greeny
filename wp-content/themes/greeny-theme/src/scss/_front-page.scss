@@ -184,9 +184,12 @@
         background: $primary;
         .cards{
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 130px;
-            
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 30px;
+            @include lt-md{
+                grid-template-columns: 1fr 1fr;
+                gap: 130px;
+            }
             @include lt-sm{
                 grid-template-columns: 1fr;
                 gap: 50px;

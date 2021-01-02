@@ -94,6 +94,12 @@
 /***/ (function(module, exports) {
 
 var $ = jQuery;
+
+function updateCartAmount(amount) {
+  $('header.greeny .add-to-cart.symbol .qty').show().html(amount);
+  $('#mobile-menu .add-to-cart.symbol .qty').show().html(amount);
+}
+
 document.addEventListener('click', function (e) {
   // Open Mobile Menu
   if (e.target.closest('.burger-menu')) {
@@ -120,7 +126,7 @@ document.addEventListener('click', function (e) {
       var tickSrc = button.classList.contains('light') ? '/tick-light.svg' : '/tick.svg';
       tick.src = attr.imageurl + tickSrc;
       button.replaceChild(tick, spinner);
-      $('header.greeny .add-to-cart.symbol .qty').show().html(++attr.cartQty);
+      updateCartAmount(++attr.cartQty);
       setTimeout(function () {
         tick.parentNode.removeChild(tick);
         $(button).children().animate({
@@ -136,15 +142,29 @@ document.addEventListener('click', function (e) {
 
 function checkPosition() {
   var windowHeight = window.innerHeight;
-  var elements = document.querySelectorAll('.animate:not(.activated)');
+  var elements = document.querySelectorAll('.animate:not(.activated):not(.animating)');
+  var array = [];
 
   for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
     var positionFromTop = elements[i].getBoundingClientRect().top;
 
     if (positionFromTop - windowHeight <= -150) {
-      element.classList.add('activated');
+      if (element.classList.contains('sequence')) {
+        element.classList.add('animating');
+        array.push(element);
+      } else {
+        element.classList.add('activated');
+      }
     }
+  }
+
+  if (array.length) {
+    array.forEach(function (elm, i) {
+      setTimeout(function () {
+        elm.classList.add('activated');
+      }, i * 100);
+    });
   }
 }
 
