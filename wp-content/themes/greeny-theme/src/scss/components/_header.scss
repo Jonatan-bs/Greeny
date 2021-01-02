@@ -58,9 +58,12 @@ header.greeny {
     margin: 0;
     padding: 0;
 
-    @include lt-sm{
-      display: none;
+    #menu-item-17{
+      @include lt-sm{
+        display: none;
+      }
     }
+
     li{
       display: inline-block;
       margin: 0px 25px;

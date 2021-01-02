@@ -53,7 +53,7 @@ header.greeny .primary-menu {
   padding: 0;
 }
 @media screen and (max-width: 599px) {
-  header.greeny .primary-menu {
+  header.greeny .primary-menu #menu-item-17 {
     display: none;
   }
 }
@@ -197,7 +197,7 @@ footer .secundary-menu a {
 }
 @media screen and (max-width: 599px) {
   #front-page .hero .text {
-    padding: 20px 20px;
+    padding: 40px 20px 20px 20px;
   }
 }
 #front-page .hero .sachets {
@@ -701,7 +701,6 @@ footer .secundary-menu a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1;
 }
 #single-product .single-product-showcase .product-wrap .product-image-width .aspect-wrap .circle, .woocommerce #single-product .single-product-showcase .product-wrap .product-image-width .aspect-wrap .circle {
@@ -739,7 +738,7 @@ footer .secundary-menu a {
   font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 25px;
   position: absolute;
-  bottom: 0;
+  bottom: 6px;
   left: 50%;
   transform: translateX(-50%);
   color: #f8f8f8;
@@ -1445,12 +1444,6 @@ p {
 .header-padding {
   padding-top: 140px;
 }
-@media screen and (max-width: 599px) {
-  .header-padding {
-    padding-top: 105px;
-  }
-}
-
 .animate {
   opacity: 0;
 }
@@ -1461,5 +1454,14 @@ p {
 }
 .slideIn.activated {
   transform: translateY(0px);
+  opacity: 1;
+}
+
+.slideInCenter {
+  transition: all 0.8s ease;
+  transform: translate(-50%, -45%);
+}
+.slideInCenter.activated {
+  transform: translate(-50%, -50%);
   opacity: 1;
 }

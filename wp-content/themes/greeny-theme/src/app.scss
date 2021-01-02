@@ -256,7 +256,7 @@ p {
 .header-padding{
   padding-top: 140px;
   @include lt-sm{
-    padding-top: 105px;
+    // padding-top: 105px;
   }
 }
 
@@ -269,6 +269,14 @@ p {
   transform: translateY(60px);
   &.activated{
     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.slideInCenter{
+  transition: all .8s ease;
+  transform: translate(-50%, -45%);
+  &.activated{
+    transform: translate(-50%, -50%);
     opacity: 1;
   }
 }
