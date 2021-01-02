@@ -42,21 +42,39 @@
                 position: absolute;
                 left: 50%;
                 top: 0;
+                transition: all .6s ease;
                 
             } 
-            .sachet:nth-of-type(1){
-                transform: translate(-120%, 60px) rotate(-15deg);
-                width: 230px;
+            .sachet:nth-of-type(1),.sachet:nth-of-type(2){
+                transition: all .9s ease;
+                transition-delay: .1s
             }
-            .sachet:nth-of-type(3){
-                transform: translateX(-50%);
-                width: 290px;
+            .sachet.activated:nth-of-type(1){
+                transform: translate(-120%, 60px) rotate(-15deg);
+                width: 300px;
+                opacity: 1;
+            }
+            .sachet.activated:nth-of-type(3){
+                transform: translate(-50%, 0);
+                width: 350px;
+                opacity: 1;
     
+            }
+            .sachet.activated:nth-of-type(2){
+                transform: translate(10%, 60px) rotate(15deg);
+                width: 300px;
+                opacity: 1;
+    
+            }
+            
+            // Animate
+            .sachet:nth-of-type(1){
+                transform: translate(-100%, 80px) rotate(-8deg);         }
+            .sachet:nth-of-type(3){
+                transform: translate(-50%, 10px);    
             }
             .sachet:nth-of-type(2){
-                transform: translate(10%, 60px) rotate(15deg);
-                width: 230px;
-    
+                transform: translate(6%, 80px) rotate(8deg);    
             }
         }
         
@@ -66,19 +84,31 @@
             margin-bottom: 140px;
             .sachets{
                 height: 130px;
-                .sachet:nth-of-type(1){
+
+                .sachet.activated:nth-of-type(1){
                     transform: translate(-120%, 40px) rotate(-15deg);
                     width: 130px;
                 }
-                .sachet:nth-of-type(3){
-                    transform: translateX(-50%);
+                .sachet.activated:nth-of-type(3){
+                    transform: translateX(-50%,0);
                     width: 160px;
         
                 }
-                .sachet:nth-of-type(2){
+                .sachet.activated:nth-of-type(2){
                     transform: translate(10%, 40px) rotate(15deg);
                     width: 130px;
         
+                }
+                // Animate
+                .sachet:nth-of-type(1){
+                    transform: translate(-100%, 40px) rotate(-8deg)
+                }
+                .sachet:nth-of-type(3){
+                    transform: translate(-50%, 20px);  
+    
+                }
+                .sachet:nth-of-type(2){
+                    transform: translate(6%, 40px) rotate(8deg);       
                 }
             }
             

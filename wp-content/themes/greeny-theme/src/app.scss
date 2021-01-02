@@ -265,8 +265,8 @@ p {
   opacity: 0;
 }
 .slideIn{
-  transition: all .5s ease;
-  transform: translateY(100px);
+  transition: all .8s ease;
+  transform: translateY(60px);
   &.activated{
     transform: translateY(0px);
     opacity: 1;
