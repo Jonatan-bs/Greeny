@@ -61,6 +61,26 @@ header.greeny .primary-menu li {
   display: inline-block;
   margin: 0px 25px;
 }
+header.greeny .primary-menu li a {
+  position: relative;
+}
+header.greeny .primary-menu li.current-menu-item a::before, header.greeny .primary-menu li:hover a::before {
+  content: url(/wp-content/themes/greeny-theme/images/fruit/pineapple-blue.svg);
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-25deg);
+  width: 50px;
+  position: absolute;
+}
+header.greeny .primary-menu li.current-menu-item:nth-of-type(1):hover a::before, header.greeny .primary-menu li.current-menu-item:nth-of-type(1).current-menu-item a::before, header.greeny .primary-menu li:hover:nth-of-type(1):hover a::before, header.greeny .primary-menu li:hover:nth-of-type(1).current-menu-item a::before {
+  content: url(/wp-content/themes/greeny-theme/images/fruit/pineapple-blue.svg);
+}
+header.greeny .primary-menu li.current-menu-item:nth-of-type(2):hover a::before, header.greeny .primary-menu li.current-menu-item:nth-of-type(2).current-menu-item a::before, header.greeny .primary-menu li:hover:nth-of-type(2):hover a::before, header.greeny .primary-menu li:hover:nth-of-type(2).current-menu-item a::before {
+  content: url(/wp-content/themes/greeny-theme/images/fruit/lime-blue.svg);
+}
+header.greeny .primary-menu li.current-menu-item:nth-of-type(3):hover a::before, header.greeny .primary-menu li.current-menu-item:nth-of-type(3).current-menu-item a::before, header.greeny .primary-menu li:hover:nth-of-type(3):hover a::before, header.greeny .primary-menu li:hover:nth-of-type(3).current-menu-item a::before {
+  content: url(/wp-content/themes/greeny-theme/images/fruit/raspberry-blue.svg);
+}
 header.greeny .primary-menu a {
   font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 25px;
@@ -71,6 +91,23 @@ header.greeny .primary-menu a {
   header.greeny .primary-menu a {
     font-size: 20px;
   }
+}
+header.greeny.light li.current-menu-item a::before, header.greeny.light li:hover a::before {
+  content: url(/wp-content/themes/greeny-theme/images/fruit/pineapple-blue.svg);
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-25deg);
+  width: 50px;
+  position: absolute;
+}
+header.greeny.light li.current-menu-item:nth-of-type(1):hover a::before, header.greeny.light li.current-menu-item:nth-of-type(1).current-menu-item a::before, header.greeny.light li:hover:nth-of-type(1):hover a::before, header.greeny.light li:hover:nth-of-type(1).current-menu-item a::before {
+  content: url(/wp-content/themes/greeny-theme/images/fruit/pineapple-light.svg);
+}
+header.greeny.light li.current-menu-item:nth-of-type(2):hover a::before, header.greeny.light li.current-menu-item:nth-of-type(2).current-menu-item a::before, header.greeny.light li:hover:nth-of-type(2):hover a::before, header.greeny.light li:hover:nth-of-type(2).current-menu-item a::before {
+  content: url(/wp-content/themes/greeny-theme/images/fruit/lime-light.svg);
+}
+header.greeny.light li.current-menu-item:nth-of-type(3):hover a::before, header.greeny.light li.current-menu-item:nth-of-type(3).current-menu-item a::before, header.greeny.light li:hover:nth-of-type(3):hover a::before, header.greeny.light li:hover:nth-of-type(3).current-menu-item a::before {
+  content: url(/wp-content/themes/greeny-theme/images/fruit/raspberry-light.svg);
 }
 header.greeny.light a {
   color: #f8f8f8;
