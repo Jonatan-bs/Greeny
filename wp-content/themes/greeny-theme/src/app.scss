@@ -92,6 +92,26 @@ cursor: pointer;
     background: #2b8952;
   }
 }
+.es_textbox_button{
+  background-color: $contrast-dark  !important;
+  color: $light  !important;
+  border: none  !important;
+  display: flex  !important;
+  align-items: center  !important;  
+  padding: 10px 20px  !important;
+  @include display-sm;
+  cursor: pointer  !important;
+  position: relative  !important;
+  border-radius: 0  !important;
+
+  &:hover{
+    background-color: #deaa22 !important;
+  }
+
+}
+.hidden{
+  display: none;
+}
 
 .gap-3{
   gap: 30px;

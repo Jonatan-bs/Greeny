@@ -5,6 +5,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    backface-visibility: hidden; 
 }
 
 @keyframes rotate {
@@ -23,7 +24,8 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 transition: all .5s ease;
-animation: fadeIn .2s linear;  
+animation: fadeIn .2s linear;
+backface-visibility: hidden;   
 }
 @keyframes fadeIn {
     0% {

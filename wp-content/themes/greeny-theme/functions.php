@@ -315,6 +315,10 @@ function hhs_component_position_meta_box_display() {
             "title" => "Main text"
         ],
         [
+            "value" => "hideContent",
+            "title" => "Hide Content"
+        ],
+        [
             "value" => "symbols",
             "title" => "Symbols"
         ],

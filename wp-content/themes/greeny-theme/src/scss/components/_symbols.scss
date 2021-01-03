@@ -7,11 +7,11 @@
         }
         position: relative;
         height: 310px;
-        justify-content: flex-end;
+        width: 540px;
+        justify-content: space-between;
         align-items: flex-end;
         display: inline-flex;
         margin: 0 auto;
-        gap: 40px;
         padding: 0 230px;
         text-align: center;
         img{
@@ -31,6 +31,8 @@
             flex-wrap: wrap;
             padding: 0;
             text-align: center;
+            width: auto;
+            max-width: 340px;
             div{
                 width: 50%;
             }

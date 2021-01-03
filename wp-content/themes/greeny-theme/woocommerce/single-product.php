@@ -14,12 +14,24 @@ get_header('light'); ?>
 				
 				<?php get_template_part('components/single-product-showcase', null, ['product' => $product]); ?>
 				
-				<div class="content text">
+				<?php 
+					$components = get_post_meta( $post->ID, 'component_position_fields', true );
+					$hideContent = false;
+					
+					foreach($components as $component){
+						if($component['component'] === 'hideContent'):
+							$hideContent = true;
+							break;
+						endif;
+					}
+
+				?>
+				<div class="content text <?php echo $hideContent? 'hidden' : ''; ?>">
 					<section class="content mb">
 
 					
 					<?php  
-							$components = get_post_meta( $post->ID, 'component_position_fields', true );
+						if(!$hideContent){
 							if($components){
 								foreach($components as $component){
 									switch ($component['component']) {
@@ -32,16 +44,18 @@ get_header('light'); ?>
 										case 'ingredients':
 											get_template_part('components/ingredients');
 											break;
+										case 'hideContent':
+											break;
 										
 									}
 								}
 							} else{
 								the_content();
 							}
-							
+						}
 					?>
 					</section>
-					<?php if ($product->is_purchasable() ) { ?>   
+					<?php if ($product->is_purchasable() && !$hideContent) { ?>   
 						<div class="flexcenter mb">
 							<div class="add-to-cart-button light pointer button" data-id="<?php echo esc_attr( $product->get_id() ); ?>" > 
 								<p> 

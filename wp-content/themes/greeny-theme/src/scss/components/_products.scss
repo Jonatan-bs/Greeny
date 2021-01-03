@@ -2,6 +2,11 @@
 
 .product-list, .woocommerce .product-list{
     .product{
+        height: fit-content;
+        .highlited{
+            border: 3px solid #2b9558;
+        }
+        
         &.outofstock{
 
             .product-image,.excerpt,.title{
@@ -34,7 +39,8 @@
         }
         .product-image{ 
             width:100%;
-            background: #eff3f7;
+            background: #eaf0f7;
+            box-sizing: border-box;
         }
         .title{}
         .excerpt{

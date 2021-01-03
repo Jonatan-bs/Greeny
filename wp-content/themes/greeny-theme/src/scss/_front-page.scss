@@ -51,30 +51,30 @@
             }
             .sachet.activated:nth-of-type(1){
                 transform: translate(-120%, 60px) rotate(-15deg);
-                width: 300px;
                 opacity: 1;
             }
             .sachet.activated:nth-of-type(3){
                 transform: translate(-50%, 0);
-                width: 350px;
                 opacity: 1;
     
             }
             .sachet.activated:nth-of-type(2){
                 transform: translate(10%, 60px) rotate(15deg);
-                width: 300px;
                 opacity: 1;
-    
             }
             
             // Animate
             .sachet:nth-of-type(1){
-                transform: translate(-100%, 80px) rotate(-8deg);         }
+                transform: translate(-100%, 80px) rotate(-8deg);         
+                width: 300px;
+            }
             .sachet:nth-of-type(3){
                 transform: translate(-50%, 10px);    
+                width: 350px;
             }
             .sachet:nth-of-type(2){
                 transform: translate(6%, 80px) rotate(8deg);    
+                width: 300px;
             }
         }
         
@@ -87,28 +87,25 @@
 
                 .sachet.activated:nth-of-type(1){
                     transform: translate(-120%, 40px) rotate(-15deg);
-                    width: 130px;
                 }
                 .sachet.activated:nth-of-type(3){
-                    transform: translateX(-50%,0);
-                    width: 160px;
-        
+                    transform: translateX(-50%,0);        
                 }
                 .sachet.activated:nth-of-type(2){
                     transform: translate(10%, 40px) rotate(15deg);
-                    width: 130px;
-        
                 }
                 // Animate
                 .sachet:nth-of-type(1){
-                    transform: translate(-100%, 40px) rotate(-8deg)
+                    transform: translate(-100%, 40px) rotate(-8deg);
+                    width: 130px;
                 }
                 .sachet:nth-of-type(3){
                     transform: translate(-50%, 20px);  
-    
+                    width: 160px;
                 }
                 .sachet:nth-of-type(2){
                     transform: translate(6%, 40px) rotate(8deg);       
+                    width: 130px;
                 }
             }
             
