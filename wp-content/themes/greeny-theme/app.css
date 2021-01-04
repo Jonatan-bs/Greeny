@@ -608,6 +608,15 @@ footer .secundary-menu a {
 #blog-post .blog-tag a {
   color: #9d9d9d;
 }
+#blog-post .blogNav a, #blog-post .blogNav div {
+  color: #2c9558;
+}
+#blog-post .blogNav .right {
+  float: right;
+}
+#blog-post .blogNav .left {
+  float: left;
+}
 
 .categories {
   margin-bottom: 30px;

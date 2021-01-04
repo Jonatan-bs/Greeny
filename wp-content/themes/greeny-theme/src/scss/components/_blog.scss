@@ -18,6 +18,17 @@
             color: $medium;
         }
     }
+    .blogNav{
+        a, div{
+            color: $primary
+        }
+        .right{ 
+            float:right;
+        };
+        .left{
+            float: left;
+        };
+    }
 
 }
 .categories{

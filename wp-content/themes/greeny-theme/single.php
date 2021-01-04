@@ -28,7 +28,13 @@
         <?php the_content();?>
         <?php endwhile; else: endif; ?>
     
+        <div class="blogNav mb">
+            <div class="left"><?php previous_post_link(); ?></div>
+            <div class="right"><?php next_post_link(); ?></div>
+        </div>
+    
     </section>
+    
     
     <?php get_footer(); ?>
     
