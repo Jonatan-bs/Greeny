@@ -98,8 +98,16 @@ var $ = jQuery;
 function updateCartAmount(amount) {
   $('header.greeny .add-to-cart.symbol .qty').show().html(amount);
   $('#mobile-menu .add-to-cart.symbol .qty').show().html(amount);
-}
+} //Update amount when cart is updated
 
+
+$(document.body).on('updated_cart_totals', function () {
+  // Get the formatted cart total
+  var amount = Array.from($('input.qty')).reduce(function (accumulator, currentValue) {
+    return accumulator + Number(currentValue.value);
+  }, 0);
+  updateCartAmount(amount);
+});
 document.addEventListener('click', function (e) {
   // Open Mobile Menu
   if (e.target.closest('.burger-menu')) {

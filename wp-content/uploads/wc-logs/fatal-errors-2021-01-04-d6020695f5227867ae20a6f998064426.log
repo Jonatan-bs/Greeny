@@ -1,0 +1,60 @@
+2021-01-04T13:03:05+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in /var/www/html/wp-content/themes/greeny-theme/functions.php:102
+Stack trace:
+#0 /var/www/html/wp-settings.php(514): include()
+#1 /var/www/html/wp-config.php(100): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-load.php(37): require_once('/var/www/html/w...')
+#3 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#4 /var/www/html/index.php(17): require('/var/www/html/w...')
+#5 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 102
+
+2021-01-04T13:03:06+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in /var/www/html/wp-content/themes/greeny-theme/functions.php:102
+Stack trace:
+#0 /var/www/html/wp-settings.php(514): include()
+#1 /var/www/html/wp-config.php(100): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-load.php(37): require_once('/var/www/html/w...')
+#3 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#4 /var/www/html/index.php(17): require('/var/www/html/w...')
+#5 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 102
+
+2021-01-04T13:03:07+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in /var/www/html/wp-content/themes/greeny-theme/functions.php:102
+Stack trace:
+#0 /var/www/html/wp-settings.php(514): include()
+#1 /var/www/html/wp-config.php(100): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-load.php(37): require_once('/var/www/html/w...')
+#3 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#4 /var/www/html/index.php(17): require('/var/www/html/w...')
+#5 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 102
+
+2021-01-04T13:03:08+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in /var/www/html/wp-content/themes/greeny-theme/functions.php:102
+Stack trace:
+#0 /var/www/html/wp-settings.php(514): include()
+#1 /var/www/html/wp-config.php(100): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-load.php(37): require_once('/var/www/html/w...')
+#3 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#4 /var/www/html/index.php(17): require('/var/www/html/w...')
+#5 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 102
+
+2021-01-04T13:03:14+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in /var/www/html/wp-content/themes/greeny-theme/functions.php:102
+Stack trace:
+#0 /var/www/html/wp-settings.php(514): include()
+#1 /var/www/html/wp-config.php(100): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-load.php(37): require_once('/var/www/html/w...')
+#3 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#4 /var/www/html/index.php(17): require('/var/www/html/w...')
+#5 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 102
+
+2021-01-04T13:03:15+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in /var/www/html/wp-content/themes/greeny-theme/functions.php:102
+Stack trace:
+#0 /var/www/html/wp-settings.php(514): include()
+#1 /var/www/html/wp-config.php(100): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-load.php(37): require_once('/var/www/html/w...')
+#3 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#4 /var/www/html/index.php(17): require('/var/www/html/w...')
+#5 {main}
+  thrown in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 102
+

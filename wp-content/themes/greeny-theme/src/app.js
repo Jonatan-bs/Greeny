@@ -5,11 +5,20 @@ function updateCartAmount(amount){
     $('#mobile-menu .add-to-cart.symbol .qty').show().html(amount)
 }
 
+//Update amount when cart is updated
+$(document.body).on('updated_cart_totals', function () {
+    // Get the formatted cart total
+    let amount = Array.from($('input.qty')).reduce((accumulator, currentValue) => accumulator + Number(currentValue.value), 0);
+    updateCartAmount(amount)
+  
+});
+
 document.addEventListener('click',(e)=>{
     // Open Mobile Menu
     if(e.target.closest('.burger-menu')){
         $('#mobile-nav').toggleClass('active')
     }
+      
 
     // Add product to cart
     if(e.target.closest('.add-to-cart-button')){
