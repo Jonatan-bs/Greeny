@@ -9,7 +9,7 @@
             $percentage = $ingredient['percentage'] . " %";
             $image_attr =  wp_get_attachment_image_src(  esc_attr( $ingredient['image'], 'thumbnail' ));
             ?>
-                <div class="ingredient animate slideIn">
+                <div class="ingredient animate slideIn sequence">
                     <div class="image-percentage">
                         <img 
                             class="symbol" 
