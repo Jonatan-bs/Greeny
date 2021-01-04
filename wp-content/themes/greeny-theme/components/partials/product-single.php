@@ -22,7 +22,7 @@
     <div class="flex">
 
         <?php 
-            if ($product->is_purchasable() ) {
+            if ($product->is_purchasable() && $product->is_in_stock()) {
         ?>
             
             <p class="price <?php if ($product->get_sale_price()) {?> onsale <?php } ?>">
