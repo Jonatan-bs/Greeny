@@ -58,3 +58,53 @@ Stack trace:
 #7 /var/www/html/wp-content/themes/greeny-theme/woocommerce/archive-product.php(14): get_template_part('components/prod...', 'list')
 #8 /var/www/html/wp-includes/template-loader.php(106): i in /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php on line 9
 
+2021-01-06T20:31:09+00:00 CRITICAL Cannot redeclare background_color_save() (previously declared in /var/www/html/wp-content/themes/greeny-theme/functions.php:556) in /var/www/html/wp-content/themes/greeny-theme/functions.php on line 834
+
+2021-01-06T21:17:43+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php:8
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/components/products-featured.php(38): get_template_part('components/part...', 'single', Array)
+#4 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#5 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#6 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#7 /var/www/html/wp-content/themes/greeny-theme/front-page.php(16): get_template_part('components/prod...', 'featured')
+#8 /var/www/html/wp-includes/template-loader.php(106): inclu in /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php on line 8
+
+2021-01-06T21:17:53+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php:8
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/components/products-featured.php(38): get_template_part('components/part...', 'single', Array)
+#4 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#5 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#6 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#7 /var/www/html/wp-content/themes/greeny-theme/front-page.php(16): get_template_part('components/prod...', 'featured')
+#8 /var/www/html/wp-includes/template-loader.php(106): inclu in /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php on line 8
+
+2021-01-06T21:21:11+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::featured() in /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php:8
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/components/products-featured.php(38): get_template_part('components/part...', 'single', Array)
+#4 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#5 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#6 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#7 /var/www/html/wp-content/themes/greeny-theme/front-page.php(16): get_template_part('components/prod...', 'featured')
+#8 /var/www/html/wp-includes/template-loader.php(106): inc in /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php on line 8
+
+2021-01-06T21:21:18+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::featured() in /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php:8
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(732): require()
+#1 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#2 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /var/www/html/wp-content/themes/greeny-theme/components/products-featured.php(38): get_template_part('components/part...', 'single', Array)
+#4 /var/www/html/wp-includes/template.php(732): require('/var/www/html/w...')
+#5 /var/www/html/wp-includes/template.php(676): load_template('/var/www/html/w...', false, Array)
+#6 /var/www/html/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#7 /var/www/html/wp-content/themes/greeny-theme/front-page.php(16): get_template_part('components/prod...', 'featured')
+#8 /var/www/html/wp-includes/template-loader.php(106): inc in /var/www/html/wp-content/themes/greeny-theme/components/partials/product-single.php on line 8
+

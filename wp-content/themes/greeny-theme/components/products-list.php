@@ -20,6 +20,7 @@
                     $productsQuery->the_post();
                     
                     $args['product'] = get_product( $productsQuery->post->ID );            
+                    $args['highlited'] = true;            
                     ?>
                         <?php  get_template_part('components/partials/product', 'single', $args);?>
                        

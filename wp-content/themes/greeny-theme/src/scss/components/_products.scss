@@ -3,7 +3,7 @@
 .product-list, .woocommerce .product-list{
     .product{
         height: fit-content;
-        .highlited{
+        &.featured .product-image{
             border: 3px solid #2b9558;
         }
         

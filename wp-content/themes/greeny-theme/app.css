@@ -489,7 +489,7 @@ footer .secundary-menu a {
   height: -moz-fit-content;
   height: fit-content;
 }
-.product-list .product .highlited, .woocommerce .product-list .product .highlited {
+.product-list .product.featured .product-image, .woocommerce .product-list .product.featured .product-image {
   border: 3px solid #2b9558;
 }
 .product-list .product.outofstock .product-image, .product-list .product.outofstock .excerpt, .product-list .product.outofstock .title, .woocommerce .product-list .product.outofstock .product-image, .woocommerce .product-list .product.outofstock .excerpt, .woocommerce .product-list .product.outofstock .title {
