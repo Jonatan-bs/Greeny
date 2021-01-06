@@ -1,7 +1,9 @@
 <?php
     $product = $args['product'];
+    $loadMore = $args['loadMore'] ? 'activated ' : '';
+    $classes = $loadMore . 'product animate slideIn sequence'
 ?>
-<div  id="product-<?php the_ID(); ?>" <?php wc_product_class( 'product animate slideIn sequence', $product ); ?> >
+<div  id="product-<?php the_ID(); ?>" <?php wc_product_class( $classes , $product ); ?> >
     <a href="<?php the_permalink(); ?>">
         <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );?>
         <img  class="product-image" src="<?echo $src[0];?>" alt="">

@@ -157,7 +157,7 @@ function checkPosition() {
     var element = elements[i];
     var positionFromTop = elements[i].getBoundingClientRect().top;
 
-    if (positionFromTop - windowHeight <= -150) {
+    if (positionFromTop - windowHeight <= -150 || element.classList.contains('run')) {
       if (element.classList.contains('sequence')) {
         element.classList.add('animating');
         array.push(element);
@@ -178,7 +178,44 @@ function checkPosition() {
 
 document.querySelector('body').addEventListener('scroll', checkPosition);
 window.addEventListener('resize', checkPosition);
-checkPosition();
+checkPosition(); //// Load more functionality
+
+jQuery(function ($) {
+  // use jQuery code inside this to avoid "$ is not defined" error
+  $('.loadmore').click(function () {
+    var button = $(this),
+        data = {
+      'action': 'loadmore',
+      'query': attr.posts,
+      // that's how we get params from wp_localize_script() function
+      'page': attr.current_page
+    };
+    var initialText = button.text();
+    $.ajax({
+      // you can also use $.post here
+      url: attr.ajaxurl,
+      // AJAX handler
+      data: data,
+      type: 'POST',
+      beforeSend: function beforeSend(xhr) {
+        button.text('Loading...'); // change the button text, you can also add a preloader image
+      },
+      success: function success(data) {
+        if (data) {
+          $('.loadMoreTarget').append(data); // insert new posts
+
+          attr.current_page++;
+          button.text(initialText);
+          if (attr.current_page == attr.max_page) button.remove(); // if last page, remove the button
+          // you can also fire the "post-load" event here if you use a plugin that requires it
+          // $( document.body ).trigger( 'post-load' );
+        } else {
+          button.remove(); // if no data, remove the button as well
+        }
+      }
+    });
+  });
+});
 
 /***/ }),
 

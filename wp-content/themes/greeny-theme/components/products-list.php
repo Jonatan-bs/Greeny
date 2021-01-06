@@ -1,29 +1,25 @@
 <div class="product-list center">
-    <div class="content col-4 gap-5">
+    <div class="content col-4 gap-5 loadMoreTarget mb-1 ">
         <?php
-            $meta_query  = WC()->query->get_meta_query();
-            $tax_query   = WC()->query->get_tax_query();
             
-           
             $args = array(
                 'post_type'           => 'product',
                 'post_status'         => 'publish',
-                'posts_per_page'      => -1,
+                'posts_per_page'      => 9,
                 'orderby'             => 'menu_order',
                 'order'               => 'ASC',
-                'meta_query'          => $meta_query,
-                'tax_query'           => $tax_query,
+                'paged'               => 1 
             );
             
-            $featured_query = new WP_Query( $args );
+            $productsQuery = new WP_Query( $args );
                 
-            if ($featured_query->have_posts()) {
+            if ($productsQuery->have_posts()) {
             
-                while ($featured_query->have_posts()) : 
+                while ($productsQuery->have_posts()) : 
                 
-                    $featured_query->the_post();
+                    $productsQuery->the_post();
                     
-                    $args['product'] = get_product( $featured_query->post->ID );            
+                    $args['product'] = get_product( $productsQuery->post->ID );            
                     ?>
                         <?php  get_template_part('components/partials/product', 'single', $args);?>
                        
@@ -35,5 +31,9 @@
             }
         ?>
     </div>
+    <?php
+        if (  $productsQuery->max_num_pages > 1 )
+        echo '<div class="loadmore button mb-1">Load more</div>'; // you can use <a> as well
+    ?>
 
 </div>

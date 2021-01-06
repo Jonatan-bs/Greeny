@@ -96,10 +96,17 @@ add_filter( 'wc_add_to_cart_message_html', '__return_null' );
 
 // Add variables to scripts
 add_action( 'wp_enqueue_scripts', function(){
+    global $wp_query; 
+
     wp_localize_script('app', 'attr', array( 
         'siteurl' => get_option('siteurl'), 
         'imageurl' => get_template_directory_uri() . '/images/',  
-        'cartQty' => WC()->cart->get_cart_contents_count() 
+        'cartQty' => WC()->cart->get_cart_contents_count(),
+        'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
+        'posts' => json_encode( $wp_query->query_vars ), // everything about your loop is here
+        'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
+        'max_page' => $wp_query->max_num_pages
+
     ));
 });
 
@@ -710,3 +717,55 @@ function profiles_save($post_id) {
 	
 };
 */
+
+
+
+
+
+
+//// Load more functionality
+
+ 
+
+
+function misha_loadmore_ajax_handler(){
+	// prepare our arguments for the query
+	$args = json_decode( stripslashes( $_POST['query'] ), true );
+	$args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
+	$args['post_status'] = 'publish';
+            
+           
+            $args = array(
+                'post_type'           => 'product',
+                'post_status'         => 'publish',
+                'posts_per_page'      => 3,
+                'orderby'             => 'menu_order',
+                'order'               => 'ASC',
+                'paged'               => $args['paged']
+            );
+            
+            $productsQuery = new WP_Query( $args );
+                
+            if ($productsQuery->have_posts()) {
+            
+                while ($productsQuery->have_posts()) : 
+                
+                    $productsQuery->the_post();
+                    
+                    $args['product'] = get_product( $productsQuery->post->ID );
+                    $args['loadMore'] = true;
+
+                    ?>
+                        <?php  get_template_part('components/partials/product', 'single', $args);?>
+                       
+                    <?php
+                
+                
+                endwhile;
+            
+            }
+        
+	die; // here we exit the script and even no wp_reset_query() required!
+}
+add_action('wp_ajax_loadmore', 'misha_loadmore_ajax_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_loadmore', 'misha_loadmore_ajax_handler'); // wp_ajax_nopriv_{action}

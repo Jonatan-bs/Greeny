@@ -1253,7 +1253,7 @@ input {
   background-color: #2c9558;
   color: #f8f8f8;
   border: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding: 10px 20px;
   font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
@@ -1442,8 +1442,16 @@ p {
   margin-top: 90px;
 }
 
+.mt-1 {
+  margin-top: 40px;
+}
+
 .mb {
   margin-bottom: 90px;
+}
+
+.mb-1 {
+  margin-bottom: 40px;
 }
 
 .body-sm {
@@ -1593,15 +1601,33 @@ p {
   opacity: 0;
 }
 
-.slideIn {
-  transition: all 0.8s ease;
-  transform: translateY(60px);
-}
 .slideIn.activated {
-  transform: translateY(0px);
   opacity: 1;
+  -webkit-animation: 0.8s ease 0s slideIn;
+          animation: 0.8s ease 0s slideIn;
 }
 
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 .slideInCenter {
   transition: all 0.8s ease;
   transform: translate(-50%, -45%);

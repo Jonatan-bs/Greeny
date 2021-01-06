@@ -67,7 +67,7 @@ cursor: pointer;
   background-color: $primary;
   color: $light;
   border: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;  
   padding: 10px 20px;
   @include display-sm;
@@ -218,8 +218,14 @@ p {
 .mt{
   margin-top: 90px;
 }
+.mt-1{
+  margin-top: 40px;
+}
 .mb{
   margin-bottom: 90px;
+}
+.mb-1{
+  margin-bottom: 40px;
 }
 
 
@@ -305,13 +311,22 @@ p {
   opacity: 0;
 }
 .slideIn{
-  transition: all .8s ease;
-  transform: translateY(60px);
   &.activated{
+    opacity: 1;
+    animation: .8s ease 0s slideIn;
+  }
+}
+@keyframes slideIn {
+  0% {
+  transform: translateY(60px);
+  opacity: 0;
+  }
+  100% {
     transform: translateY(0px);
     opacity: 1;
   }
 }
+
 .slideInCenter{
   transition: all .8s ease;
   transform: translate(-50%, -45%);
