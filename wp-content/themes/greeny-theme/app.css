@@ -1307,6 +1307,30 @@ input {
   display: none;
 }
 
+.page-nav-container {
+  display: flex;
+  justify-content: center;
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
+  font-size: 35px;
+}
+@media screen and (max-width: 599px) {
+  .page-nav-container {
+    font-size: 25px;
+  }
+}
+.page-nav-container .current {
+  color: #2c9558;
+}
+.page-nav-container a, .page-nav-container span {
+  border: 1px solid #c9c9c9;
+  width: 40px;
+  height: 40px;
+  margin-right: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .gap-3 {
   gap: 30px;
 }
