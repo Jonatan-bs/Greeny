@@ -26,8 +26,8 @@ get_header('light'); ?>
 					}
 
 				?>
-				<div class="content text <?php echo $hideContent? 'hidden' : ''; ?>">
-					<section class="content mb">
+				<div class="content text ">
+					<section class="content mb <?php echo $hideContent? 'hidden' : ''; ?>">
 
 					
 					<?php  
@@ -65,11 +65,18 @@ get_header('light'); ?>
 							</div>
 						</div>
 					<?php } ?>
+					<?php 
+						// do_action( 'woocommerce_after_single_product_summary' );
+						echo $hideContent?  '' : '<hr>';
+						$args['product-id'] = $product->get_id() ;
+					 	get_template_part('components/products', 'related', $args); ?>
+
 					
 				</div>
 
 			<?php endwhile; ?>
 		
 <?php
+
 get_footer( 'shop' );
 
