@@ -14,9 +14,37 @@
         margin: 0 auto;
         padding: 0 230px;
         text-align: center;
-        img{
-            max-width: initial;
+        &>div{
+            width: 30%;
         }
+    }
+    @include lt-md{
+        .symbols{
+            position: relative;
+            height: auto;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            margin: 0 auto;
+            gap: 0;
+            flex-wrap: wrap;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            max-width: 550px;
+            div{
+                width: 33%;
+            }
+            >img{
+                display: none;
+            }
+            &>p:nth-of-type(1){
+                margin-bottom: 20px;
+                width: 100%;
+                position: relative;
+            }
+        }
+
     }
 
     @include lt-sm{
@@ -31,7 +59,7 @@
             flex-wrap: wrap;
             padding: 0;
             text-align: center;
-            width: auto;
+            width: 100%;
             max-width: 340px;
             div{
                 width: 50%;

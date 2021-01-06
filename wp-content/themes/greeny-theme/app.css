@@ -841,8 +841,35 @@ footer .secundary-menu a {
 .symbols-container .symbols > p:nth-of-type(1), .symbols-container .symbols > img:nth-of-type(1) {
   position: absolute;
 }
-.symbols-container .symbols img {
-  max-width: initial;
+.symbols-container .symbols > div {
+  width: 30%;
+}
+@media screen and (max-width: 959px) {
+  .symbols-container .symbols {
+    position: relative;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    gap: 0;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    max-width: 550px;
+  }
+  .symbols-container .symbols div {
+    width: 33%;
+  }
+  .symbols-container .symbols > img {
+    display: none;
+  }
+  .symbols-container .symbols > p:nth-of-type(1) {
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+  }
 }
 @media screen and (max-width: 599px) {
   .symbols-container .symbols {
@@ -856,7 +883,7 @@ footer .secundary-menu a {
     flex-wrap: wrap;
     padding: 0;
     text-align: center;
-    width: auto;
+    width: 100%;
     max-width: 340px;
   }
   .symbols-container .symbols div {
