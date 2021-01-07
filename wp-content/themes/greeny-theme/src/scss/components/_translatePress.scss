@@ -1,0 +1,30 @@
+#trp-floater-ls {
+    background: $secondary-light !important;
+    border-radius: 0 !important;
+    // border: 1px solid #65c990;
+    box-shadow: none;
+    position: absolute;
+    top: 0 !important;
+    left: 35px !important;
+
+    @include lt-sm{
+        left: 10px !important;
+    }
+
+}
+#trp-floater-ls-current-language a, #trp-floater-ls-language-list a {
+    padding: 7px 12px 7px 12px;
+}
+#trp-floater-ls-language-list a:hover {
+    color: #FAFAFA;
+    background-color: $secondary !important;
+}
+// #trp-floater-ls #trp-floater-ls-language-list, #trp-floater-ls #trp-floater-ls-language-list {
+//     display: block !important;
+// }
+// #trp-floater-ls-current-language{
+//     display: none;
+// }
+// .trp-ls-disabled-language{
+//     display: none !important;
+// }

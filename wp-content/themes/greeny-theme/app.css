@@ -1256,6 +1256,29 @@ nav.woocommerce-MyAccount-navigation li.is-active a {
   color: #2b9558;
 }
 
+#trp-floater-ls {
+  background: #a5cbef !important;
+  border-radius: 0 !important;
+  box-shadow: none;
+  position: absolute;
+  top: 0 !important;
+  left: 35px !important;
+}
+@media screen and (max-width: 599px) {
+  #trp-floater-ls {
+    left: 10px !important;
+  }
+}
+
+#trp-floater-ls-current-language a, #trp-floater-ls-language-list a {
+  padding: 7px 12px 7px 12px;
+}
+
+#trp-floater-ls-language-list a:hover {
+  color: #FAFAFA;
+  background-color: #2699fb !important;
+}
+
 body,
 html {
   position: relative;
