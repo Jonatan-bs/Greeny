@@ -10,7 +10,7 @@ get_header('light'); ?>
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); 
 				// $args = $product);
-?>
+				?>
 				
 				<?php get_template_part('components/single-product-showcase', null, ['product' => $product]); ?>
 				
@@ -27,7 +27,13 @@ get_header('light'); ?>
 
 				?>
 				<div class="content text ">
-					<section class="content mb <?php echo $hideContent? 'hidden' : ''; ?>">
+					
+					<div class="nav">
+						<a href="#" data-section="description" class="active">Description</a>
+						<a href="#" data-section="reviews" >Reviews</a>
+					</div>
+
+					<section class="description content mb <?php echo $hideContent? 'hidden' : ''; ?>">
 
 					
 					<?php  
@@ -55,6 +61,9 @@ get_header('light'); ?>
 						}
 					?>
 					</section>
+					<section class="reviews mb hidden">
+						<?php comments_template(); ?>
+					</section>
 					<?php if ($product->is_purchasable() && !$hideContent) { ?>   
 						<div class="flexcenter mb">
 							<div class="add-to-cart-button light pointer button" data-id="<?php echo esc_attr( $product->get_id() ); ?>" > 
@@ -65,7 +74,9 @@ get_header('light'); ?>
 							</div>
 						</div>
 					<?php } ?>
-					<?php 
+
+					<?php
+						// Related Products 
 						// do_action( 'woocommerce_after_single_product_summary' );
 						echo $hideContent?  '' : '<hr>';
 						$args['product-id'] = $product->get_id() ;

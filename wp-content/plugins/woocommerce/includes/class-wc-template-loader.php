@@ -39,7 +39,7 @@ class WC_Template_Loader {
 	public static function init() {
 		self::$theme_support = current_theme_supports( 'woocommerce' );
 		self::$shop_page_id  = wc_get_page_id( 'shop' );
-
+		
 		// Supported themes.
 		if ( self::$theme_support ) {
 			add_filter( 'template_include', array( __CLASS__, 'template_loader' ) );

@@ -776,6 +776,24 @@ footer .secundary-menu a {
   height: 90%;
   z-index: 0;
 }
+#single-product .nav, .woocommerce #single-product .nav {
+  text-align: center;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 0 0 20px 0;
+}
+#single-product .nav a, .woocommerce #single-product .nav a {
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
+  font-size: 25px;
+  padding: 0 20px;
+}
+@media screen and (max-width: 599px) {
+  #single-product .nav a, .woocommerce #single-product .nav a {
+    font-size: 20px;
+  }
+}
+#single-product .nav a.active, .woocommerce #single-product .nav a.active {
+  color: #2c9558;
+}
 
 .ingredients {
   display: flex;
@@ -1199,6 +1217,43 @@ nav.woocommerce-MyAccount-navigation li.is-active a {
   background: #f8f8f8;
   height: 4px;
   border-radius: 100px;
+}
+
+.woocommerce #reviews #comments ol.commentlist li img.avatar {
+  display: none;
+}
+
+.woocommerce #reviews #comments ol.commentlist {
+  padding: 0;
+}
+
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+  margin: 0;
+}
+
+#reply-title {
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+@media screen and (max-width: 599px) {
+  #reply-title {
+    font-size: 25px;
+  }
+}
+
+#review_form_wrapper {
+  background: #98b3cd;
+  color: #fff;
+  padding: 20px;
+}
+#review_form_wrapper a {
+  color: #fff;
+}
+
+.star-rating {
+  color: #2b9558;
 }
 
 body,

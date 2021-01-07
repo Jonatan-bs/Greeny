@@ -1,0 +1,30 @@
+.woocommerce #reviews #comments ol.commentlist li img.avatar{
+    display: none;
+}
+.woocommerce #reviews #comments ol.commentlist {
+    padding: 0;
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text{
+    margin: 0;
+}
+#reply-title{
+    @include display-md;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#review_form_wrapper {
+    background: #98b3cd;
+    color: #fff;
+    padding: 20px;
+    a{
+        color: #fff;
+    }
+}
+// #comments {
+//     padding: 20px;
+//     background: #eaf0f5;
+// }
+.star-rating {
+    color: #2b9558;
+}

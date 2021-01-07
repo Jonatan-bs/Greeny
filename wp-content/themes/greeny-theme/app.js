@@ -110,34 +110,56 @@ $(document.body).on('updated_cart_totals', function () {
 });
 document.addEventListener('click', function (e) {
   // Open Mobile Menu
+  if (e.target.closest('#single-product .nav a')) {
+    var button = e.target.closest('#single-product .nav a');
+    if (button.classList.contains("active")) return;
+    button.parentNode.querySelectorAll('a').forEach(function (a) {
+      if (button === a) {
+        a.classList.add('active');
+        $('.' + a.dataset.section).removeClass('hidden');
+      } else {
+        a.classList.remove('active');
+        $('.' + a.dataset.section).addClass('hidden');
+      }
+    }); // $('.' + button.dataset.section).removeClass('hidden')
+    // $('.' + button.dataset.section).addClass('active')
+    // console.log( button);
+  } // Single page nav
+
+
   if (e.target.closest('.burger-menu')) {
     $('#mobile-nav').toggleClass('active');
   } // Add product to cart
 
 
   if (e.target.closest('.add-to-cart-button')) {
-    var button = e.target.closest('.add-to-cart-button'); // Button add to cart button
+    var _button = e.target.closest('.add-to-cart-button'); // Button add to cart button
 
-    var id = button.dataset.id;
-    $(button).children().animate({
+
+    var id = _button.dataset.id;
+    $(_button).children().animate({
       "opacity": .1
     }, 100); // Show spinner
 
     var spinner = document.createElement('img');
     spinner.classList.add('spinner');
-    var spinnerSrc = button.classList.contains('light') ? '/spinner-light.svg' : '/spinner.svg';
+    var spinnerSrc = _button.classList.contains('light') ? '/spinner-light.svg' : '/spinner.svg';
     spinner.src = attr.imageurl + spinnerSrc;
-    button.appendChild(spinner);
-    fetch('/?add-to-cart=' + button.dataset.id).then(function () {
+
+    _button.appendChild(spinner);
+
+    fetch('/?add-to-cart=' + _button.dataset.id).then(function () {
       var tick = document.createElement('img');
       tick.classList.add('tick');
-      var tickSrc = button.classList.contains('light') ? '/tick-light.svg' : '/tick.svg';
+      var tickSrc = _button.classList.contains('light') ? '/tick-light.svg' : '/tick.svg';
       tick.src = attr.imageurl + tickSrc;
-      button.replaceChild(tick, spinner);
+
+      _button.replaceChild(tick, spinner);
+
       updateCartAmount(++attr.cartQty);
       setTimeout(function () {
         tick.parentNode.removeChild(tick);
-        $(button).children().animate({
+        $(_button).children().animate({
           "opacity": 1
         }, 300);
       }, 1000);

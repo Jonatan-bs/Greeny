@@ -15,6 +15,31 @@ $(document.body).on('updated_cart_totals', function () {
 
 document.addEventListener('click',(e)=>{
     // Open Mobile Menu
+    if(e.target.closest('#single-product .nav a')){
+
+        let button = e.target.closest('#single-product .nav a');
+
+        if(button.classList.contains("active")) return;
+
+        button.parentNode.querySelectorAll('a').forEach( a =>{
+            
+            if( button === a){
+                a.classList.add('active')
+                $('.' + a.dataset.section).removeClass('hidden')
+            } else {
+                a.classList.remove('active')
+                $('.' + a.dataset.section).addClass('hidden')
+            }            
+        });
+
+
+        // $('.' + button.dataset.section).removeClass('hidden')
+        // $('.' + button.dataset.section).addClass('active')
+        // console.log( button);
+
+    }
+
+    // Single page nav
     if(e.target.closest('.burger-menu')){
         $('#mobile-nav').toggleClass('active')
     }

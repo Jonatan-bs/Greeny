@@ -89,4 +89,14 @@
         }
     
     }
+    .nav{
+        text-align: center;
+        border-bottom: 1px solid #d6d6d6;
+        padding: 0 0 20px 0;
+        a{
+            @include display-sm;
+            padding: 0 20px;
+        }
+        a.active{ color: $primary}
+    }
 }
