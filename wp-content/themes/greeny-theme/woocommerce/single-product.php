@@ -16,15 +16,6 @@ get_header('light'); ?>
 				
 				<?php 
 					$components = get_post_meta( $post->ID, 'component_position_fields', true );
-					$hideContent = false;
-					
-					foreach($components as $component){
-						if($component['component'] === 'hideContent'):
-							$hideContent = true;
-							break;
-						endif;
-					}
-
 				?>
 				<div class="content text ">
 					
@@ -33,38 +24,42 @@ get_header('light'); ?>
 						<a href="#" data-section="reviews" >Reviews</a>
 					</div>
 
-					<section class="description content mb <?php echo $hideContent? 'hidden' : ''; ?>">
+					<section class="description content mb">
 
 					
 					<?php  
-						if(!$hideContent){
-							if($components){
-								foreach($components as $component){
-									switch ($component['component']) {
-										case 'content':
-											the_content();
-											break;
-										case 'symbols':
-											get_template_part('components/symbols');
-											break;
-										case 'ingredients':
-											get_template_part('components/ingredients');
-											break;
-										case 'hideContent':
-											break;
-										
-									}
+						
+						if($components){
+							foreach($components as $component){
+								switch ($component['component']) {
+									case 'content':
+										// the_content();
+										break;
+									case 'symbols':
+										get_template_part('components/symbols');
+										break;
+									case 'ingredients':
+										get_template_part('components/ingredients');
+										break;
+									case 'hideContent':
+										break;
+									
 								}
-							} else{
+							}
+						} else{
+							if ( !empty( get_the_content() ) ){
 								the_content();
+							} else{
+								echo "There's no decription for this product" ;
 							}
 						}
+						
 					?>
 					</section>
 					<section class="reviews mb hidden">
 						<?php comments_template(); ?>
 					</section>
-					<?php if ($product->is_purchasable() && !$hideContent) { ?>   
+					<?php if ($product->is_purchasable()) { ?>   
 						<div class="flexcenter mb">
 							<div class="add-to-cart-button light pointer button" data-id="<?php echo esc_attr( $product->get_id() ); ?>" > 
 								<p> 
