@@ -90,87 +90,57 @@
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _js_cart__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/cart */ "./src/js/cart.js");
+/* harmony import */ var _js_cart__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_cart__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _js_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/menu */ "./src/js/menu.js");
+/* harmony import */ var _js_menu__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_menu__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _js_animate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/animate */ "./src/js/animate.js");
+/* harmony import */ var _js_animate__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_animate__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _js_loadMore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/loadMore */ "./src/js/loadMore.js");
+/* harmony import */ var _js_loadMore__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_loadMore__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+/***/ }),
+
+/***/ "./src/app.scss":
+/*!**********************!*\
+  !*** ./src/app.scss ***!
+  \**********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var $ = jQuery;
+// removed by extract-text-webpack-plugin
 
-function updateCartAmount(amount) {
-  $('header.greeny .add-to-cart.symbol .qty').show().html(amount);
-  $('#mobile-menu .add-to-cart.symbol .qty').show().html(amount);
-} //Update amount when cart is updated
+/***/ }),
 
+/***/ "./src/editor.scss":
+/*!*************************!*\
+  !*** ./src/editor.scss ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-$(document.body).on('updated_cart_totals', function () {
-  // Get the formatted cart total
-  var amount = Array.from($('input.qty')).reduce(function (accumulator, currentValue) {
-    return accumulator + Number(currentValue.value);
-  }, 0);
-  updateCartAmount(amount);
-});
-document.addEventListener('click', function (e) {
-  // Open Mobile Menu
-  if (e.target.closest('#single-product .nav a')) {
-    var button = e.target.closest('#single-product .nav a');
-    if (button.classList.contains("active")) return;
-    button.parentNode.querySelectorAll('a').forEach(function (a) {
-      if (button === a) {
-        a.classList.add('active');
-        $('.' + a.dataset.section).removeClass('hidden');
-      } else {
-        a.classList.remove('active');
-        $('.' + a.dataset.section).addClass('hidden');
-      }
-    }); // $('.' + button.dataset.section).removeClass('hidden')
-    // $('.' + button.dataset.section).addClass('active')
-    // console.log( button);
-  } // Single page nav
+// removed by extract-text-webpack-plugin
 
+/***/ }),
 
-  if (e.target.closest('.burger-menu')) {
-    $('#mobile-nav').toggleClass('active');
-  } // Add product to cart
+/***/ "./src/js/animate.js":
+/*!***************************!*\
+  !*** ./src/js/animate.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-
-  if (e.target.closest('.add-to-cart-button')) {
-    var _button = e.target.closest('.add-to-cart-button'); // Button add to cart button
-
-
-    var id = _button.dataset.id;
-    $(_button).children().animate({
-      "opacity": .1
-    }, 100); // Show spinner
-
-    var spinner = document.createElement('img');
-    spinner.classList.add('spinner');
-    var spinnerSrc = _button.classList.contains('light') ? '/spinner-light.svg' : '/spinner.svg';
-    spinner.src = attr.imageurl + spinnerSrc;
-
-    _button.appendChild(spinner);
-
-    fetch('/?add-to-cart=' + _button.dataset.id).then(function () {
-      var tick = document.createElement('img');
-      tick.classList.add('tick');
-      var tickSrc = _button.classList.contains('light') ? '/tick-light.svg' : '/tick.svg';
-      tick.src = attr.imageurl + tickSrc;
-
-      _button.replaceChild(tick, spinner);
-
-      updateCartAmount(++attr.cartQty);
-      setTimeout(function () {
-        tick.parentNode.removeChild(tick);
-        $(_button).children().animate({
-          "opacity": 1
-        }, 300);
-      }, 1000);
-    })["catch"](function (e) {
-      console.log('error');
-      console.log(e);
-    });
-  }
-}); // Animate in
-
-function checkPosition() {
+// Animate in
+function animateInViewport() {
   var windowHeight = window.innerHeight;
   var elements = document.querySelectorAll('.animate:not(.activated):not(.animating)');
   var array = [];
@@ -198,10 +168,79 @@ function checkPosition() {
   }
 }
 
-document.querySelector('body').addEventListener('scroll', checkPosition);
-window.addEventListener('resize', checkPosition);
-checkPosition(); //// Load more functionality
+document.querySelector('body').addEventListener('scroll', animateInViewport);
+window.addEventListener('resize', animateInViewport);
+animateInViewport();
 
+/***/ }),
+
+/***/ "./src/js/cart.js":
+/*!************************!*\
+  !*** ./src/js/cart.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+jQuery(function ($) {
+  function updateCartAmount(amount) {
+    $('header.greeny .add-to-cart.symbol .qty').show().html(amount);
+    $('#mobile-menu .add-to-cart.symbol .qty').show().html(amount);
+  } //Update amount when cart is updated
+
+
+  $(document.body).on('updated_cart_totals', function () {
+    // Get the formatted cart total
+    var amount = Array.from($('input.qty')).reduce(function (accumulator, currentValue) {
+      return accumulator + Number(currentValue.value);
+    }, 0);
+    updateCartAmount(amount);
+  });
+  document.addEventListener('click', function (e) {
+    // Add product to cart
+    if (e.target.closest('.add-to-cart-button')) {
+      var button = e.target.closest('.add-to-cart-button'); // Button add to cart button
+
+      var id = button.dataset.id;
+      $(button).children().animate({
+        "opacity": .1
+      }, 100); // Show spinner
+
+      var spinner = document.createElement('img');
+      spinner.classList.add('spinner');
+      var spinnerSrc = button.classList.contains('light') ? '/spinner-light.svg' : '/spinner.svg';
+      spinner.src = attr.imageurl + spinnerSrc;
+      button.appendChild(spinner);
+      fetch('/?add-to-cart=' + button.dataset.id).then(function () {
+        var tick = document.createElement('img');
+        tick.classList.add('tick');
+        var tickSrc = button.classList.contains('light') ? '/tick-light.svg' : '/tick.svg';
+        tick.src = attr.imageurl + tickSrc;
+        button.replaceChild(tick, spinner);
+        updateCartAmount(++attr.cartQty);
+        setTimeout(function () {
+          tick.parentNode.removeChild(tick);
+          $(button).children().animate({
+            "opacity": 1
+          }, 300);
+        }, 1000);
+      })["catch"](function (e) {
+        console.log('error');
+        console.log(e);
+      });
+    }
+  });
+});
+
+/***/ }),
+
+/***/ "./src/js/loadMore.js":
+/*!****************************!*\
+  !*** ./src/js/loadMore.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//// Load more functionality
 jQuery(function ($) {
   // use jQuery code inside this to avoid "$ is not defined" error
   $('.loadmore').click(function () {
@@ -241,25 +280,38 @@ jQuery(function ($) {
 
 /***/ }),
 
-/***/ "./src/app.scss":
-/*!**********************!*\
-  !*** ./src/app.scss ***!
-  \**********************/
+/***/ "./src/js/menu.js":
+/*!************************!*\
+  !*** ./src/js/menu.js ***!
+  \************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+jQuery(function ($) {
+  document.addEventListener('click', function (e) {
+    // Toggle Mobile Menu
+    if (e.target.closest('.burger-menu')) {
+      $('#mobile-nav').toggleClass('active');
+    } // Open Mobile Menu
 
-/***/ }),
 
-/***/ "./src/editor.scss":
-/*!*************************!*\
-  !*** ./src/editor.scss ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+    if (e.target.closest('#single-product .nav a')) {
+      var button = e.target.closest('#single-product .nav a');
+      if (button.classList.contains("active")) return;
+      button.parentNode.querySelectorAll('a').forEach(function (a) {
+        if (button === a) {
+          a.classList.add('active');
+          $('.' + a.dataset.section).removeClass('hidden');
+        } else {
+          a.classList.remove('active');
+          $('.' + a.dataset.section).addClass('hidden');
+        }
+      });
+    }
 
-// removed by extract-text-webpack-plugin
+    ;
+  });
+});
 
 /***/ }),
 
