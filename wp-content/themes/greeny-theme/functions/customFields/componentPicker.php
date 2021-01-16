@@ -1,16 +1,15 @@
 <?php
 
 // Template + positions
-add_action('admin_init', 'hhs_add_component_position_meta_boxes', 1);
+add_action('admin_init', 'add_component_position_meta_boxes', 1);
 
 // Add meta fields
-function hhs_add_component_position_meta_boxes() {
-	add_meta_box( 'component-position-fields', 'Component Position Fields', 'hhs_component_position_meta_box_display', 'product', 'normal', 'default');
+function add_component_position_meta_boxes() {
+	add_meta_box( 'component-position-fields', 'Component Position Fields', 'component_position_meta_box_display', 'product', 'normal', 'default');
 }
 
 // create frontend
-function hhs_component_position_meta_box_display() {
-    global $post;
+function component_position_meta_box_display() {
     $options = [
         [
             "value" => "content",
@@ -27,9 +26,11 @@ function hhs_component_position_meta_box_display() {
 
     ];
 
-	$component_position_fields = get_post_meta($post->ID, 'component_position_fields', true);
-
-	wp_nonce_field( 'hhs_component_position_meta_box_nonce', 'hhs_component_position_meta_box_nonce' );
+    global $post;
+    
+	$component_position_fields = get_post_meta($post->ID, 'component_position_fields', false);
+    
+	wp_nonce_field( 'component_position_meta_box_nonce', 'component_position_meta_box_nonce' );
 	?>
     <script type="text/javascript">
     // Create new field on click
@@ -134,10 +135,10 @@ function hhs_component_position_meta_box_display() {
 };
 
 // Save post meta 
-add_action('save_post', 'hhs_component_position_meta_box_save');
-function hhs_component_position_meta_box_save($post_id) {
-	if ( ! isset( $_POST['hhs_component_position_meta_box_nonce'] ) ||
-	! wp_verify_nonce( $_POST['hhs_component_position_meta_box_nonce'], 'hhs_component_position_meta_box_nonce' ) )
+add_action('save_post', 'component_position_meta_box_save');
+function component_position_meta_box_save($post_id) {
+	if ( ! isset( $_POST['component_position_meta_box_nonce'] ) ||
+	! wp_verify_nonce( $_POST['component_position_meta_box_nonce'], 'component_position_meta_box_nonce' ) )
 		return;
 	
 	if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
@@ -147,11 +148,11 @@ function hhs_component_position_meta_box_save($post_id) {
 		return;
 	
 	$old = get_post_meta($post_id, 'component_position_fields', true);
-	$new = array();
+    
+    $new = array();
 	
 	$components = $_POST['component'];
     
-	
     $count = count( $components );
     
 	for ( $i = 0; $i < $count; $i++ ) {

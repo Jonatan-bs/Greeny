@@ -1,12 +1,12 @@
 //// Load more functionality
 
-jQuery(function($){ // use jQuery code inside this to avoid "$ is not defined" error
+jQuery(function($){ 
 	$('.loadmore').click(function(){
 
         var button = $(this),
 		    data = {
 			'action': 'loadmore',
-			'query': attr.posts, // that's how we get params from wp_localize_script() function
+			'query': attr.posts,
 			'page' : attr.current_page
         };
         

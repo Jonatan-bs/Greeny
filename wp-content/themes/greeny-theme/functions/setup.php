@@ -34,9 +34,9 @@ register_nav_menus(
 add_image_size('custom_product_thumbnail', 420, 300, true); 
 
 //Change style in WYSIWYG editor
-add_action( 'after_setup_theme', 'misha_gutenberg_css' );
+add_action( 'after_setup_theme', 'gutenberg_css' );
  
-function misha_gutenberg_css(){
+function gutenberg_css(){
  
 	add_theme_support( 'editor-styles' ); // if you don't add this line, your stylesheet won't be added
 	add_editor_style( 'editor.css' ); // tries to include style-editor.css directly from your theme folder

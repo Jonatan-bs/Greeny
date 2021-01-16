@@ -50,7 +50,7 @@ get_header('light'); ?>
 							if ( !empty( get_the_content() ) ){
 								the_content();
 							} else{
-								echo "There's no decription for this product" ;
+								echo "There's no description for this product" ;
 							}
 						}
 						

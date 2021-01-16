@@ -1,10 +1,10 @@
 <?php
 //// Load more functionality
 
-function misha_loadmore_ajax_handler(){
-	// prepare our arguments for the query
-	$args = json_decode( stripslashes( $_POST['query'] ), true );
-	$args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
+function loadmore_ajax_handler(){
+
+    $args = json_decode( stripslashes( $_POST['query'] ), true );
+	$args['paged'] = $_POST['page'] + 1;
 	$args['post_status'] = 'publish';
             
            
@@ -40,6 +40,6 @@ function misha_loadmore_ajax_handler(){
         
 	die; // here we exit the script and even no wp_reset_query() required!
 }
-add_action('wp_ajax_loadmore', 'misha_loadmore_ajax_handler'); // wp_ajax_{action}
-add_action('wp_ajax_nopriv_loadmore', 'misha_loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
+add_action('wp_ajax_loadmore', 'loadmore_ajax_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_loadmore', 'loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
 
