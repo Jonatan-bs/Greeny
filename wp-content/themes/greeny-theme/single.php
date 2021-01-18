@@ -6,7 +6,7 @@
         <h1 class=""><?php the_title()?></h1>
         
         <?php if(has_post_thumbnail()):?>
-            <img class="featuredImage" src="<?php the_post_thumbnail_url('post_image'); ?>"/>
+            <img class="featuredImage" src="<?php the_post_thumbnail_url('post_image'); ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true ); ?>"/>
         <?php endif; ?>
 
         

@@ -8,7 +8,7 @@
 ?> >
     <a href="<?php the_permalink(); ?>">
         <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );?>
-        <img  class="product-image" src="<?echo $src[0];?>" alt="">
+        <img  class="product-image" src="<?echo $src[0];?>"  alt="<?php echo get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true ); ?>">
         
         <?php if(!$product->is_in_stock()){?> 
             <div class="info outofstock">Out of stock</div>

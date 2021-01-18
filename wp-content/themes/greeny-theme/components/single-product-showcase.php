@@ -8,7 +8,7 @@ $product = $args['product'];
         <div class="product-image-width">
             <div class="aspect-wrap">
                 <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );?>
-                <img  class="product-image animate slideInCenter" src="<?php echo $src[0];?>" alt="">
+                <img  class="product-image animate slideInCenter" src="<?php echo $src[0];?>" alt="<?php echo get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true ); ?>">
                 <div class="circle"></div>
             </div>
         </div> 

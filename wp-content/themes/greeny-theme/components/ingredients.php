@@ -15,7 +15,9 @@
                             class="symbol" 
                             src="<?php echo $image_attr[0] ?>" 
                             width="<?php echo $image_attr[1] ?>" 
-                            height="<?php echo $image_attr[2] ?>" alt="" />
+                            height="<?php echo $image_attr[2] ?>" 
+                            alt="Fruit symbol" 
+                            />
 
                         <p class="percentage"><?php echo $percentage ?></p>
                     </div>

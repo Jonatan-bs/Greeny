@@ -3,13 +3,13 @@
 <footer>
     <div class="some-buttons">
         <div>
-            <a href="#"><img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/instagram.svg" alt="instagram" ></a>
+            <a href="#"><img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/instagram.svg" alt="instagram link" ></a>
         </div>
         <div>
-            <a href="#"><img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/twitter.svg" alt="twitter" ></a>
+            <a href="#"><img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/twitter.svg" alt="twitter link" ></a>
         </div>
         <div>
-            <a href="#"> <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/facebook.svg" alt="facebook" ></a>
+            <a href="#"> <img  class="symbol" src="<?php echo get_template_directory_uri() ?>/images/facebook.svg" alt="facebook link" ></a>
         </div>
 
     </div>
