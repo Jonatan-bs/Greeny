@@ -311,18 +311,18 @@ footer .secundary-menu a {
     width: 130px;
   }
 }
-#front-page .starterpack {
+#front-page .starterpack > div {
   text-align: center;
   position: relative;
   height: 350px;
 }
-#front-page .starterpack a {
+#front-page .starterpack > div a {
   text-decoration: underline;
 }
-#front-page .starterpack p {
+#front-page .starterpack > div p {
   position: relative;
 }
-#front-page .starterpack .blue-circle:nth-of-type(1) {
+#front-page .starterpack > div .blue-circle:nth-of-type(1) {
   width: 330px;
   height: 330px;
   opacity: 0.1;
@@ -334,12 +334,12 @@ footer .secundary-menu a {
   transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 599px) {
-  #front-page .starterpack .blue-circle:nth-of-type(1) {
+  #front-page .starterpack > div .blue-circle:nth-of-type(1) {
     width: 270px;
     height: 270px;
   }
 }
-#front-page .starterpack .blue-circle:nth-of-type(2) {
+#front-page .starterpack > div .blue-circle:nth-of-type(2) {
   width: 60px;
   height: 60px;
   opacity: 0.1;
@@ -351,11 +351,11 @@ footer .secundary-menu a {
   transform: translate(-190px, 0px);
 }
 @media screen and (max-width: 599px) {
-  #front-page .starterpack .blue-circle:nth-of-type(2) {
+  #front-page .starterpack > div .blue-circle:nth-of-type(2) {
     transform: translate(-160px, -10px);
   }
 }
-#front-page .starterpack .blue-circle:nth-of-type(3) {
+#front-page .starterpack > div .blue-circle:nth-of-type(3) {
   width: 90px;
   height: 90px;
   opacity: 0.1;
@@ -367,15 +367,15 @@ footer .secundary-menu a {
   transform: translate(170px, 40px);
 }
 @media screen and (max-width: 599px) {
-  #front-page .starterpack .blue-circle:nth-of-type(3) {
+  #front-page .starterpack > div .blue-circle:nth-of-type(3) {
     transform: translate(120px, 20px);
   }
 }
-#front-page .starterpack .fruits {
+#front-page .starterpack > div .fruits {
   height: 120px;
   position: relative;
 }
-#front-page .starterpack .fruits img {
+#front-page .starterpack > div .fruits img {
   left: 50%;
   top: 0%;
   position: absolute;
@@ -1295,7 +1295,6 @@ html {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   height: 100%;
-  overflow-x: hidden;
 }
 @media screen and (max-width: 599px) {
   body,
@@ -1501,6 +1500,7 @@ p {
 }
 
 .content {
+  overflow-x: hidden;
   width: 100%;
   margin: 0 auto;
   max-width: 1450px;

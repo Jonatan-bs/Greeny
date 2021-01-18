@@ -29,7 +29,7 @@ function animateInViewport() {
    
 }
 
-document.querySelector('body').addEventListener('scroll', animateInViewport);
+document.addEventListener('scroll', animateInViewport);
 window.addEventListener('resize', animateInViewport);
 
 animateInViewport();
