@@ -31,9 +31,11 @@
         <?php  get_template_part('components/blog','teaser');?>
     </section>
 <!-- Newsletter -->
+<!--    
     <section class="content mb animate slideIn">
         <?php  get_template_part('components/newsletter');?>
     </section>
+-->
     
 </div>
 <?php get_footer(); ?>

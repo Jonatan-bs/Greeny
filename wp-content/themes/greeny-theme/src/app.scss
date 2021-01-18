@@ -35,17 +35,19 @@
 // $blog-display-xl: 48px;
 
 
+
+
 body,
 html {
-  position: relative;
+  // position: relative ;
   margin: 0;
   padding: 0;
   color: $dark;
   background: $light;
   @include blog-body-md;
   height: 100%;
-  // overflow-x: hidden;
 }
+
 
 body{
   display: flex;

@@ -1,0 +1,1371 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Coupon Box for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 03:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/woo-coupon-box.php:36
+msgid ""
+"Please install and activate WooCommerce to use Coupon Box for WooCommerce."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:35
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:433
+msgid "Email campaign"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:36
+msgid "Given coupon"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:37
+msgid "Coupon value"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:38
+msgid "Expiry date"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:199
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:252
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:253
+msgid "Settings"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:284
+msgctxt "Admin menu"
+msgid "Coupon Box for WooCommerce"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:285
+msgctxt "Add new on Admin bar"
+msgid "Email"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:286
+msgctxt "role"
+msgid "Add New Subscribe"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:287
+msgid "Add New Email Subscribe"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:288
+msgid "New Email"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:289
+msgid "Edit Email"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:290
+msgid "View Email"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:291
+msgid "Email Subscribe"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:292
+msgid "Search Email"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:293
+msgid "Parent Email:"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:294
+msgid "No Email found."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/admin.php:295
+msgid "No Email found in Trash."
+msgstr ""
+
+#. Name of the plugin
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:515
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:264
+msgid "Coupon Box for WooCommerce"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:535
+msgid "Premium version features"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:553
+msgid "More triggers to show coupon box"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:554
+msgid "More option when visitors close Coupon box"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:555
+msgid "More input fields including name, mobile, birthday and gender"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:556
+msgid "Background effect like snow, rain..."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:557
+msgid "More templates to choose"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:558
+msgid "Google font"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:559
+msgid "ActiveCampaign integrated"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:560
+msgid "Premium support"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:571
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:275
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/includes/3rd/elementor/shortcode-widget.php:31
+msgid "General"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:586
+msgid "Select view mode to edit"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:588
+msgid "Before subscribe"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:589
+msgid "After subscribe"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:591
+msgid ""
+"This option is for you to see what it't like before and after visitors "
+"subscribe only"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:603
+msgid "Show coupon after subscribing."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:604
+msgid ""
+"If you set to give coupons for subscribers, beside sending coupon code via "
+"email address, enable this to print out the coupon code inside the coupon "
+"box after subscribing."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:616
+msgid "Coupon Box Rounded Corner (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:634
+msgid "Popup Display Type"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:666
+msgid "Overlay color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:697
+msgid "GDPR checkbox"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:709
+msgid "Set checkbox state \"checked\" as default"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:723
+msgid "GDPR message"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:740
+msgid "Button 'No, thanks'"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:753
+msgid "Button title"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:765
+msgid "Rounded corner (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:783
+msgid "Button title color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:800
+msgid "Button background color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:821
+msgid "Footer Text"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:835
+msgid "Footer Text After Subscribing"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:845
+msgid "Button Close"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:891
+msgid "Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:908
+msgid "Background Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:935
+msgid "Size (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:951
+msgid "Width (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:952
+msgid ""
+"Helpful tip: Set width to 0 to disable button close. Visitor can still close "
+"Coupon box without subscribing by clicking around or press Esc."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:968
+msgid "Rounded Corner (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:984
+msgid "Position-x (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:996
+msgid "Position-y (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1006
+msgid "Header"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1027
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1035
+msgid "Header Title"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1028
+msgid "Place words in <span></span> to make it display in new line"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1060
+msgid "Header Title After Subscribe"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1075
+msgid "Header Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1092
+msgid "Header Background Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1108
+msgid "Header Font Size(px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1109
+msgid "Helpful tip: Set both Header Font size and Space to 0 to hide header."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1126
+msgid "Header Space(px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1140
+msgid "Body"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1156
+msgid "Body Text Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1157
+msgid "wcb_coupon_box_design_body"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1173
+msgid "Body Background Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1202
+msgid "Body Background Image"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1218
+msgid "Body Background Image Repeat"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1220
+msgid "inherit"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1221
+msgid "no-repeat"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1222
+msgid "repeat"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1223
+msgid "repeat-x"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1224
+msgid "repeat-y"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1225
+msgid "round"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1226
+msgid "space"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1240
+msgid "Body Background Image Size"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1242
+msgid "Auto"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1243
+msgid "Inherit"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1244
+msgid "Contain"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1245
+msgid "Cover"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1259
+msgid "Body Background Image Position"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1260
+#, php-format
+msgid "Position of Background Image. Eg: 100% 100%, center..."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1280
+msgid "Message"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1293
+msgid "Message After Subscribing"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1305
+msgid "Message Size (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1322
+msgid "Message Text Align (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1324
+msgid "Left"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1325
+msgid "Center"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1326
+msgid "Right"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1327
+msgid "Justify"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1328
+msgid "Start"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1329
+msgid "End"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1345
+msgid "Message Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1358
+msgid "Social Media"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1445
+msgid "Text Follow Social Network"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1460
+msgid "Follow Us Text Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1475
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2216
+msgid "Icons size (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1491
+msgid "When click on social icons"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1493
+msgid "Open link in new tab"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1494
+msgid "Open link in current tab"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1532
+msgid "Facebook User Name"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1533
+msgid "Your Facebook User Name. Eg: villatheme"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1568
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1620
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1671
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1722
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1773
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1824
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1875
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1926
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1976
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2026
+msgid "Icon Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1585
+msgid "Twitter User Name"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1586
+msgid "Your Twitter User Name. Eg: villatheme"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1636
+msgid "Pinterest User Name"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1637
+msgid "Your Pinterest User Name. Eg: villatheme"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1687
+msgid "Instagram User Name"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1688
+msgid "Your Instagram User Name. Eg: villatheme"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1738
+msgid "Dribbble User Name"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1739
+msgid "Your Dribbble User Name. Eg: villatheme"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1789
+msgid "Tumblr User Name"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1790
+msgid "Your Tumblr User Name. Eg: villatheme"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1840
+msgid "Google Plus ID"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1841
+msgid "Your Google Plus ID. Eg: +LarryPage"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1891
+msgid "VKontakte User Name"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1892
+msgid "Your VKontakte User Name. Eg: villatheme"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1961
+msgid "Linkedin User Name"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:1962
+msgid "Your Linkedin User Name. Eg: villatheme"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2011
+msgid "Youtube URL"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2012
+msgid ""
+"Your Youtube full url. Eg: https://www.youtube."
+"com/channel/UCbCfnjbtBZIQfzLvXgNpbKw"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2039
+msgid "Button Subscribe & Email field"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2052
+msgid "Emai Input Rounded Corner (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2068
+msgid "Space between email field & button SUBSCRIBE"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2091
+msgid "Button Title"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2106
+msgid "Button Text Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2124
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/includes/3rd/elementor/shortcode-widget.php:64
+msgid "Button Background Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2139
+msgid "Button \"SUBSCRIBE\" Rounded Corner (px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2153
+msgid "Popup Icons"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2171
+msgid "Coupon box icon"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2172
+msgid ""
+"A small icon to call coupon again after a visitor closes coupon box without "
+"subscribing"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2184
+msgid "Coupon box icon on mobile"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2185
+msgid "Uncheck this to hide the coupon box icon on mobile"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2197
+msgid "Icon position"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2199
+msgid "Top Left"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2200
+msgid "Top Right"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2201
+msgid "Bottom Left"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2202
+msgid "Bottom Right"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2232
+msgid "Icon wrap rounded corner(px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2250
+msgid "Icon color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2278
+msgid "Icon background color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2372
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/design.php:2387
+msgid "Custom CSS"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/export_email.php:161
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/export_email.php:162
+msgid "Export Email"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/export_email.php:173
+msgid "Export email subscribe"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/export_email.php:184
+msgid "Choose type"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/export_email.php:186
+msgid "Date"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/export_email.php:187
+msgid "Campaign"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/export_email.php:194
+msgid "Start Date"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/export_email.php:201
+msgid "End Date"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/export_email.php:208
+msgid "Choose campaign"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:51
+msgid "Preview emails"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:75
+msgid "never expires"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:265
+msgid "\">WooCommerce Emails settings</a> to edit Email design"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:278
+msgid "Coupon"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:280
+msgid "Email"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:282
+msgid "Email API"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:284
+msgid "Google reCAPTCHA"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:286
+msgid "Assign"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:288
+msgid "Design"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:295
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:302
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:392
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:908
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:984
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1072
+msgid "Enable"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:309
+msgid "Disable for logged-in users"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:317
+msgid "Enable to hide coupon box for all logged-in users"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:323
+msgid "Enable multi language"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:327
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:965
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:974
+msgid "Upgrade This Feature"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:329
+msgid ""
+"You can use multi language if you are using WPML or Polylang. Make sure you "
+"had translated Coupon Box for WooCommerce in all your languages before using "
+"this feature."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:335
+msgid "Popup trigger"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:341
+msgid "After initial time"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:343
+msgid "When users scroll-Pro version only"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:345
+msgid "When users are about to exit-Pro version only"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:347
+msgid "Random one of these above-Pro version only"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:353
+msgid "Initial time"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:359
+msgid "Enter min,max to set initial time random between min and max(seconds)."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:365
+msgid "When visitors close coupon box without subscribing"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:371
+msgid "Hide coupon box"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:373
+msgid "Minimize to top bar-Pro version only"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:375
+msgid "Minimize to bottom bar-Pro version only"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:378
+msgid ""
+"If a visitor subscribes when the coupon box is minimized, only field email "
+"is visible and required, all other fields are invisible even if you set them "
+"required fields."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:384
+msgid "Never reminder if click 'No, thanks' button"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:398
+msgid "Subscription reminder if not subscribe"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:405
+msgid "Second"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:406
+msgid "Minute"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:407
+msgid "Hour"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:408
+msgid "Day"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:412
+msgid "Time to show subscription again if visitor does not subscribe"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:418
+msgid "Subscription reminder if subscribe"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:424
+msgid "Days"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:427
+msgid "Show subscription form again after "
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:428
+msgid " days if the visitor subscribes"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:462
+msgid "Select coupon"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:467
+msgid "Unique coupon"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:468
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:490
+msgid "Existing coupon"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:469
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:509
+msgid "Custom"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:470
+msgid "Do not use coupon"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:476
+msgid "Email restriction"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:484
+msgid "Enable to make coupon usable for received email only"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:519
+msgid "Description"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:528
+msgid "Discount type"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:532
+msgid "Percentage discount"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:533
+msgid "Fixed cart discount"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:534
+msgid "Fixed product discount"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:541
+msgid "Coupon code prefix"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:550
+msgid "Coupon amount"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:560
+msgid "Allow free shipping"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:568
+#, php-format
+msgid ""
+"Enable if the coupon grants free shipping. A free shipping method must be "
+"enabled in your shipping zone and be set to require \"a valid free shipping "
+"coupon\" (see the \"%s\" setting)."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:569
+msgid "free shipping method"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:575
+msgid "Expires after(days)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:587
+msgid "Minimum spend"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:598
+msgid "Maximum spend"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:611
+msgid "Individual use only"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:619
+msgid "Enable if the coupon cannot be used in conjunction with other coupons."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:625
+msgid "Exclude sale items"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:633
+msgid ""
+"Enable if the coupon should not apply to items on sale. Per-item coupons "
+"will only work if the item is not on sale. Per-cart coupons will only work "
+"if there are items in the cart that are not on sale."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:641
+msgid "Products"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:656
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:685
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:715
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:745
+msgid ")"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:669
+msgid "Exclude products"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:698
+msgid "Categories"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:728
+msgid "Exclude categories"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:758
+msgid "Usage limit per coupon"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:769
+msgid "Limit usage to X items"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:780
+msgid "Usage limit per user"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:796
+msgid "Email subject"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:807
+msgid "Email heading"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:818
+msgid "Email content"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:846
+msgid "Button \"Shop now\" title"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:855
+msgid "Button \"Shop now\" URL"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:865
+msgid "Button \"Shop now\" color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:876
+msgid "Button \"Shop now\" background color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:887
+msgid "Button \"Shop now\" font size(px)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:901
+msgid "Mailchimp"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:910
+msgid "Turn on to use MailChimp system"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:913
+msgid "Please install "
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:913
+msgid "Mailchimp for WordPress"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:913
+msgid " to using this feature."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:920
+msgid "Mailchimp API Key"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:926
+msgid ""
+" The API key for connecting with your MailChimp account. Get your API key "
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:927
+msgid "here"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:933
+msgid "Mailchimp lists"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:961
+msgid "Active Campaign"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:970
+msgid "SendGrid"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:995
+msgid "Version"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:999
+msgid "reCAPTCHA v2"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1000
+msgid "reCAPTCHA v3"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1006
+msgid "Site key"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1014
+msgid "Secret key"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1022
+msgid "Theme"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1026
+msgid "Dark"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1027
+msgid "Light"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1033
+msgid "Guide"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1038
+msgid "Get Google reCAPTCHA V2 Site and Secret key"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1041
+msgid "Get Google reCAPTCHA V3 Site and Secret key"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1044
+msgid ""
+"1, Visit <a target=\"_blank\" href=\"http://www.google.com/recaptcha/admin\">"
+"page</a> to sign up for an API key pair with your Gmail account"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1047
+msgid "2, Choose reCAPTCHA v2 checkbox "
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1050
+msgid "2, Choose reCAPTCHA v3"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1052
+msgid "3, Fill in authorized domains"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1053
+msgid "4, Accept terms of service and click Register button"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1054
+msgid "5, Copy and paste the site and secret key into the above field"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1065
+msgid "Home Page"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1074
+msgid "Turn on to show coupon box only on Home page"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1079
+msgid "Assign Page"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1084
+msgid "Ex: !is_page(array(123,41,20))"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1086
+msgid "Let you control on which pages coupon box will appear using "
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1087
+msgid "WP's conditional tags"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1090
+msgid ""
+"\"Home page\" option above must be disabled to run these conditional tags."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1092
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1094
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1096
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1098
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1100
+msgid "Use "
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1092
+msgid " to show only on cart page"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1094
+msgid " to show only on checkout page"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1096
+msgid "to show only on WooCommerce category page"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1098
+msgid " to show only on WooCommerce shop page"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1100
+msgid " to show only on WooCommerce single product page"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1103
+msgid ""
+"Combining 2 or more conditionals using || to show coupon box if 1 of the "
+"conditionals matched. e.g use "
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1105
+msgid " to show only on cart page and checkout page"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1113
+msgid "Go to design now"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/settings.php:1119
+msgid "Save"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/system.php:13
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/system.php:38
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/system.php:39
+msgid "System Status"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/system.php:17
+msgid "PHP Time Limit"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/system.php:21
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/admin/system.php:26
+msgid "Memory Limit"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:28
+msgid "*No g_validate_response"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:41
+msgid "*Invalid google reCAPTCHA!"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:48
+msgid "*Invalid google reCAPTCHA secret key!"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:81
+msgid "*reCAPTCHA verification failed"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:90
+msgid " lower than threshold 0.5 "
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:150
+msgid "*This email already subscribed!"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:216
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:234
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/templates/customize.php:63
+msgid "Enter this promo code at checkout page."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:246
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:491
+msgid "*Invalid email!"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:490
+msgid "*Please enter your email and subscribe."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:662
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:681
+msgid "Do not show again"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:757
+msgid "Follow Facebook"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:769
+msgid "Follow Twitter"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:782
+msgid "Follow Pinterest"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:795
+msgid "Follow Instagram"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:808
+msgid "Follow Dribbble"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:821
+msgid "Follow Tumblr"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:834
+msgid "Follow Google Plus"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:847
+msgid "Follow VK"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:860
+msgid "Follow Linkedin"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/frontend.php:874
+msgid "Follow Youtube"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/shortcode.php:92
+msgid "Enter your email address"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/shortcode.php:165
+msgid ""
+"*This email already subscribed. Please enter another email and subscribe!"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/frontend/shortcode.php:234
+msgid "*Invalid email! Please enter a valid email and subscribe."
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/templates/basic.php:54
+msgid "Enter your email address(*)"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/templates/customize.php:80
+msgid "*Enter your email address"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/includes/3rd/elementor/shortcode-widget.php:15
+msgid "Woo Coupon Box"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/includes/3rd/elementor/shortcode-widget.php:38
+msgid "Always Visible"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/includes/3rd/elementor/shortcode-widget.php:41
+msgid ""
+"Display subscription form everywhere even the user is logged or subscribed"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/includes/3rd/elementor/shortcode-widget.php:42
+msgid "Yes"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/includes/3rd/elementor/shortcode-widget.php:43
+msgid "No"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/includes/3rd/elementor/shortcode-widget.php:50
+msgid "Button Color"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/includes/3rd/elementor/shortcode-widget.php:78
+msgid "Button Border Radius"
+msgstr ""
+
+#: D:/git/free-version/woo-coupon-box/woo-coupon-box/includes/3rd/elementor/shortcode-widget.php:91
+msgid "Input Border Radius"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"The easiest way to share your coupon code and grow your social followers at "
+"the same time. With Coupon Box for WooCommerce, your customers will see a "
+"popup that motivates them to follow your social profiles to get coupon code."
+msgstr ""
+
+#. URI of the plugin
+msgid "https://villatheme.com/extensions/woo-coupon-box/"
+msgstr ""
+
+#. Author of the plugin
+msgid "VillaTheme"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://villatheme.com"
+msgstr ""
