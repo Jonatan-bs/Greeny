@@ -33,7 +33,7 @@ get_header('light'); ?>
 							foreach($components as $component){
 								switch ($component['component']) {
 									case 'content':
-										// the_content();
+										the_content();
 										break;
 									case 'symbols':
 										get_template_part('components/symbols');

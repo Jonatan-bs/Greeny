@@ -16,10 +16,6 @@ function component_position_meta_box_display() {
             "title" => "Main text"
         ],
         [
-            "value" => "symbols",
-            "title" => "Symbols"
-        ],
-        [
             "value" => "ingredients",
             "title" => "Ingredients"
         ]
@@ -28,7 +24,7 @@ function component_position_meta_box_display() {
 
     global $post;
     
-	$component_position_fields = get_post_meta($post->ID, 'component_position_fields', false);
+	$component_position_fields = get_post_meta($post->ID, 'component_position_fields', true);
     
 	wp_nonce_field( 'component_position_meta_box_nonce', 'component_position_meta_box_nonce' );
 	?>

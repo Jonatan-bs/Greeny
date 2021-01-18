@@ -20,8 +20,26 @@ function single_product_background_color_display() {
             "value" => "#d54970",
             "title" => "Red"
         ],
-
-
+        [
+            "value" => "#359c61",
+            "title" => "Green"
+        ],
+        [
+            "value" => "#e8c15a",
+            "title" => "Yellow"
+        ],
+        [
+            "value" => "#9975d0",
+            "title" => "Purple"
+        ],
+        [
+            "value" => "#f19958",
+            "title" => "Orange"
+        ],
+        [
+            "value" => "#3abfbb",
+            "title" => "Cyan"
+        ]
     ];
 
 	$background_color = get_post_meta($post->ID, 'background_color', true);

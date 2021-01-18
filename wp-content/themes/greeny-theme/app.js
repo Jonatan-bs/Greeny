@@ -299,10 +299,10 @@ jQuery(function ($) {
       button.parentNode.querySelectorAll('a').forEach(function (a) {
         if (button === a) {
           a.classList.add('active');
-          $('.' + a.dataset.section).removeClass('hidden');
+          $('section.' + a.dataset.section).removeClass('hidden');
         } else {
           a.classList.remove('active');
-          $('.' + a.dataset.section).addClass('hidden');
+          $('section.' + a.dataset.section).addClass('hidden');
         }
       });
     }
