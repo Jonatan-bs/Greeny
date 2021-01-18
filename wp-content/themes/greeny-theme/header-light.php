@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Greeny</title>
+    <title><?php echo get_the_title() && get_the_title() != get_bloginfo( 'name' ) && !is_front_page() ? get_bloginfo( 'name' ). ' | ' . get_the_title() : get_bloginfo( 'name' ); ?></title>
     <?php wp_head(); ?>
 </head>
+<body <?php body_class() ?>>
     <header class="light greeny">
         <div class="container">
             <a href="<?php bloginfo( 'url' )?>">
@@ -52,5 +53,4 @@
             ?>
         </div>
     </header>
-<body <?php body_class() ?>>
     
