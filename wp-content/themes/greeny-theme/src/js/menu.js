@@ -10,6 +10,8 @@ jQuery(($)=>{
         // Open Mobile Menu
         if(e.target.closest('#single-product .nav a')){
 
+            e.preventDefault();
+
             let button = e.target.closest('#single-product .nav a');
 
             if(button.classList.contains("active")) return;

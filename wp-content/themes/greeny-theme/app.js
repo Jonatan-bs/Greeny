@@ -298,6 +298,7 @@ jQuery(function ($) {
 
 
     if (e.target.closest('#single-product .nav a')) {
+      e.preventDefault();
       var button = e.target.closest('#single-product .nav a');
       if (button.classList.contains("active")) return;
       button.parentNode.querySelectorAll('a').forEach(function (a) {

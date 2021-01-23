@@ -13,6 +13,7 @@
             }
             .add-to-cart-button{
                 position: relative;
+                z-index: 1;
                 p{
                     @include display-lg;
                     color: $light;

@@ -687,6 +687,7 @@ footer .secundary-menu a {
 }
 #single-product .single-product-showcase .info .add-to-cart-button, .woocommerce #single-product .single-product-showcase .info .add-to-cart-button {
   position: relative;
+  z-index: 1;
 }
 #single-product .single-product-showcase .info .add-to-cart-button p, .woocommerce #single-product .single-product-showcase .info .add-to-cart-button p {
   font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
