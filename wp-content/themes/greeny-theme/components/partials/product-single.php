@@ -2,6 +2,7 @@
     $product = $args['product'];
     $loadMore = $args['loadMore'] ? 'activated ' : '';
     $classes = $loadMore . 'product animate slideIn sequence'
+    
 ?>
 <div  id="product-<?php the_ID(); ?>" <?php wc_product_class( $classes , $product ); 
 
@@ -30,14 +31,33 @@
         ?>
             
             <p class="price <?php if ($product->get_sale_price()) {?> onsale <?php } ?>">
-                <?php if ($product->get_sale_price()) {?>
-                    <span class="sales-price"><?php echo $product->get_sale_price(), get_woocommerce_currency_symbol() ?></span>
+                <?php if(!$product->is_type( 'variable' )) { ?>
+                    <?php if ($product->get_sale_price()) {?>
+                        <span class="sales-price"><?php echo $product->get_sale_price(), get_woocommerce_currency_symbol() ?></span>
+                    <?php } ?>
+                    <?php echo wc_format_decimal($product->get_regular_price(),2), get_woocommerce_currency_symbol() ?>
+                <?php } elseif ($product->is_type( 'variable' )){ 
+                    
+                            if( $product->get_variation_price() !== $product->get_variation_price('max')){ ?>
+                                <span class="sales-price">
+                                    <?php echo wc_format_decimal($product->get_variation_price(),2), get_woocommerce_currency_symbol() ?>
+                                     - 
+                                    <?php echo wc_format_decimal($product->get_variation_price('max'),2), get_woocommerce_currency_symbol() ?>
+                                </span>
+                            <?php } else { ?>
+                                <span class="sales-price">
+                                    <?php echo wc_format_decimal($product->get_variation_price(),2), get_woocommerce_currency_symbol() ?>
+                                </span>
+                            <?php }
+                    
+                    ?>
                 <?php } ?>
-                <?php echo $product->get_regular_price(), get_woocommerce_currency_symbol() ?>
             </p>
-            <div class="add-to-cart-button pointer" data-id="<?php echo esc_attr( $product->get_id() ); ?>" >
-                <img src="<?php echo get_template_directory_uri() ?>/images/cart-add.svg" alt="add to cart" >
-            </div>
+            <?php if(!$product->is_type( 'variable' )) { ?>
+                <div class="add-to-cart-button pointer" data-id="<?php echo esc_attr( $product->get_id() ); ?>" >
+                    <img src="<?php echo get_template_directory_uri() ?>/images/cart-add.svg" alt="add to cart" >
+                </div>
+            <?php } ?>
         <?php
             } else {
         ?>

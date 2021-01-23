@@ -719,9 +719,6 @@ footer .secundary-menu a {
     font-size: 30px;
   }
 }
-#single-product .single-product-showcase .info .price.onsale, .woocommerce #single-product .single-product-showcase .info .price.onsale {
-  color: #f8f8f8;
-}
 #single-product .single-product-showcase .info .price.onsale .sales-price, .woocommerce #single-product .single-product-showcase .info .price.onsale .sales-price {
   font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
   font-size: 25px;
@@ -992,6 +989,45 @@ nav.woocommerce-MyAccount-navigation li.is-active a {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+#aboutUs .profiles {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 599px) {
+  #aboutUs .profiles {
+    flex-wrap: wrap;
+  }
+}
+#aboutUs .profiles .profile {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 340px;
+}
+#aboutUs .profiles .profile .image {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  border-radius: 100%;
+  border: 10px solid #2c9558;
+  background-position: center center;
+}
+#aboutUs .profiles .profile .name {
+  font-family: "Caveat Brush", "Lucida Grande", Tahoma, Sans-Serif;
+  font-size: 35px;
+  color: #2c9558;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 599px) {
+  #aboutUs .profiles .profile .name {
+    font-size: 25px;
+  }
+}
+#aboutUs .profiles .profile .title {
+  margin-top: 0;
+  color: #9d9d9d;
 }
 
 .spinner {

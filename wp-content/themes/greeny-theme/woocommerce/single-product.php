@@ -33,7 +33,11 @@ get_header('light'); ?>
 							foreach($components as $component){
 								switch ($component['component']) {
 									case 'content':
-										the_content();
+										if ( !empty( get_the_content() ) ){
+											the_content();
+										} else{
+											echo "There's no description for this product" ;
+										}
 										break;
 									case 'symbols':
 										get_template_part('components/symbols');

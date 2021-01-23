@@ -103,6 +103,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_animate__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_animate__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _js_loadMore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/loadMore */ "./src/js/loadMore.js");
 /* harmony import */ var _js_loadMore__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_loadMore__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _js_variants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/variants */ "./src/js/variants.js");
+/* harmony import */ var _js_variants__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_variants__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -210,7 +213,8 @@ jQuery(function ($) {
       var spinnerSrc = button.classList.contains('light') ? '/spinner-light.svg' : '/spinner.svg';
       spinner.src = attr.imageurl + spinnerSrc;
       button.appendChild(spinner);
-      fetch('/?add-to-cart=' + button.dataset.id).then(function () {
+      var variationID = button.dataset.variationid ? '&variation_id=' + button.dataset.variationid : '';
+      fetch('/?add-to-cart=' + button.dataset.id + variationID).then(function () {
         var tick = document.createElement('img');
         tick.classList.add('tick');
         var tickSrc = button.classList.contains('light') ? '/tick-light.svg' : '/tick.svg';
@@ -308,6 +312,49 @@ jQuery(function ($) {
     }
 
     ;
+  });
+});
+
+/***/ }),
+
+/***/ "./src/js/variants.js":
+/*!****************************!*\
+  !*** ./src/js/variants.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+jQuery(function ($) {
+  var _this = this;
+
+  if (!$('#variants').length) {
+    return;
+  }
+
+  $('#variants').change(function () {
+    var is_purchasable = $(_this).find(':selected').attr('data-is_purchasable');
+    var is_in_stock = $(_this).find(':selected').attr('data-is_in_stock');
+    var id = $(_this).find(':selected').attr('data-id');
+    var currency_symbol = $(_this).find(':selected').attr('data-currency_symbol');
+    var onsale = $(_this).find(':selected').attr('data-sales-price');
+    var salesPrice = onsale + currency_symbol;
+    var price = $(_this).find(':selected').attr('data-price') + currency_symbol;
+
+    if (onsale) {
+      $('.price').addClass('onsale');
+      $('.sales-price').removeClass('hidden');
+      $('.sales-price').text(price);
+      $('.displayPrice').text(salesPrice);
+    } else {
+      $('.sales-price').addClass('hidden');
+      $('.price').removeClass('onsale');
+      $('.displayPrice').text(price);
+    }
+
+    $('.add-to-cart-button').attr('data-variationId', id);
+  });
+  window.addEventListener('load', function () {
+    $('#variants').trigger('change');
   });
 });
 

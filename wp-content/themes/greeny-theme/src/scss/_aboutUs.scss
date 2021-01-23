@@ -1,0 +1,35 @@
+#aboutUs {
+  .profiles{
+    display: flex;
+    justify-content: space-around;
+    @include lt-sm{
+      flex-wrap: wrap;
+    }
+      .profile{
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        max-width: 340px;
+
+        .image{
+          width: 100%;
+          padding-bottom: 100%;
+          background-size: cover;
+          border-radius: 100%;
+          border: 10px solid $primary;
+          background-position: center center;
+        }
+        .name{
+          @include display-md;
+          color: $primary;
+          margin-bottom: 0;
+        }
+        .title{
+          margin-top: 0;
+          color: $medium;
+        }
+      }
+
+  }
+
+}

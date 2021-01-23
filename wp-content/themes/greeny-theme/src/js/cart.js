@@ -29,9 +29,9 @@ jQuery(($) => {
                 let spinnerSrc = button.classList.contains('light')? '/spinner-light.svg' : '/spinner.svg';
                 spinner.src = attr.imageurl + spinnerSrc
                 button.appendChild(spinner)
+                let variationID = button.dataset.variationid ? '&variation_id=' + button.dataset.variationid : '';
 
-
-                fetch('/?add-to-cart=' + button.dataset.id)
+                fetch('/?add-to-cart=' + button.dataset.id + variationID)
                 .then(()=>{
                     let tick = document.createElement('img')
                     tick.classList.add('tick')

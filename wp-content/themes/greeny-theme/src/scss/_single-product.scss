@@ -28,7 +28,7 @@
                 color: $dark;
 
                 &.onsale{
-                    color: $light;
+                    // color: $light;
 
                     .sales-price{
                         @include display-sm;
