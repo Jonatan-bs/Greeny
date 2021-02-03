@@ -59,14 +59,15 @@ $product = $args['product'];
             }
 
             $get_regular_price = $product->is_type( 'variable' ) ? $product->get_available_variations()[0]["display_regular_price"] : $product->get_regular_price();
-            $is_in_stock = $product->is_type( 'variable' ) ? $product->get_available_variations()[0]["is_in_stock"] :$product->is_in_stock();
+            $is_in_stock = $product->is_type( 'variable' ) ? $product->get_available_variations()[0]["is_in_stock"] : $product->is_in_stock();
             $id = esc_attr( $product->get_id() );
             $variation_id = $product->is_type( 'variable' ) ? $product->get_available_variations()[0]["variation_id"] : '';
+
             ?>
 
             <p class="price <?php if ($get_sale_price) {?> onsale <?php } ?>">            
 
-            <?php if($is_purchasable){?> 
+            <?php if($is_purchasable && $is_in_stock){?> 
                     <span class="sales-price <?php if (!$get_sale_price) { echo 'hidden'; }?>"><?php echo $get_regular_price, get_woocommerce_currency_symbol() ?></span>
                     <span class="displayPrice">
                         <?php 
@@ -77,14 +78,14 @@ $product = $args['product'];
                         }?>
                     </span>
                     
-            <? } else if (!$is_in_stock){?>
+            <? } else {?>
                 <div class="outofstock">Out of stock</div>
             <?php } ?>
 
             </p>
 
             <?php 
-                if ($is_purchasable ) {
+                if ($is_purchasable && $is_in_stock) {
             ?>   
                 <div  class="add-to-cart-button pointer light" data-id="<?php echo $id; ?>" data-variationId="<?php echo $variation_id; ?>" > 
                     <p>Add to cart</p>

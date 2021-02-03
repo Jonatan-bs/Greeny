@@ -63,7 +63,11 @@ get_header('light'); ?>
 					<section class="reviews mb hidden">
 						<?php comments_template(); ?>
 					</section>
-					<?php if ($product->is_purchasable()) { ?>   
+					<?php 
+					$is_purchasable = $product->is_type( 'variable' ) ? $product->get_available_variations()[0]["is_purchasable"] : $product->is_purchasable();
+					$is_in_stock = $product->is_type( 'variable' ) ? $product->get_available_variations()[0]["is_in_stock"] : $product->is_in_stock();
+					
+					if ($is_purchasable && $is_in_stock) { ?>   
 						<div class="flexcenter mb">
 							<div class="add-to-cart-button light pointer button" data-id="<?php echo esc_attr( $product->get_id() ); ?>" > 
 								<p> 
